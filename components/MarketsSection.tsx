@@ -110,7 +110,20 @@ export default function MarketsSection() {
             </h2>
           </div>
         </ScrollReveal>
+<<<<<<< HEAD
         <div className="grid grid-cols-1 gap-6 max-w-3xl mx-auto">
+=======
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <ScrollReveal delay={100}>
+            <MetricCard
+              title="BTCUSD – Bitcoin"
+              value={isLoading ? '—' : formatPrice(data.btc.price)}
+              change={data.btc.changePercent}
+              sparklineData={data.btc.history}
+              isLoading={isLoading}
+            />
+          </ScrollReveal>
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
           <ScrollReveal delay={200}>
             <MetricCard
               title={
@@ -127,6 +140,25 @@ export default function MarketsSection() {
               isLoading={isLoading}
             />
           </ScrollReveal>
+<<<<<<< HEAD
+=======
+          <ScrollReveal delay={300}>
+            <MetricCard
+              title={
+                <span className="flex items-center gap-2">
+                  Indice global
+                  <span className="text-xs px-2 py-1 bg-text-muted/20 text-text-muted rounded-full">
+                    Désactivé temporairement
+                  </span>
+                </span>
+              }
+              value={isLoading ? '—' : formatPrice(data.index.price)}
+              change={data.index.changePercent}
+              sparklineData={data.index.history}
+              isLoading={isLoading}
+            />
+          </ScrollReveal>
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
         </div>
       </div>
     </section>

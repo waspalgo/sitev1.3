@@ -40,7 +40,11 @@ export default function SecurityContactPage() {
 
       const data = await res.json();
 
+<<<<<<< HEAD
       if (!res.ok || !data.ok) {
+=======
+      if (!res.ok) {
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
         console.error('Erreur API /api/security:', data);
         setStatusMessage(data.error || t('contact.form.error'));
         return;

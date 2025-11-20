@@ -1,10 +1,16 @@
 ﻿import type { NextConfig } from 'next';
+<<<<<<< HEAD
 import path from 'path';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Fix warning about multiple lockfiles
   outputFileTracingRoot: path.join(__dirname),
+=======
+
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],

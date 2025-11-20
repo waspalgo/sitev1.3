@@ -47,7 +47,11 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+<<<<<<< HEAD
                   href="/gold"
+=======
+                  href="/marches"
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
                   className="text-text-muted hover:text-purple-accent transition-colors text-sm block"
                 >
                   {t('common.markets')}

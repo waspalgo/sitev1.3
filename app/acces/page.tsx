@@ -1,6 +1,10 @@
 'use client';
 
+<<<<<<< HEAD
 import { useState, Suspense, useEffect } from 'react';
+=======
+import { useState, Suspense } from 'react';
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 import { useSearchParams } from 'next/navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useKeyboard } from '@/contexts/KeyboardContext';
@@ -19,7 +23,10 @@ interface FormData {
   expectations: string;
   riskAcknowledged: boolean;
   infoAccurate: boolean;
+<<<<<<< HEAD
   newsletterConsent: boolean;
+=======
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
   preferredDays: string[];
   timeSlots: string[];
   whatsappOnly: boolean;
@@ -47,11 +54,18 @@ function AccesPageContent() {
     expectations: '',
     riskAcknowledged: false,
     infoAccurate: false,
+<<<<<<< HEAD
     newsletterConsent: false,
     preferredDays: [],
     timeSlots: [],
     whatsappOnly: false,
     contactPreference: 'call', // Toujours WhatsApp par défaut
+=======
+    preferredDays: [],
+    timeSlots: [],
+    whatsappOnly: false,
+    contactPreference: '',
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
@@ -78,7 +92,11 @@ function AccesPageContent() {
     });
   };
 
+<<<<<<< HEAD
   const validateStep = (currentStep: number): { isValid: boolean; errors: Record<string, string> } => {
+=======
+  const validateStep = (currentStep: number): boolean => {
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     const newErrors: Record<string, string> = {};
     
     if (currentStep === 0) {
@@ -106,6 +124,7 @@ function AccesPageContent() {
       if (formData.timeSlots.length === 0) {
         newErrors.timeSlots = t('access.errors.timeSlots');
       }
+<<<<<<< HEAD
       // contactPreference est toujours 'call' (WhatsApp) par défaut, pas besoin de validation
     }
     
@@ -117,11 +136,25 @@ function AccesPageContent() {
   const handleNext = () => {
     const validation = validateStep(step);
     if (validation.isValid) {
+=======
+      if (!formData.contactPreference) {
+        newErrors.contactPreference = t('access.errors.contactPreference');
+      }
+    }
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleNext = () => {
+    if (validateStep(step)) {
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       setStep(step + 1);
       setErrors({});
     }
   };
 
+<<<<<<< HEAD
   const handleSubmit = async (e?: React.MouseEvent<HTMLButtonElement>) => {
     if (e) {
       e.preventDefault();
@@ -162,6 +195,13 @@ function AccesPageContent() {
 
     // Validation réussie, on peut envoyer
     console.log('Validation passed, submitting form...');
+=======
+  const handleSubmit = async () => {
+    if (!validateStep(step)) {
+      return;
+    }
+
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     setIsSubmitting(true);
     setStatusMessage(null);
 
@@ -177,6 +217,7 @@ function AccesPageContent() {
       expectations: formData.expectations || undefined,
       risk_acknowledged: formData.riskAcknowledged,
       info_confirmed: formData.infoAccurate,
+<<<<<<< HEAD
       newsletter_consent: formData.newsletterConsent ? 'YES' : 'NO',
       // Convertir les tableaux en chaînes de caractères séparées par des virgules
       preferred_days: formData.preferredDays.join(', ') || undefined,
@@ -186,6 +227,10 @@ function AccesPageContent() {
 
     console.log('Sending payload:', payload);
 
+=======
+    };
+
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     try {
       const res = await fetch('/api/algo-access', {
         method: 'POST',
@@ -193,6 +238,7 @@ function AccesPageContent() {
         body: JSON.stringify(payload),
       });
 
+<<<<<<< HEAD
       console.log('Response status:', res.status, res.ok);
 
       let data;
@@ -219,10 +265,23 @@ function AccesPageContent() {
     } catch (error) {
       console.error('Erreur lors de l\'envoi:', error);
       setStatusMessage(t('contact.form.error'));
+=======
+      if (!res.ok) {
+        setStatusMessage(t('contact.form.error'));
+        return;
+      }
+
+      setSubmitted(true);
+    } catch (error) {
+      console.error(error);
+      setStatusMessage(t('contact.form.error'));
+    } finally {
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       setIsSubmitting(false);
     }
   };
 
+<<<<<<< HEAD
   // Faire défiler vers le haut quand la page de succès s'affiche
   useEffect(() => {
     if (submitted) {
@@ -230,6 +289,8 @@ function AccesPageContent() {
     }
   }, [submitted]);
 
+=======
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
   if (submitted) {
     return (
       <div className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 min-h-screen">
@@ -252,7 +313,11 @@ function AccesPageContent() {
             </p>
             <a
               href="/"
+<<<<<<< HEAD
               className="inline-block px-8 py-3 bg-purple-primary hover:bg-purple-secondary rounded-2xl text-white font-semibold transition-all duration-300 hover:scale-105"
+=======
+              className="inline-block px-8 py-3 bg-purple-primary hover:bg-purple-secondary rounded-2xl text-white font-semibold transition-all duration-300 shadow-glow-sm hover:shadow-glow-md hover:scale-105"
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
             >
               {t('access.backToHome')}
             </a>
@@ -278,10 +343,17 @@ function AccesPageContent() {
         {/* Step 0: Algorithm Selection */}
         {step === 0 && (
           <GlassCard className="p-4 sm:p-6 md:p-8 animate-scale-in">
+<<<<<<< HEAD
             <h2 className="text-xl sm:text-2xl font-bold text-text-primary mb-3 sm:mb-4 text-center">
               {t('access.step1.title')}
             </h2>
             <p className="text-sm sm:text-base text-text-secondary mb-4 sm:mb-6 text-center">
+=======
+            <h2 className="text-xl sm:text-2xl font-bold text-text-primary mb-3 sm:mb-4">
+              {t('access.step1.title')}
+            </h2>
+            <p className="text-sm sm:text-base text-text-secondary mb-4 sm:mb-6">
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
               {t('access.step1.description')}
             </p>
             <div className="space-y-3 sm:space-y-4">
@@ -344,13 +416,21 @@ function AccesPageContent() {
               <p className="mt-4 text-negative text-sm">{t('access.errors.algorithm')}</p>
             )}
             {formData.algorithm && (
+<<<<<<< HEAD
               <p className="mt-6 p-4 bg-purple-primary/10 border border-purple-accent/20 rounded-xl text-sm text-text-secondary text-center">
+=======
+              <p className="mt-6 p-4 bg-purple-primary/10 border border-purple-accent/20 rounded-xl text-sm text-text-secondary">
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
                 {t('access.step1.selected')} <strong className="text-purple-accent">WA-AMIR ST V1</strong>
               </p>
             )}
             <button
               onClick={handleNext}
+<<<<<<< HEAD
               className="mt-6 sm:mt-8 w-full px-6 sm:px-8 py-3 sm:py-4 bg-purple-primary hover:bg-purple-secondary rounded-2xl text-white font-semibold transition-all duration-300 hover:scale-105 text-sm sm:text-base"
+=======
+              className="mt-6 sm:mt-8 w-full px-6 sm:px-8 py-3 sm:py-4 bg-purple-primary hover:bg-purple-secondary rounded-2xl text-white font-semibold transition-all duration-300 shadow-glow-sm hover:shadow-glow-md hover:scale-105 text-sm sm:text-base"
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
             >
               {t('access.continue')}
             </button>
@@ -360,15 +440,26 @@ function AccesPageContent() {
         {/* Step 1: Basic Information */}
         {step === 1 && (
           <GlassCard className="p-4 sm:p-6 md:p-8 animate-scale-in">
+<<<<<<< HEAD
             <h2 className="text-xl sm:text-2xl font-bold text-text-primary mb-2 text-center">
               Accéder à l&apos;algorithme WA-AMIR
             </h2>
             <p className="text-sm sm:text-base text-text-secondary mb-6 sm:mb-8 text-center">
+=======
+            <h2 className="text-xl sm:text-2xl font-bold text-text-primary mb-2">
+              Accéder à l&apos;algorithme WA-AMIR
+            </h2>
+            <p className="text-sm sm:text-base text-text-secondary mb-6 sm:mb-8">
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
               Remplissez ces informations pour que nous puissions analyser votre profil et vous
               accompagner dans la mise en place. Aucune carte bancaire, aucun engagement.
             </p>
             {formData.algorithm && (
+<<<<<<< HEAD
               <p className="mb-6 p-4 bg-purple-primary/10 border border-purple-accent/20 rounded-xl text-sm text-text-secondary text-center">
+=======
+              <p className="mb-6 p-4 bg-purple-primary/10 border border-purple-accent/20 rounded-xl text-sm text-text-secondary">
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
                 Algorithme sélectionné : <strong className="text-purple-accent">WA-AMIR ST V1</strong>
               </p>
             )}
@@ -547,6 +638,7 @@ function AccesPageContent() {
                   </label>
                   {errors.infoAccurate && <p className="mt-1 ml-8 text-negative text-xs">{errors.infoAccurate}</p>}
                 </div>
+<<<<<<< HEAD
                 <div>
                   <label className="flex items-start space-x-3 cursor-pointer">
                     <input
@@ -561,6 +653,8 @@ function AccesPageContent() {
                     </span>
                   </label>
                 </div>
+=======
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
               </div>
             </div>
 
@@ -576,7 +670,11 @@ function AccesPageContent() {
               </button>
               <button
                 onClick={handleNext}
+<<<<<<< HEAD
                 className="flex-1 px-6 py-3 bg-purple-primary hover:bg-purple-secondary rounded-2xl text-white font-semibold transition-all duration-300 hover:scale-105"
+=======
+                className="flex-1 px-6 py-3 bg-purple-primary hover:bg-purple-secondary rounded-2xl text-white font-semibold transition-all duration-300 shadow-glow-sm hover:shadow-glow-md hover:scale-105"
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
               >
                 {t('access.continue')}
               </button>
@@ -587,8 +685,13 @@ function AccesPageContent() {
         {/* Step 2: Availability */}
         {step === 2 && (
           <GlassCard className="p-4 sm:p-6 md:p-8 animate-scale-in">
+<<<<<<< HEAD
             <h2 className="text-xl sm:text-2xl font-bold text-text-primary mb-2 text-center">{t('access.step3.title')}</h2>
             <p className="text-sm sm:text-base text-text-secondary mb-6 sm:mb-8 text-center">
+=======
+            <h2 className="text-xl sm:text-2xl font-bold text-text-primary mb-2">{t('access.step3.title')}</h2>
+            <p className="text-sm sm:text-base text-text-secondary mb-6 sm:mb-8">
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
               {t('access.step3.description')}
             </p>
 
@@ -646,6 +749,95 @@ function AccesPageContent() {
                 </div>
                 {errors.timeSlots && <p className="mt-2 text-negative text-sm">{errors.timeSlots}</p>}
               </div>
+<<<<<<< HEAD
+=======
+
+              <div>
+                <label className="block text-text-secondary text-sm mb-3">
+                  {t('access.step3.contactPreference')}
+                </label>
+                <div className="space-y-3">
+                  <label
+                    className={`block p-4 rounded-xl border-2 cursor-pointer transition-all duration-300 ${
+                      formData.contactPreference === 'call'
+                        ? 'border-purple-accent bg-purple-accent/10'
+                        : 'border-purple-accent/20 hover:border-purple-accent/40'
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="contactPreference"
+                      value="call"
+                      checked={formData.contactPreference === 'call'}
+                      onChange={handleInputChange}
+                      className="sr-only"
+                    />
+                    <div className="flex items-start space-x-3">
+                      <div
+                        className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 mt-0.5 ${
+                          formData.contactPreference === 'call'
+                            ? 'border-purple-accent bg-purple-accent'
+                            : 'border-text-muted'
+                        }`}
+                      >
+                        {formData.contactPreference === 'call' && (
+                          <div className="w-2.5 h-2.5 rounded-full bg-white" />
+                        )}
+                      </div>
+                      <div>
+                        <span className="text-text-primary font-medium block">
+                          {t('access.step3.callOption')}
+                        </span>
+                        <span className="text-text-secondary text-sm">
+                          {t('access.step3.callDescription')}
+                        </span>
+                      </div>
+                    </div>
+                  </label>
+
+                  <label
+                    className={`block p-4 rounded-xl border-2 cursor-pointer transition-all duration-300 ${
+                      formData.contactPreference === 'documentation'
+                        ? 'border-purple-accent bg-purple-accent/10'
+                        : 'border-purple-accent/20 hover:border-purple-accent/40'
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="contactPreference"
+                      value="documentation"
+                      checked={formData.contactPreference === 'documentation'}
+                      onChange={handleInputChange}
+                      className="sr-only"
+                    />
+                    <div className="flex items-start space-x-3">
+                      <div
+                        className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 mt-0.5 ${
+                          formData.contactPreference === 'documentation'
+                            ? 'border-purple-accent bg-purple-accent'
+                            : 'border-text-muted'
+                        }`}
+                      >
+                        {formData.contactPreference === 'documentation' && (
+                          <div className="w-2.5 h-2.5 rounded-full bg-white" />
+                        )}
+                      </div>
+                      <div>
+                        <span className="text-text-primary font-medium block">
+                          {t('access.step3.docOption')}
+                        </span>
+                        <span className="text-text-secondary text-sm">
+                          {t('access.step3.docDescription')}
+                        </span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                {errors.contactPreference && (
+                  <p className="mt-2 text-negative text-sm">{errors.contactPreference}</p>
+                )}
+              </div>
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
             </div>
 
             <div className="flex gap-4 mt-8">
@@ -659,15 +851,26 @@ function AccesPageContent() {
                 {t('access.back')}
               </button>
               <button
+<<<<<<< HEAD
                 type="button"
                 onClick={handleSubmit}
                 disabled={isSubmitting}
                 className="flex-1 px-6 py-3 bg-purple-primary hover:bg-purple-secondary rounded-2xl text-white font-semibold transition-all duration-300 hover:scale-105 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
+=======
+                onClick={handleSubmit}
+                disabled={isSubmitting}
+                className={`flex-1 px-6 py-3 bg-purple-primary hover:bg-purple-secondary rounded-2xl text-white font-semibold transition-all duration-300 hover:scale-105 disabled:opacity-60 disabled:hover:scale-100 ${
+                  isKeyboardOpen
+                    ? 'shadow-[0_0_5px_rgba(168,85,247,0.2),0_0_10px_rgba(109,40,217,0.1)] hover:shadow-[0_0_8px_rgba(168,85,247,0.3),0_0_15px_rgba(109,40,217,0.15)]'
+                    : 'shadow-glow-sm hover:shadow-glow-md'
+                }`}
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
               >
                 {isSubmitting ? t('access.sending') : t('access.sendRequest')}
               </button>
             </div>
             {statusMessage && (
+<<<<<<< HEAD
               <div className={`mt-4 p-4 rounded-xl ${
                 statusMessage.includes('succès') || statusMessage.includes('envoyée') || statusMessage.includes('success')
                   ? 'bg-positive/20 border border-positive/30 text-positive'
@@ -675,6 +878,11 @@ function AccesPageContent() {
               }`}>
                 <p className="text-sm font-medium">{statusMessage}</p>
               </div>
+=======
+              <p className="mt-4 text-sm text-text-secondary">
+                {statusMessage}
+              </p>
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
             )}
           </GlassCard>
         )}

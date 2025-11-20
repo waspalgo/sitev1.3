@@ -2,8 +2,11 @@ import { NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabaseServer';
 import { resend } from '@/lib/resendClient';
 import { sendAutoReplyEmail } from '@/lib/sendAutoReply';
+<<<<<<< HEAD
 import { buildAdminNotificationHtml } from '@/lib/adminNotificationTemplate';
 import { escapeHtml } from '@/lib/sanitize';
+=======
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
 // Force dynamic rendering to avoid build-time analysis
 export const dynamic = 'force-dynamic';
@@ -32,6 +35,7 @@ export async function POST(req: Request) {
       }, { status: 500 });
     }
 
+<<<<<<< HEAD
     const html = buildAdminNotificationHtml(
       'contact',
       'Nouvelle demande de contact',
@@ -47,6 +51,16 @@ export async function POST(req: Request) {
       ],
       message ? escapeHtml(message) : undefined
     );
+=======
+    const html = `
+      <h1>Nouvelle demande de contact</h1>
+      <p><strong>Nom :</strong> ${name || '-'}</p>
+      <p><strong>Email :</strong> ${email}</p>
+      <p><strong>Sujet :</strong> ${subject || '—'}</p>
+      <p><strong>Message :</strong></p>
+      <p>${(message || '').replace(/\n/g, '<br />')}</p>
+    `;
+>>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
     await resend.emails.send({
       from: `WASPALGO Contact <${process.env.NO_REPLY_EMAIL!}>`,
