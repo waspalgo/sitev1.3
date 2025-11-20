@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Favicon basé sur l'icône fournie - Guêpe violette sur fond noir, bien visible -->
+  <defs>
+    <style>
+      .wasp { fill: #A855F7; }
+    </style>
+  </defs>
+  
+  <!-- Fond noir carré -->
+  <rect width="100" height="100" fill="#000000"/>
+  
+  <!-- Guêpe violette - Version agrandie pour meilleure visibilité -->
+  <!-- Tête (côté droit, agrandie) -->
+  <circle cx="72" cy="28" r="11" class="wasp"/>
+  <circle cx="72" cy="28" r="5.5" fill="#000000"/>
+  
+  <!-- Antennes -->
+  <path d="M 77 17 Q 82 12 87 15" stroke="#A855F7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 77 19 Q 82 14 87 17" stroke="#A855F7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Thorax -->
+  <ellipse cx="52" cy="38" rx="13" ry="11" class="wasp"/>
+  
+  <!-- Abdomen segmenté -->
+  <ellipse cx="28" cy="53" rx="16" ry="11" class="wasp"/>
+  <!-- Segments (pour effet segmenté) -->
+  <ellipse cx="28" cy="53" rx="11" ry="7" fill="#000000" opacity="0.25"/>
+  
+  <!-- Ailes -->
+  <ellipse cx="47" cy="33" rx="20" ry="11" class="wasp" opacity="0.95"/>
+  <ellipse cx="42" cy="36" rx="16" ry="9" class="wasp" opacity="0.85"/>
+</svg>

@@ -1,0 +1,13 @@
+﻿LOGO MANQUANT
+=============
+
+Le fichier waspalgo-logo.png doit être ajouté dans le dossier /public/
+
+Spécifications:
+- Nom du fichier: waspalgo-logo.png
+- Résolution: 500x500 pixels
+- Format: PNG avec transparence recommandée
+- Emplacement: /public/waspalgo-logo.png
+
+Le logo est utilisé dans le Header sur toutes les pages du site.
+Sans ce fichier, une erreur d image apparaîtra.

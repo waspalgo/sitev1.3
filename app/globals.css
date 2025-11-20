@@ -1,0 +1,497 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+    @apply antialiased;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  html {
+    background-color: #000000;
+    scroll-behavior: smooth;
+    /* Optimisation du scroll */
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+  }
+  
+  /* Optimisation des performances de scroll */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-black/20 backdrop-blur-md border border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-black/30 backdrop-blur-lg border border-purple-accent/20 rounded-3xl;
+  }
+  
+  .bg-gradient-radial {
+    background-image: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+  
+  /* Content container for consistent max-width and centering */
+  .content-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-28;
+  }
+}
+
+/* Enhanced animations */
+/* Particules avec mouvements beaucoup plus visibles et fluides */
+@keyframes particle-drift-1 {
+  0% {
+    transform: translate(0, 0) translateZ(0);
+  }
+  12.5% {
+    transform: translate(15px, -20px) translateZ(0);
+  }
+  25% {
+    transform: translate(30px, -40px) translateZ(0);
+  }
+  37.5% {
+    transform: translate(25px, -50px) translateZ(0);
+  }
+  50% {
+    transform: translate(-5px, -60px) translateZ(0);
+  }
+  62.5% {
+    transform: translate(-25px, -55px) translateZ(0);
+  }
+  75% {
+    transform: translate(-20px, -35px) translateZ(0);
+  }
+  87.5% {
+    transform: translate(8px, -15px) translateZ(0);
+  }
+  100% {
+    transform: translate(0, 0) translateZ(0);
+  }
+}
+
+@keyframes particle-drift-2 {
+  0% {
+    transform: translate(0, 0) translateZ(0);
+  }
+  12.5% {
+    transform: translate(-12px, -18px) translateZ(0);
+  }
+  25% {
+    transform: translate(-28px, -35px) translateZ(0);
+  }
+  37.5% {
+    transform: translate(-40px, -50px) translateZ(0);
+  }
+  50% {
+    transform: translate(-35px, -55px) translateZ(0);
+  }
+  62.5% {
+    transform: translate(-15px, -50px) translateZ(0);
+  }
+  75% {
+    transform: translate(18px, -40px) translateZ(0);
+  }
+  87.5% {
+    transform: translate(25px, -20px) translateZ(0);
+  }
+  100% {
+    transform: translate(0, 0) translateZ(0);
+  }
+}
+
+@keyframes particle-drift-3 {
+  0% {
+    transform: translate(0, 0) translateZ(0);
+  }
+  16.66% {
+    transform: translate(12px, -25px) translateZ(0);
+  }
+  33.33% {
+    transform: translate(25px, -50px) translateZ(0);
+  }
+  50% {
+    transform: translate(18px, -45px) translateZ(0);
+  }
+  66.66% {
+    transform: translate(-8px, -35px) translateZ(0);
+  }
+  83.33% {
+    transform: translate(-20px, -15px) translateZ(0);
+  }
+  100% {
+    transform: translate(0, 0) translateZ(0);
+  }
+}
+
+@keyframes particle-drift-4 {
+  0% {
+    transform: translate(0, 0) translateZ(0);
+  }
+  12.5% {
+    transform: translate(-15px, -20px) translateZ(0);
+  }
+  25% {
+    transform: translate(-32px, -38px) translateZ(0);
+  }
+  37.5% {
+    transform: translate(-28px, -48px) translateZ(0);
+  }
+  50% {
+    transform: translate(-25px, -52px) translateZ(0);
+  }
+  62.5% {
+    transform: translate(-8px, -48px) translateZ(0);
+  }
+  75% {
+    transform: translate(18px, -42px) translateZ(0);
+  }
+  87.5% {
+    transform: translate(22px, -20px) translateZ(0);
+  }
+  100% {
+    transform: translate(0, 0) translateZ(0);
+  }
+}
+
+/* Orbiting animations for nodes on circular arcs */
+/* Using rotate transform to orbit around center */
+@keyframes orbit-0 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-150px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateY(-150px);
+  }
+}
+
+@keyframes orbit-1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-250px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateY(-250px);
+  }
+}
+
+@keyframes orbit-2 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-350px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateY(-350px);
+  }
+}
+
+@keyframes orbit-3 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-450px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateY(-450px);
+  }
+}
+
+@keyframes orbit-4 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-550px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateY(-550px);
+  }
+}
+
+@keyframes orbit-5 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-650px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateY(-650px);
+  }
+}
+
+/* Nouvelles animations d'orbite pour les boules (rayons) - rayons réduits */
+@keyframes orbit-sphere-0 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-80px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateY(-80px);
+  }
+}
+
+@keyframes orbit-sphere-1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-120px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateY(-120px);
+  }
+}
+
+@keyframes orbit-sphere-2 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-160px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateY(-160px);
+  }
+}
+
+@keyframes orbit-sphere-3 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-200px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateY(-200px);
+  }
+}
+
+@keyframes orbit-sphere-4 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-240px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateY(-240px);
+  }
+}
+
+@keyframes orbit-sphere-5 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-280px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg) translateY(-280px);
+  }
+}
+
+/* Animations supplémentaires pour plus de dynamisme */
+@keyframes fade-in-scale {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.50);
+  }
+}
+
+/* Animations pour le glow violet derrière le titre */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translate3d(0, 0, 0) scale(1.05);
+  }
+}
+
+@keyframes rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float-glow {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate3d(0, -10px, 0) scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+/* Particle drift classes - mouvements plus rapides et visibles */
+.particle-drift-1 {
+  animation: particle-drift-1 12s ease-in-out infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.particle-drift-2 {
+  animation: particle-drift-2 14s ease-in-out infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.particle-drift-3 {
+  animation: particle-drift-3 16s ease-in-out infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.particle-drift-4 {
+  animation: particle-drift-4 13s ease-in-out infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  will-change: opacity, transform;
+  backfaceVisibility: 'hidden';
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+  backfaceVisibility: hidden;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+/* Animation pour la barre néon - effet flash intense */
+@keyframes neon-bar-pulse {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scaleX(1);
+    box-shadow: 
+      0 0 15px rgba(168, 85, 247, 0.8),
+      0 0 30px rgba(168, 85, 247, 0.6),
+      0 0 45px rgba(168, 85, 247, 0.4),
+      0 0 60px rgba(168, 85, 247, 0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1.08);
+    box-shadow: 
+      0 0 25px rgba(168, 85, 247, 1),
+      0 0 50px rgba(168, 85, 247, 0.8),
+      0 0 75px rgba(168, 85, 247, 0.6),
+      0 0 100px rgba(168, 85, 247, 0.4),
+      0 0 120px rgba(168, 85, 247, 0.2);
+  }
+}
+
+/* Animation shimmer pour effet de brillance qui traverse */
+@keyframes float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(30px, -30px, 0) scale(1.1);
+  }
+  66% {
+    transform: translate3d(-20px, 20px, 0) scale(0.9);
+  }
+}
+
+@keyframes linePulse {
+  0%, 100% {
+    opacity: 0.1;
+    stroke-dasharray: 0, 1000;
+  }
+  50% {
+    opacity: 0.3;
+    stroke-dasharray: 500, 0;
+  }
+}
+
+@keyframes neon-bar-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #02010A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6D28D9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B5CF6;
+}
+

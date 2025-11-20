@@ -1,0 +1,431 @@
+PROJECT OVERVIEW
+You are building the official website for WASPALGO, a professional algorithmic trading technology brand.
+The core product is an internal algorithmic engine called WA-AMIR:
+WA-AMIR = WASP Autonomous Market Intelligence Reactor.
+
+There are two variants of WA-AMIR:
+- WA-AMIR ST V1 (Short Term) – available now.
+- WA-AMIR LT V1 (Long Term) – planned and currently in internal testing (not yet accessible to clients).
+
+The website must look like a serious, premium, AI-powered fintech / quant trading brand:
+- Not like a retail “get rich quick” landing page.
+- Tone = calm, professional, transparent, technical.
+
+The target language for the user interface is French by default. English can be added later via a language switcher, but the main content must be in French.
+
+TECH STACK
+- Use Next.js App Router (latest) with TypeScript.
+- Use TailwindCSS for all styling (no CSS frameworks other than Tailwind).
+- Use a mobile-first, fully responsive approach for phones, tablets, laptops and large screens.
+- Organize reusable UI as React components under /components.
+
+BRAND & POSITIONING
+- WASPALGO = algorithmic trading technology brand, not a regulated investment manager.
+- WA-AMIR is presented as an algorithmic engine that connects to the user’s own broker account.
+- The user always keeps control of their capital and account; the algorithm simply automates decisions following predefined rules.
+- The site must never:
+  - promise profits,
+  - guarantee returns,
+  - or suggest “safe gains”.
+- You may describe:
+  - logic (short term vs long term),
+  - exposure (XAUUSD vs BTC),
+  - backtest methodology and stress tests,
+  - risk warnings.
+- Always pair any mention of performance or backtests with a clear risk disclaimer in French.
+
+VISUAL DESIGN & THEME
+Global style:
+- Dark, futuristic, AI / quant / cyber-finance.
+- Feel: serious, premium, high-end technology.
+
+Colors:
+- Background base:
+  - #000000
+  - #02010A
+  - #050111
+- Primary purples:
+  - #6D28D9
+  - #8B5CF6
+  - #A855F7
+- Text:
+  - #FFFFFF (primary)
+  - #F3F4F6 (secondary)
+  - #9CA3AF (muted)
+- Positive metrics:
+  - #34D399 (green)
+- Alerts / errors:
+  - #F87171 – use rarely and subtly.
+- Glows:
+  - rgba(168, 85, 247, 0.25)
+  - rgba(168, 85, 247, 0.40)
+
+Style rules:
+- Use rounded-2xl or rounded-3xl for cards and buttons.
+- Use soft drop-shadows and purple glows for important CTAs and cards.
+- Use glassmorphism for some elements:
+  - dark, semi-transparent backgrounds with backdrop-blur.
+- Animations:
+  - smooth, subtle, and elegant.
+  - no aggressive flashing or bouncing.
+  - use Tailwind transitions (`transition-all`, `duration-300` / `duration-500`).
+
+HERO BACKGROUND (VERY IMPORTANT)
+The homepage hero must use a custom animated background component, reusable if needed:
+
+- Large, full-width, hero-height container.
+- Background:
+  - black → deep purple gradient (from top black to bottom purple).
+  - a radial purple halo behind the main hero content (e.g. bottom center).
+- Add thin circular orbit lines:
+  - implemented as SVG shapes,
+  - very low opacity strokes,
+  - positioned behind content, giving a sense of structure or “radar”.
+- Add small floating particles:
+  - 1–2 px dots,
+  - color: white or soft purple,
+  - opacity: 0.2–0.4,
+  - animated slowly with CSS keyframes (floating / drifting).
+- Implementation:
+  - Create a dedicated React component: e.g. <HeroBackground />.
+  - Place it absolutely behind the hero content, with overflow-hidden and correct z-index.
+  - Use pure CSS / Tailwind / keyframes or a very light React logic instead of heavy canvas/WebGL.
+
+RESPONSIVE DESIGN REQUIREMENTS
+- The layout must be **mobile-first** and fully responsive.
+- On small screens (phones ~360–430px width):
+  - Navigation collapses into a hamburger menu.
+  - Sections are stacked vertically with generous spacing.
+  - Text remains readable: limit line-length, adapt font sizes, and add comfortable padding.
+  - Cards use full width with margin between them.
+  - Charts or “fake dashboards” must never overflow horizontally: always respect max-width: 100%.
+- On medium screens (tablets ~768px):
+  - Use 2-column layouts for hero (text + dashboard preview) and some sections.
+  - Cards can be displayed as 2-column grids.
+- On large screens (~1024–1920px+):
+  - Use 2–3-column grids where appropriate (e.g. “Nos algorithmes”, “Market snapshot”).
+  - Hero can be a 2-column layout: text left, fake dashboard right.
+- Test visually and ensure everything looks polished from mobile to large desktop.
+
+LANGUAGE & TONE
+- All user-facing content (headings, body text, labels, buttons) must be in **French**.
+- English can be prepared later via i18n, but for now:
+  - FR is the main and fully functional language.
+- Tone:
+  - professional,
+  - calm,
+  - transparent,
+  - no hype,
+  - no “quick money” vocabulary.
+- Use “vous” in French (formal, respectful).
+
+HEADER & NAVIGATION
+- Use a sticky header at the top:
+  - full-width,
+  - dark translucent background with slight blur,
+  - subtle bottom border or glow.
+- Left: text logo “WASPALGO” (we may later replace with an SVG logo).
+- Center or right: navigation links (in French):
+  - Accueil
+  - Marchés
+  - Nos algorithmes
+  - Accéder à l’algorithme
+- Right side:
+  - Language switcher placeholder: “FR | EN” with FR highlighted as active.
+  - Main CTA button: “Accéder à l’algorithme” (primary purple button).
+- On mobile:
+  - Replace the nav links with a hamburger icon.
+  - The hamburger opens a full-screen or side-drawer menu with the same links and the CTA.
+
+CORE PAGES
+Implement the following pages/routes with the App Router:
+
+1) Home (/) – “Accueil”
+2) /marches – “Marchés”
+3) /algorithmes – “Nos algorithmes”
+4) /algorithmes/wa-amir-st – detail page for WA-AMIR ST V1
+5) /algorithmes/wa-amir-lt – detail page for WA-AMIR LT V1
+6) /acces – “Accéder à l’algorithme” (multi-step form)
+7) /legal – “Mentions légales & Risques”
+
+HOMEPAGE (ACCUEIL)
+Sections:
+
+1. Hero section
+- Background: use the animated hero background described above.
+- Layout:
+  - On desktop: 2 columns (text left, fake dashboard right).
+  - On mobile: stacked vertically (text first, dashboard after).
+- Content (left side):
+  - Small badge: “Technologie d’algorithmes de trading”.
+  - H1 in French:
+    “WASPALGO – Algorithmes sur les marchés financiers.”
+  - Subheading:
+    “WA-AMIR est un moteur autonome qui analyse en continu le marché et réagit aux mouvements, sans émotions, directement connecté à votre propre compte de trading.”
+  - Buttons:
+    - Primary: “Accéder à l’algorithme” → /acces
+    - Secondary (outline): “Voir les marchés en direct” → /marches
+- Content (right side, fake dashboard card):
+  - Card title: “WA-AMIR ST V1 – Aperçu”.
+  - Some fake metrics, in French, for visual credibility only, e.g.:
+    - “Exposition actuelle : 99% XAUUSD”
+    - “Signal récent : Long XAUUSD”
+    - “Activité récente : X trades sur les 7 derniers jours”
+  - A small sparkline chart (SVG) with a purple line.
+  - Card style: glassmorphism + glow.
+
+2. Market snapshot section
+- Below the hero, add a “Market snapshot” row.
+- Show 2–3 metric cards:
+  - XAUUSD (Or)
+  - BTCUSD (Bitcoin)
+  - Optionally un indice (ex: “Indice global”).
+- Each card:
+  - Title (e.g. “XAUUSD – Or”).
+  - Fake current price (just placeholder values).
+  - Variation % with green/red color depending on sign.
+  - Small sparkline-style decoration.
+- Style: dark cards, slight border, subtle purple glow on hover.
+
+3. “Comment fonctionne WASPALGO ?”
+- Title: “Comment fonctionne WASPALGO ?”
+- 3–4 steps, in French, explaining high-level logic, for example:
+  1) “Analyse des marchés” – WA-AMIR analyse en continu des flux de données de marché selon des règles définies.
+  2) “Connexion à votre compte” – vous gardez votre propre compte chez un broker partenaire, l’algorithme envoie simplement les décisions.
+  3) “Exécution automatisée” – les positions sont prises selon la logique du moteur, sans émotions.
+  4) “Accompagnement humain” – un échange privé permet d’expliquer le fonctionnement avant toute mise en place.
+- Keep it neutral, no performance promises.
+
+4. “Nos algorithmes” (teaser on home)
+- A teaser version of the /algorithmes page:
+  - Short intro.
+  - A preview card for WA-AMIR ST V1 and WA-AMIR LT V1 with a link to “Voir tous nos algorithmes” → /algorithmes.
+
+5. CTA section at the bottom
+- A final band prompting the user:
+  - Title: “Envie d’en savoir plus sur WA-AMIR ?”
+  - Text: “Remplissez le formulaire pour accéder à l’algorithme et être accompagné étape par étape.”
+  - Button: “Accéder à l’algorithme” → /acces.
+
+PAGE /ALGORITHMES – “Nos algorithmes”
+- Title: “Nos algorithmes”
+- Intro text explaining that WASPALGO développe un moteur interne WA-AMIR avec deux variantes (court terme et long terme).
+
+List two main cards in a responsive grid:
+
+Card 1 – WA-AMIR ST V1 (Short Term – available)
+- Badge: “Disponible”.
+- Title: “WA-AMIR ST V1”.
+- Subtitle: “Autonomous Market Intelligence Reactor – Short Term”.
+- Short description in French:
+  - Algo court terme,
+  - principalement exposé à l’or (XAUUSD),
+  - peut intervenir ponctuellement sur BTCUSD,
+  - conçu pour exploiter les mouvements rapides du marché.
+- Bullet points:
+  - “Horizon : quelques heures à quelques jours”
+  - “Fréquence : plus de signaux que la version long terme”
+  - “Style : réactif, opportuniste, discipliné”
+  - “Exécution : entièrement automatisée”
+- Buttons:
+  - “En savoir plus” → /algorithmes/wa-amir-st
+  - “Accéder à l’algorithme” → /acces?algo=wa-amir-st
+
+Card 2 – WA-AMIR LT V1 (Long Term – coming soon)
+- Badge: “Bientôt disponible”.
+- Title: “WA-AMIR LT V1”.
+- Subtitle: “Autonomous Market Intelligence Reactor – Long Term”.
+- Style: slightly desaturated/greyed; subtle “locked” feel (padlock icon, reduced opacity).
+- Description:
+  - version long terme orientée sur des horizons de plusieurs semaines à plusieurs mois,
+  - moins de signaux,
+  - décisions plus filtrées.
+- Bullet points:
+  - “Horizon : plusieurs semaines à plusieurs mois”
+  - “Style : macro, patient, structuré”
+  - “Statut : en phase d’optimisation interne”
+- Buttons:
+  - “En savoir plus” → /algorithmes/wa-amir-lt
+  - Disabled button: label “Accès prochainement” (non clickable, pointer-events: none).
+
+PAGE /ALGORITHMES/WA-AMIR-ST – DETAIL
+- Title: “WA-AMIR ST V1 – Short Term”.
+- Short intro explaining:
+  - WA-AMIR = “Autonomous Market Intelligence Reactor”.
+  - ST = version court terme du moteur.
+
+Sections on this page:
+
+1) “Architecture générale”
+- Explain in French that WA-AMIR ST V1:
+  - analyse en continu les marchés,
+  - identifie des configurations spécifiques de prix, de volatilité et de structure,
+  - déclenche des positions selon des règles strictes et testées,
+  - fonctionne sans émotions.
+
+2) “Horizon & style de trading”
+- Describe:
+  - horizon: quelques heures à quelques jours,
+  - plus de signaux que la version long terme,
+  - objectif: exploiter des mouvements de court terme,
+  - gestion du risque disciplinée.
+
+3) “Actifs concernés”
+- Clarify:
+  - l’algorithme concentre plus de 99% de son activité sur l’or (XAUUSD),
+  - il peut intervenir ponctuellement sur BTCUSD dans certains contextes de marché spécifiques.
+- This should be described as current configuration / typical behavior, not a promise.
+
+4) “Backtests & scénarios de stress”
+- Mention:
+  - WA-AMIR ST V1 a été backtesté sur les 4 dernières années de données.
+  - Les résultats montrent une bonne robustesse sur différentes phases de marché, avec des périodes très solides sur l’or.
+  - Expliquer que l’un des scénarios internes les plus défavorables utilisés en stress test correspond à un choc extrême sur BTCUSD autour du 10 octobre 2025:
+    - Dans ce scénario théorique, une position sur BTCUSD aurait pu afficher jusqu’à –24% sur une courte période.
+    - Cependant, ce scénario reste limité car la configuration actuelle de WA-AMIR ST V1 reste majoritairement exposée à XAUUSD.
+  - Indiquer que lors de ce type de choc sur les cryptomonnaies, les flux se sont historiquement souvent redirigés vers l’or, ce qui, dans les simulations, a permis à l’algorithme de bénéficier de ce mouvement sur XAUUSD.
+- Always add a disclaimer after this section (see below).
+
+5) “Votre rôle & celui de l’algorithme”
+- Clarify:
+  - l’utilisateur garde son propre compte de trading chez un broker partenaire,
+  - il garde le contrôle de ses dépôts et retraits,
+  - l’algorithme envoie les décisions ou exécute les positions selon la configuration choisie,
+  - l’utilisateur peut arrêter l’utilisation de l’algorithme à tout moment.
+
+6) Risk disclaimer block (important)
+- Add a visible block in French, something like:
+  - “Le trading sur les marchés financiers comporte un risque élevé de perte en capital. Les performances passées, les simulations ou les backtests ne garantissent en aucun cas les résultats futurs. WA-AMIR ST V1 est un moteur de décision algorithmique, pas une garantie de résultat.”
+
+7) Bottom CTA
+- At the bottom, add a CTA section:
+  - “Accéder à l’algorithme”
+  - Button: “Accéder à l’algorithme” → /acces?algo=wa-amir-st
+
+PAGE /ALGORITHMES/WA-AMIR-LT – DETAIL
+- Title: “WA-AMIR LT V1 – Long Term”.
+- Intro:
+  - Explain that this is the long term variant of WA-AMIR,
+  - currently in internal optimisation and not yet opened to clients.
+
+Sections:
+
+1) “Vision long terme”
+- Explain:
+  - horizon plus long (plusieurs semaines à plusieurs mois),
+  - moins de signaux,
+  - décisions plus filtrées,
+  - adapté aux profils qui préfèrent moins d’activité mais des positions plus structurées.
+
+2) “Statut actuel”
+- Explain in French:
+  - “WA-AMIR LT V1 est actuellement en phase de tests et d’optimisation interne. Avant toute ouverture, nous testons différents scénarios de marché, conditions extrêmes et paramètres de risque.”
+
+3) Actions
+- Two buttons:
+  - Primary: “Être informé de l’ouverture” (for now it can be a simple button linking to a placeholder or anchor).
+  - Secondary (disabled): “Accéder à l’algorithme (bientôt disponible)” – greyed out, non clickable.
+
+PAGE /ACCES – “Accéder à l’algorithme”
+This page implements a multi-step form. Steps:
+
+Step 0 – Choix de l’algorithme
+- Title: “Choisissez la variante de l’algorithme”.
+- Explain that for now only WA-AMIR ST V1 is accessible.
+- Two options (cards or radio buttons):
+  - WA-AMIR ST V1 – selectable, with short description.
+  - WA-AMIR LT V1 – greyed out, disabled, with label “Bientôt disponible”.
+- Button: “Continuer” → move to Step 1.
+- Display the chosen algorithm name in the following steps (e.g., “Vous avez choisi : WA-AMIR ST V1”).
+
+Step 1 – Informations de base
+- Title: “Accéder à l’algorithme WA-AMIR”.
+- Subtitle:
+  - “Remplissez ces informations pour que nous puissions analyser votre profil et vous accompagner dans la mise en place. Aucune carte bancaire, aucun engagement.”
+- Fields:
+  - Prénom
+  - Nom
+  - Adresse e-mail
+  - Numéro WhatsApp
+  - Pays de résidence (select)
+  - Capital envisagé (select):
+    - “Moins de 500”
+    - “500 – 1 000”
+    - “1 000 – 5 000”
+    - “5 000 – 10 000”
+    - “Plus de 10 000”
+  - Niveau en trading:
+    - “Débutant”
+    - “Intermédiaire”
+    - “Avancé”
+  - Question facultative (textarea):
+    - “Qu’attendez-vous de l’algorithme ?”
+- Legal checkboxes:
+  - “Je comprends que le trading comporte un risque de perte en capital.”
+  - “Je confirme que les informations fournies sont exactes.”
+- Button: “Continuer” → go to Step 2.
+
+Step 2 – Disponibilités
+- Title: “Vos disponibilités”.
+- Subtitle:
+  - “Indiquez vos disponibilités afin que nous puissions vous proposer un créneau via WhatsApp. Il ne s’agit pas encore d’un rendez-vous fixe, simplement d’une indication.”
+- Inputs:
+  - Option pour choisir 2–3 jours préférés (simple select / multi-select or checkboxes).
+  - Choix de plages horaires (matin / après-midi / soir).
+  - Optional checkbox:
+    - “Je préfère être contacté uniquement par messages WhatsApp dans un premier temps.”
+- Button: “Envoyer ma demande”.
+- Confirmation message (after submission):
+  - “Merci ! Votre demande d’accès à WA-AMIR a bien été envoyée. Vous recevrez un message WhatsApp prochainement avec la suite des étapes.”
+
+PAGE /MARCHES – “Marchés”
+- Title: “Marchés”.
+- Add a layout prepared to embed live charts later (e.g., TradingView).
+- For now, use placeholder components:
+  - A large card for XAUUSD with a fake chart.
+  - A card for BTCUSD with a fake chart.
+- Include a short text explaining that these visuels are indicatifs and that the actual data comes from the broker / trading platform.
+- Keep the design consistent with the rest: dark, purple accents, glows.
+
+PAGE /LEGAL – “Mentions légales & Risques”
+- Create a simple legal page with:
+  - Mentions de risques:
+    - “Le trading comporte un risque élevé de perte en capital.”
+    - “Les performances passées et les backtests ne garantissent en aucun cas les résultats futurs.”
+    - “Aucune information présente sur ce site ne constitue un conseil en investissement.”
+  - Placeholders for:
+    - “Mentions légales”
+    - “Politique de confidentialité”
+  - Write in clean, structured French.
+
+GENERAL CODING RULES
+- Use semantic HTML: <header>, <main>, <section>, <footer>.
+- Keep components small and reusable.
+- Prefer Tailwind utility classes over custom CSS files.
+- Use smooth transitions and subtle animations.
+- Always keep the design aligned with:
+  - dark violet theme,
+  - glows,
+  - premium dashboard aesthetic.
+- Always respect:
+  - French language for user content,
+  - no performance promises,
+  - WA-AMIR naming conventions,
+  - algorithm variants (ST available, LT grayed / coming soon),
+  - instructions defined in this file.
+
+
+LOGO USAGE
+The official logo of the website is the file "waspalgo-logo.png", located in /public, at 500x500 resolution.
+Use it in the header next to the site name "WASPALGO". 
+
+Logo rules:
+- Always load the logo from /public/waspalgo-logo.png using Next.js <Image>.
+- Do not distort, stretch or crop the logo.
+- Use a responsive size:
+  - Desktop: around 36–44px height
+  - Mobile: around 28–32px height
+- Keep proper spacing between the logo and the text "WASPALGO".
+- On mobile layouts, ensure the logo remains readable and not too large.
+- Maintain consistent alignment in the header with navigation links and the language switcher.
+

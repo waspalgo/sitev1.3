@@ -1,0 +1,707 @@
+{
+  "common": {
+    "waspalgo": "WASPALGO",
+    "home": "Home",
+    "markets": "Markets",
+    "algorithms": "Algorithms",
+    "access": "Access the Algorithm",
+    "legal": "Information",
+    "faq": "FAQ",
+    "news": "News",
+    "contact": "Contact",
+    "navigation": "Navigation",
+    "information": "Information",
+    "warning": "Warning",
+    "copyright": "© {year} WASPALGO. All rights reserved.",
+    "allRightsReserved": "All rights reserved",
+    "menu": "Menu",
+    "close": "Close",
+    "loading": "Loading..."
+  },
+  "footer": {
+    "description": "Algorithm trading technology with the WA-AMIR engine.",
+    "important": "Important:",
+    "riskWarning": "Trading involves a high risk of capital loss. Past performance does not guarantee future results.",
+    "contact": "Contact",
+    "contactPage": "Contact page",
+    "supportEmail": "support@waspalgo.com",
+    "infoEmail": "info@waspalgo.com"
+  },
+  "home": {
+    "hero": {
+      "badge": "Opening for whitelist members",
+      "title1": "Get passive returns",
+      "title2": "thanks to our algorithm.",
+      "subtitle": "WA-AMIR is an autonomous and intelligent trading algorithm that continuously monitors market movements, identifies opportunities and executes trades automatically, all directly connected to your personal trading account.",
+      "cta": "Access the Algorithm",
+      "learnMore": "Learn More"
+    },
+    "dashboard": {
+      "ytdReturn": "YTD Return",
+      "maxMonthlyReturn": "Max Monthly Return",
+      "currentMonthlyReturn": "Current Monthly Return",
+      "averageRiskYTD": "Average YTD Risk",
+      "maxMonthlyRisk": "Max Monthly Risk",
+      "currentMonthlyRisk": "Current Monthly Risk",
+      "title": "WA-AMIR ST V1 – Overview",
+      "showReturns": "Returns",
+      "showRisk": "Risk Band",
+      "currentMonth": "Current month"
+    },
+    "stats": {
+      "performanceYTD": "YTD Performance",
+      "monthsOfPerformance": "Months of performance",
+      "xauusdExposure": "XAUUSD Exposure",
+      "currentRisk": "Current risk"
+    },
+    "features": {
+      "marketAnalysis": {
+        "title": "Market Analysis",
+        "description": "WA-AMIR continuously analyzes market data flows according to defined rules."
+      },
+      "automatedExecution": {
+        "title": "Automated Execution",
+        "description": "Positions are taken according to the engine's logic, without emotions."
+      },
+      "secureConnection": {
+        "title": "Secure Connection",
+        "description": "You keep your own account with a partner broker, the algorithm simply sends decisions."
+      },
+      "humanSupport": {
+        "title": "Human Support",
+        "description": "A private exchange allows explaining the operation before any setup."
+      },
+      "rigorousBacktesting": {
+        "title": "Rigorous Backtesting",
+        "description": "All our algorithms are tested on extensive historical data and subjected to stress scenarios."
+      },
+      "riskManagement": {
+        "title": "Risk Management",
+        "description": "Each position is evaluated according to predefined and tested risk criteria."
+      },
+      "continuousPerformance": {
+        "title": "Continuous Performance",
+        "description": "The engine continuously adapts to market conditions to optimize decisions."
+      },
+      "totalControl": {
+        "title": "Total Control",
+        "description": "You keep control of your capital and can stop the algorithm at any time."
+      },
+      "realTimeAnalysis": {
+        "title": "Real-time Analysis",
+        "description": "Continuous market monitoring with instant data processing."
+      },
+      "fastExecution": {
+        "title": "Fast Execution",
+        "description": "Immediate reaction to market signals without delay."
+      },
+      "enhancedSecurity": {
+        "title": "Advanced Security",
+        "description": "Enhanced protection of our servers against cyberattacks."
+      },
+      "continuousOptimization": {
+        "title": "Continuous Optimization",
+        "description": "Constant adaptation of algorithms to market conditions by our experts."
+      },
+      "userControl": {
+        "title": "User Control",
+        "description": "You retain full control of your capital."
+      }
+    },
+    "simulation": {
+      "badge": "WA-AMIR Engine",
+      "title": "Harness the Power of Algorithmic Intelligence",
+      "subtitle": "WA-AMIR makes automated investing simple and accessible. Deposit your capital, connect the algorithm, and let it work for you.",
+      "simulatedCapital": "Simulated Capital",
+      "simulationDescription": "Educational simulation based on historical returns of WA-AMIR ST V1. Past performance does not predict future performance.",
+      "investedAmount": "Invested Amount",
+      "currentValue": "Current Value",
+      "totalReturn": "Total Return",
+      "depositedOn": "Deposited on {date}",
+      "asOf": "As of {date}",
+      "overMonths": "Over {count} months",
+      "simulationTitle": "WA-AMIR ST V1 – Simulation",
+      "disclaimer": "Simulation based on real historical performance of WA-AMIR ST V1 since April 2025. This simulation is indicative and does not guarantee future results. Past performance does not predict future performance.",
+      "start": "Start",
+      "final": "Final",
+      "return": "Return",
+      "thisMonth": "this month"
+    },
+    "algorithms": {
+      "title": "Our Algorithms",
+      "subtitle": "WASPALGO develops an internal WA-AMIR engine with two variants: short-term and long-term.",
+      "seeAll": "See All Our Algorithms",
+      "page": {
+        "badge": "WA-AMIR Engine",
+        "title": "Our Algorithms",
+        "subtitle": "WASPALGO develops an internal {waamir} (WASP Autonomous Market Intelligence Reactor) engine with two variants: a {shortTerm} version and a {longTerm} version.",
+        "subtitle2": "Each variant is designed to meet different trading objectives and horizons.",
+        "cta": {
+          "title": "Ready to start?",
+          "subtitle": "Access WA-AMIR ST V1 and start your automated investment journey today.",
+          "button": "Access WA-AMIR ST V1",
+          "backButton": "Back to home"
+        }
+      }
+    },
+    "cta": {
+      "title": "Want to learn more about WA-AMIR?",
+      "subtitle": "Fill out the form to access the algorithm and be guided step by step.",
+      "button": "Access the Algorithm"
+    },
+    "markets": {
+      "title": "Gold Price Overview"
+    },
+    "about": {
+      "title": "About WASPALGO",
+      "subtitle": "WASPALGO is a trading algorithm technology provider, not a regulated asset manager.",
+      "whoWeAre": {
+        "title": "Who We Are",
+        "p1": "WASPALGO develops and provides trading algorithm technologies. Our WA-AMIR engine (WASP Autonomous Market Intelligence Reactor) is designed to analyze markets and generate automated trading signals.",
+        "p2": "We are a technology provider, not an investment advisor or fund manager. Our role is to provide the algorithmic tool, not to manage your capital."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "p1": "We believe that algorithmic automation allows investors to benefit from markets without having to trade themselves. You deposit your capital, we connect the algorithm, and it trades automatically on your behalf, 24/7, without emotions, following strict and tested rules. This also allows people without trading knowledge to invest and generate passive income.",
+        "p2": "Our goal is to democratize automated investing by making advanced algorithmic trading technology accessible to everyone. The algorithm makes trading decisions for you, but you maintain full control of your account: you can stop, modify, or withdraw your capital at any time."
+      },
+      "methodology": {
+        "title": "Our Methodology",
+        "internal": "Internal Development: WA-AMIR is developed and optimized internally by our technical team.",
+        "backtesting": "Rigorous Backtesting: All our algorithms are tested on extensive historical data and subjected to stress scenarios.",
+        "transparency": "Transparency: We display the real and historical performance of our algorithms, without promises or guarantees.",
+        "control": "User Control: You maintain full control of your capital. The algorithm sends signals, but it's your account that executes positions."
+      }
+    },
+    "onboarding": {
+      "title": "How does access to WA-AMIR work?",
+      "subtitle": "A simple and transparent process in 5 steps, with support at each stage.",
+      "steps": {
+        "step1": {
+          "title": "Access Request",
+          "description": "Fill out the access form with your basic information and availability. No credit card, no commitment."
+        },
+        "step2": {
+          "title": "WhatsApp Contact",
+          "description": "We contact you via WhatsApp to discuss your profile, answer your questions, and plan the next steps of the process."
+        },
+        "step3": {
+          "title": "Creating an account on a partner platform",
+          "description": "If you don't have an account yet, we guide you through creating an account on a compatible partner platform."
+        },
+        "step4": {
+          "title": "Algorithm Connection",
+          "description": "We give you access to a strategy that is connected to our WA-AMIR algorithm."
+        },
+        "step5": {
+          "title": "Follow-up",
+          "description": "After setup, regular follow-up is provided to answer your questions and optimize the configuration if necessary."
+        }
+      }
+    },
+    "testimonials": {
+      "badge": "Testimonials",
+      "title": "What Our Users Say"
+    },
+    "articles": {
+      "badge": "News",
+      "title": "Latest Articles",
+      "subtitle": "Stay informed about the latest updates and performance of WA-AMIR.",
+      "viewAll": "View All News"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to the most common questions about WASPALGO and WA-AMIR.",
+      "viewAll": "View All FAQ"
+    },
+    "comparison": {
+      "badge": "Comparison",
+      "title": "WA-AMIR ST vs WA-AMIR LT",
+      "subtitle": "Compare the two versions of our algorithm to choose the one that matches your strategy.",
+      "feature": "Feature",
+      "horizon": "Trading Horizon",
+      "markets": "Main Markets",
+      "frequency": "Risks",
+      "risk": "Risk",
+      "performance": "YTD Performance",
+      "availability": "Availability",
+      "shortTerm": "Short Term",
+      "longTerm": "Long Term",
+      "high": "High",
+      "moderate": "Moderate",
+      "moderateRisk": "Moderate",
+      "moderateToLow": "Moderate to Low",
+      "soonAvailable": "Coming Soon",
+      "available": "Available",
+      "unknown": "Unknown"
+    },
+    "timeline": {
+      "title": "Performance Timeline",
+      "subtitle": "Track the evolution of WA-AMIR ST V1 month by month since its launch in private phase (April 2025). Opened to the public since November 1, 2025.",
+      "badge": "History"
+    },
+    "algorithmCard": {
+      "available": "Available",
+      "comingSoon": "Coming Soon",
+      "learnMore": "Learn More",
+      "access": "Access the Algorithm",
+      "accessSoon": "Access Coming Soon",
+      "horizonShort": "a few days/weeks/months",
+      "horizonLong": "several months",
+      "frequencyHigh": "Moderate",
+      "riskLow": "Moderate/Low",
+      "style": "Style",
+      "styleReactive": "reactive, opportunistic, disciplined",
+      "styleMacro": "macro, patient, structured",
+      "execution": "Execution",
+      "executionAutomated": "fully automated",
+      "status": "Status",
+      "statusOptimization": "in internal optimization phase",
+      "subtitleST": "Autonomous Market Intelligence Reactor – Short Term",
+      "subtitleLT": "Autonomous Market Intelligence Reactor – Long Term",
+      "descriptionST": "Short-term algorithm, exclusively exposed to gold (XAUUSD), designed to exploit rapid market movements.",
+      "descriptionLT": "Long-term version oriented towards horizons of several months, fewer signals, more filtered decisions."
+    },
+    "statusBadge": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "articleCard": {
+      "readMore": "Read More",
+      "featured": "Featured"
+    },
+    "articles": {
+      "badge": "News",
+      "title": "Latest Articles",
+      "subtitle": "Stay informed about the latest updates and performance of WA-AMIR.",
+      "viewAll": "View All News",
+      "pageTitle": "Latest News",
+      "pageSubtitle": "Stay informed about the latest updates, performance, and announcements concerning WA-AMIR.",
+      "all": "All",
+      "noArticles": "No articles found in this category.",
+      "categories": {
+        "update": "Update",
+        "performance": "Performance",
+        "info": "Information",
+        "bugfix": "Fix",
+        "announcement": "Announcement"
+      },
+      "backToNews": "Back to news",
+      "by": "By",
+      "otherArticles": "Other articles"
+    },
+    "comparison": {
+      "badge": "Comparison",
+      "title": "WA-AMIR ST vs WA-AMIR LT",
+      "subtitle": "Compare the two versions of our algorithm to choose the one that matches your strategy.",
+      "feature": "Feature",
+      "horizon": "Trading Horizon",
+      "markets": "Main Markets",
+      "frequency": "Risks",
+      "risk": "Risk",
+      "performance": "YTD Performance",
+      "availability": "Availability",
+      "shortTerm": "Short Term",
+      "longTerm": "Long Term",
+      "high": "High",
+      "moderate": "Moderate",
+      "moderateRisk": "Moderate",
+      "moderateToLow": "Moderate to Low",
+      "soonAvailable": "Coming Soon",
+      "available": "Available",
+      "unavailable": "Unavailable",
+      "unknown": "Unknown",
+      "learnMoreST": "Learn More About ST V1",
+      "learnMoreLT": "Learn More About LT V1"
+    },
+    "about": {
+      "title": "About WASPALGO",
+      "subtitle": "WASPALGO is a trading algorithm technology provider, not a regulated asset manager.",
+      "whoWeAre": {
+        "title": "Who We Are",
+        "p1": "WASPALGO develops and provides trading algorithm technologies. Our WA-AMIR engine (WASP Autonomous Market Intelligence Reactor) is designed to analyze markets and generate automated trading signals.",
+        "p2": "We are a technology provider, not an investment advisor or fund manager. Our role is to provide the algorithmic tool, not to manage your capital."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "p1": "We believe that algorithmic automation allows investors to benefit from markets without having to trade themselves. You deposit your capital, we connect the algorithm, and it trades automatically on your behalf, 24/7, without emotions, following strict and tested rules. This also allows people without trading knowledge to invest and generate passive income.",
+        "p2": "Our goal is to democratize automated investing by making advanced algorithmic trading technology accessible to everyone. The algorithm makes trading decisions for you, but you maintain full control of your account: you can stop, modify, or withdraw your capital at any time."
+      },
+      "methodology": {
+        "title": "Our Methodology",
+        "internal": "Internal Development: WA-AMIR is developed and optimized internally by our technical team.",
+        "backtesting": "Rigorous Backtesting: All our algorithms are tested on extensive historical data and subjected to stress scenarios.",
+        "transparency": "Transparency: We display the real and historical performance of our algorithms, without promises or guarantees.",
+        "control": "User Control: You maintain full control of your capital. The algorithm sends signals, but it's your account that executes positions."
+      },
+      "notWaspalgo": {
+        "title": "What WASPALGO is NOT",
+        "notFundManager": "Not a fund manager: We do not manage your money. You deposit your capital into your account, we connect the algorithm, and you retain total control of your account.",
+        "notProfitPromise": "Not a profit promise: No guarantee of return is provided. Trading involves risks.",
+        "notInvestmentAdvice": "Not investment advice: We provide technology, not personalized financial advice.",
+        "notGetRichQuick": "Not a \"get rich quick\" solution: WA-AMIR is a serious tool for investors who understand the risks and wish to invest passively."
+      }
+    },
+    "markets": {
+      "title": "Gold Price Overview",
+      "pageBadge": "Market Data",
+      "pageTitle": "Gold Overview",
+      "pageSubtitle": "Follow the evolution of the market on which WA-AMIR operates: XAUUSD (Gold).",
+      "pageNote": "Indicative visualizations. Real data comes from your broker or trading platform.",
+      "detailedCharts": "Detailed Charts",
+      "chartsSubtitle": "Analyze trends and price movements on the main markets.",
+      "xauusdTitle": "XAUUSD – Gold",
+      "xauusdMain": "Main market of WA-AMIR ST V1 — Gold (XAUUSD) represents more than 99% of the short-term algorithm's exposure.",
+      "xauusdDescription": "Gold is a traditional safe-haven asset that reacts to geopolitical events, central bank decisions, and economic indicators.",
+      "xauusdAnalysis": "WA-AMIR ST V1 continuously analyzes price movements, volatility, and trends on this market to identify the best trading opportunities.",
+      "importantNote": "Important Note",
+      "noteContent": "These charts are indicative. For real-time data and advanced charts, please consult a specialized platform. The data displayed here is provided for informational purposes only and not accurate.",
+      "ctaTitle": "Ready to invest in these markets?",
+      "ctaSubtitle": "WA-AMIR ST V1 analyzes and trades automatically on these markets for you. Deposit your capital and let the algorithm work.",
+      "ctaButton": "Access WA-AMIR ST V1",
+      "ctaLearnMore": "Learn More About Algorithms",
+      "viewMore": "View More"
+    }
+  },
+  "faq": {
+    "badge": "Help Center",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find all the answers to the most common questions about WASPALGO.",
+    "cta": {
+      "title": "Have other questions?",
+      "subtitle": "Feel free to contact us via the access form for any additional questions.",
+      "button": "Access the Algorithm"
+    },
+    "q1": {
+      "question": "Do you manage my money?",
+      "answer": "No. WASPALGO never touches your money. Your capital remains 100% in your own account. The algorithm only sends automated signals, and it's your account that executes positions. You maintain total control, at all times."
+    },
+    "q2": {
+      "question": "Can I withdraw my capital at any time?",
+      "answer": "Yes, of course. You are free to withdraw or deposit whenever you want, without fees and without delay. WA-AMIR does not block any funds: everything is managed directly from the broker."
+    },
+    "q3": {
+      "question": "What are the risks?",
+      "answer": "As with any investment in financial markets, there is always a risk of loss. However, WA-AMIR is designed to: continuously analyze the market, detect trends and reversals, limit excessive exposure, secure positions according to market conditions. The algorithm also receives macroeconomic alerts in case of announcements likely to impact the market (FOMC, NFP, CPI…), which allows it to adapt its strategy."
+    },
+    "q4": {
+      "question": "How does the WA-AMIR engine make decisions?",
+      "answer": "WA-AMIR uses a combination of technical analysis, statistical models, and real-time data. It automatically identifies: favorable zones, reversals, entry and exit signals, volatility periods. Its goal: execute logical, consistent, and emotion-free decisions."
+    },
+    "q5": {
+      "question": "What platforms are compatible?",
+      "answer": "WA-AMIR currently works via Pu Prime, which serves as a secure intermediary. Then, it is possible to connect MetaTrader 4 or 5 to Pu Prime, which allows: tracking all positions in real-time, consulting the complete history, checking activity directly from MetaTrader."
+    },
+    "q6": {
+      "question": "How much does access to the algorithm cost?",
+      "answer": "Access to WA-AMIR is 100% free. No subscription, no initial payment. WASPALGO only takes 10% of the profits you make each month. If you don't make any profits during the month, you don't pay anything."
+    },
+    "q7": {
+      "question": "Can I stop WA-AMIR whenever I want?",
+      "answer": "Yes. You can disable the algorithm with one click. All positions remain visible and controllable from MetaTrader or Pu Prime."
+    },
+    "q8": {
+      "question": "What capital is recommended to start?",
+      "answer": "Technically, you can start with the minimum capital required by your broker. However, for an optimal experience, we recommend a minimum capital of $600."
+    },
+    "q9": {
+      "question": "Does the algorithm work 24/7?",
+      "answer": "WA-AMIR works continuously during market opening (5 days out of 7). It continuously analyzes XAUUSD to seize the best opportunities as soon as they appear."
+    },
+    "q10": {
+      "question": "What returns can I expect?",
+      "answer": "Returns vary according to: market conditions, volatility, economic periods. We display a real and transparent history, but no performance is guaranteed."
+    },
+    "q11": {
+      "question": "Can the algorithm lose money?",
+      "answer": "Yes. All strategies involve risks. WA-AMIR can experience losses, but it is designed to: limit drawdowns, optimize risk management, aim for stable performance over the long term."
+    }
+  },
+  "legal": {
+    "badge": "Important Information",
+    "title": "Legal Notice & Risks",
+    "subtitle": "Essential information about risks, the nature of our services, and your rights as a user.",
+    "riskWarnings": {
+      "title": "Risk Warnings",
+      "subtitle": "It is essential to understand the risks before using WA-AMIR.",
+      "capitalLoss": {
+        "title": "Capital loss risk",
+        "description": "Trading on financial markets involves a high risk of capital loss. You may lose part or all of your initial investment. Only invest funds you can afford to lose."
+      },
+      "noPerformanceGuarantee": {
+        "title": "No performance guarantee",
+        "description": "Past performance, simulations, or backtests do not guarantee future results in any way. Market conditions can change, and historical results are not necessarily indicative of future performance."
+      },
+      "noInvestmentAdvice": {
+        "title": "No investment advice",
+        "description": "No information on this site constitutes investment advice, a recommendation to buy or sell, or a solicitation of an offer to buy or sell any financial instrument. Trading decisions are your sole responsibility."
+      },
+      "marketVolatility": {
+        "title": "Market volatility",
+        "description": "Financial markets are volatile and can move quickly. Losses can occur even with a well-designed strategy. Make sure you understand trading mechanisms before starting."
+      }
+    },
+    "service": {
+      "nature": {
+        "title": "Nature of service",
+        "p1": "WASPALGO is a trading algorithm technology brand. WASPALGO is not a regulated fund manager, nor a regulated investment advisor.",
+        "p2": "WA-AMIR (WASP Autonomous Market Intelligence Reactor) is an algorithmic engine that analyzes markets and generates trading signals. The user retains full control of their trading account and capital.",
+        "p3": "The algorithm can be connected to the user's trading account with a partner broker, but the user maintains ownership and control of their funds at all times."
+      },
+      "responsibilities": {
+        "title": "User responsibilities",
+        "items": [
+          "The user is solely responsible for their trading decisions and capital management.",
+          "The user must understand the risks associated with trading before using the algorithm.",
+          "The user can stop using the algorithm at any time.",
+          "The user must ensure compliance with applicable regulations in their country of residence."
+        ]
+      }
+    },
+    "data": {
+      "title": "Data & backtests",
+      "p1": "Backtests and simulations mentioned on this site are based on historical data and theoretical scenarios. They do not guarantee future results and may not reflect actual market conditions.",
+      "p2": "Stress test scenarios are theoretical simulations used for internal risk analysis purposes. They do not necessarily represent events that will occur in the future."
+    },
+    "legalInfo": {
+      "title": "Legal notice",
+      "publisher": "Site publisher:",
+      "publisherName": "WASPALGO",
+      "publisherDetails": "1227 Geneva\nSwitzerland",
+      "hosting": "Hosting:",
+      "hostingDetails": "Infomaniak Network SA\nRue Eugène Marziano 25\n1227 Les Acacias (GE)",
+      "contact": "Contact:",
+      "email": "info@waspalgo.com",
+      "whatsapp": "WhatsApp: [number to be completed]"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "p1": "WASPALGO is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR).",
+      "dataCollected": {
+        "title": "Data collected:",
+        "description": "Information you provide via the access form (name, email, WhatsApp, etc.) is used solely to contact you and assist you in setting up the algorithm."
+      },
+      "usage": {
+        "title": "Usage:",
+        "description": "Your data is not sold to third parties. It is used only in the context of the relationship with WASPALGO."
+      },
+      "rights": {
+        "title": "Your rights:",
+        "description": "You have the right to access, rectify, delete your personal data, or object to its processing. To exercise these rights, contact us."
+      }
+    },
+    "cta": {
+      "title": "Questions?",
+      "subtitle": "Check our FAQ or contact us directly for any additional questions.",
+      "faqButton": "View FAQ",
+      "backButton": "Back to home"
+    }
+  },
+  "waAmirSt": {
+    "intro": "WA-AMIR (WASP Autonomous Market Intelligence Reactor) is the algorithmic engine developed by WASPALGO. ST V1 is the short-term version of this engine, designed to exploit short-term market movements. The algorithm has been operating since April 2025 in private phase and is now open to the public since November 1, 2025.",
+    "architecture": {
+      "title": "General architecture",
+      "p1": "WA-AMIR ST V1 continuously analyzes financial markets according to a defined algorithmic logic. The engine identifies specific price, volatility, and market structure configurations that match its decision rules.",
+      "p2": "When a corresponding configuration is detected, the algorithm triggers a position according to strict and tested rules. The process is fully automated and operates without emotions, allowing constant discipline in execution."
+    },
+    "horizon": {
+      "title": "Trading horizon & style",
+      "p1": "WA-AMIR ST V1 is designed for horizons of a few hours to a few days. This version generates more signals than the long-term version, as it reacts to short-term market movements.",
+      "p2": "The goal is to exploit short-term movements while maintaining disciplined risk management. Each position is evaluated according to predefined risk criteria."
+    },
+    "assets": {
+      "title": "Assets concerned",
+      "p1": "WA-AMIR ST V1 concentrates 100% of its activity on gold (XAUUSD). This exclusive exposure reflects the current algorithm configuration and its optimization for this market.",
+      "p2": "The algorithm is entirely dedicated to trading on XAUUSD, which allows for maximum optimization for this specific market."
+    },
+    "backtests": {
+      "title": "Backtests & stress scenarios",
+      "p1": "WA-AMIR ST V1 has been backtested on the last 4 years of market data. Results show good robustness across different market phases, with very strong periods on gold.",
+      "p2": "Stress tests include various unfavorable market scenarios, including periods of high volatility and price shocks on XAUUSD. The algorithm has demonstrated its ability to manage these situations while maintaining rigorous risk management."
+    },
+    "role": {
+      "title": "Your role & that of the algorithm",
+      "p1": "You simply deposit your capital into your account with a partner broker, then we connect WA-AMIR to your account. The algorithm trades automatically on your behalf, 24/7, without you having to intervene.",
+      "p2": "You can let your investment run for weeks, months, or years without doing anything. You remain the owner of your account and can withdraw your profits or initial capital at any time. You can stop the algorithm instantly if you wish.",
+      "p3": "Before any setup, a private exchange allows explaining the operation and answering your questions."
+    },
+    "cta": "Access the algorithm"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "A question, a problem, or a project? Choose the right channel below and we'll get back to you.",
+    "support": {
+      "title": "Support & assistance",
+      "email": "support@waspalgo.com",
+      "description": "For technical issues, questions about using the algorithm, access, etc.",
+      "button": "Write to support"
+    },
+    "general": {
+      "title": "General questions",
+      "email": "info@waspalgo.com",
+      "description": "For questions about how WASPALGO works, WA-AMIR, conditions, etc.",
+      "button": "Write to info"
+    },
+    "direct": {
+      "title": "Direct contact",
+      "email": "contact@waspalgo.com",
+      "description": "For more general requests, press, specific requests that don't fit into other categories.",
+      "button": "Write to contact"
+    },
+    "security": {
+      "title": "Security & reporting",
+      "email": "security@waspalgo.com",
+      "description": "To report a critical bug, suspicious behavior, or a security issue, contact us directly here.",
+      "button": "Report an issue"
+    },
+    "partnership": {
+      "title": "Want to become a partner?",
+      "description": "Influencers, content creators, brokers, communities... We are open to all professional collaborations.",
+      "button": "Partnership request"
+    },
+    "responseTime": "Average response time: 24 to 48 hours (business days).",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Subject of your message",
+      "message": "Message",
+      "messagePlaceholder": "Describe your request...",
+      "send": "Send",
+      "cancel": "Cancel",
+      "success": "Your request has been sent successfully. Thank you.",
+      "error": "An error occurred. Please try again later."
+    }
+  },
+  "partnerships": {
+    "title": "Become a WASPALGO partner",
+    "intro": "WASPALGO can collaborate with: content creators, entrepreneurs, brokers, communities, etc. The goal is to offer WA-AMIR to more people in a professional setting.",
+    "types": {
+      "title": "Types of partnerships possible",
+      "influencer": {
+        "title": "Influencer / Creator",
+        "description": "Share WA-AMIR with your community and benefit from an adapted partnership program."
+      },
+      "broker": {
+        "title": "Broker / Platform",
+        "description": "Integrate WA-AMIR into your service offering and provide an automated trading solution to your clients."
+      },
+      "community": {
+        "title": "Community",
+        "description": "Join our partner network and offer WA-AMIR to your community of traders and investors."
+      },
+      "other": {
+        "title": "Other",
+        "description": "Have a specific partnership project? Contact us to discuss it."
+      }
+    },
+    "contact": {
+      "title": "Contact us for a partnership",
+      "email": "partners@waspalgo.com",
+      "description": "Send us an email with your partnership proposal and we'll get back to you as soon as possible.",
+      "button": "Send an email"
+    },
+    "form": {
+      "company": "Company / Organization",
+      "companyPlaceholder": "Name of your company or organization (optional)",
+      "type": "Partnership type",
+      "typePlaceholder": "Select a type",
+      "messagePlaceholder": "Describe your partnership project..."
+    }
+  },
+  "access": {
+    "title": "Access the Algorithm",
+    "successTitle": "Request sent successfully",
+    "successMessage": "Thank you! Your request to access WA-AMIR has been sent. You will receive a WhatsApp message shortly to schedule a call or discuss next steps.",
+    "backToHome": "Back to Home",
+    "continue": "Continue",
+    "sendRequest": "Send my request",
+    "sending": "Sending...",
+    "step1": {
+      "title": "Choose the algorithm variant",
+      "description": "Currently, only WA-AMIR ST V1 is available. The long-term version will be available soon.",
+      "selected": "You have selected:"
+    },
+    "step2": {
+      "title": "Access the WA-AMIR Algorithm",
+      "description": "Fill in this information so we can analyze your profile and guide you through the setup. No credit card, no commitment.",
+      "algorithmSelected": "Selected algorithm:",
+      "firstName": "First Name *",
+      "lastName": "Last Name *",
+      "email": "Email Address *",
+      "whatsapp": "WhatsApp Number *",
+      "country": "Country of Residence *",
+      "capital": "Intended Capital *",
+      "experience": "Investment Experience Level *",
+      "expectations": "What do you expect from the algorithm? (optional)",
+      "riskAcknowledged": "I understand that trading involves a risk of capital loss. *",
+      "infoAccurate": "I confirm that the information provided is accurate. *"
+    },
+    "step3": {
+      "title": "Your Availability",
+      "description": "Indicate your availability so we can propose a time slot via WhatsApp. This is not yet a fixed appointment, just an indication.",
+      "preferredDays": "Preferred Days (select 2-3 days) *",
+      "timeSlots": "Preferred Time Slots *",
+      "contactPreference": "How would you like to proceed? *",
+      "callOption": "Be called on WhatsApp with an expert",
+      "callDescription": "An expert will contact you to guide you through the process",
+      "docOption": "Receive documentation by message",
+      "docDescription": "You will receive all the documentation to follow directly by message"
+    },
+    "errors": {
+      "algorithm": "Please select an algorithm",
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Email is required",
+      "emailInvalid": "Invalid email format",
+      "whatsapp": "WhatsApp number is required",
+      "country": "Country is required",
+      "capital": "Intended capital is required",
+      "experience": "Investment experience level is required",
+      "risk": "You must accept the risks",
+      "info": "You must confirm the accuracy of the information",
+      "days": "Select at least 2 days",
+      "timeSlots": "Select at least one time slot",
+      "contactPreference": "Please select an option"
+    },
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "timeSlots": {
+      "morning": "Morning (9am-12pm)",
+      "afternoon": "Afternoon (2pm-6pm)",
+      "evening": "Evening (7pm-9pm)"
+    },
+    "countries": {
+      "select": "Select a country",
+      "france": "France",
+      "belgium": "Belgium",
+      "switzerland": "Switzerland",
+      "canada": "Canada",
+      "other": "Other"
+    },
+    "capital": {
+      "select": "Select a range",
+      "less500": "Less than $500",
+      "500-1000": "$500 – $1,000",
+      "1000-5000": "$1,000 – $5,000",
+      "5000-10000": "$5,000 – $10,000",
+      "more10000": "More than $10,000"
+    },
+    "experience": {
+      "select": "Select a level",
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "back": "Back"
+  }
+}
