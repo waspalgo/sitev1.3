@@ -21,11 +21,7 @@
   "footer": {
     "description": "Technologie d'algorithmes de trading avec le moteur WA-AMIR.",
     "important": "Important :",
-<<<<<<< HEAD
     "riskWarning": "L'investissement comporte un risque élevé de perte en capital. Les performances passées ne garantissent pas les résultats futurs.",
-=======
-    "riskWarning": "Le trading comporte un risque élevé de perte en capital. Les performances passées ne garantissent pas les résultats futurs.",
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     "contact": "Contact",
     "contactPage": "Page contact",
     "supportEmail": "support@waspalgo.com",
@@ -33,16 +29,10 @@
   },
   "home": {
     "hero": {
-<<<<<<< HEAD
       "badge": "Ouverture au membres whitelist",
       "title1": "Obtenez des rendements",
       "title2": "passifs grâce à",
       "title3": "notre algorithme.",
-=======
-      "badge": "Dernière mise à jour disponible",
-      "title1": "Obtenez des rendements passifs",
-      "title2": "grâce à notre algorithme.",
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       "subtitle": "WA-AMIR est un algorithme de trading autonome et intelligent qui surveille en permanence les mouvements de marché, identifie les opportunités et exécute des trades automatiquement, le tout directement connecté à votre compte de trading personnel.",
       "cta": "Accéder à l'algorithme",
       "learnMore": "En savoir plus"
@@ -161,11 +151,7 @@
       "button": "Accéder à l'algorithme"
     },
     "markets": {
-<<<<<<< HEAD
       "title": "Aperçu du cours de l'or"
-=======
-      "title": "Aperçu des marchés"
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     },
     "about": {
       "title": "À propos de WASPALGO",
@@ -201,13 +187,8 @@
           "description": "Nous vous contactons via WhatsApp pour discuter de votre profil, répondre à vos questions et planifier la suite du processus."
         },
         "step3": {
-<<<<<<< HEAD
           "title": "Création d'un compte sur une plateforme partenaire",
           "description": "Si vous n'avez pas encore de compte, nous vous guidons dans la création d'un compte sur une plateforme partenaire compatible."
-=======
-          "title": "Création du compte broker",
-          "description": "Si vous n'avez pas encore de compte, nous vous guidons dans la création d'un compte chez un broker partenaire compatible."
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
         },
         "step4": {
           "title": "Connexion à l'algorithme",
@@ -279,11 +260,7 @@
       "statusOptimization": "en phase d'optimisation interne",
       "subtitleST": "Autonomous Market Intelligence Reactor – Short Term",
       "subtitleLT": "Autonomous Market Intelligence Reactor – Long Term",
-<<<<<<< HEAD
       "descriptionST": "Algorithme court terme, exclusivement exposé à l'or (XAUUSD), conçu pour exploiter les mouvements rapides du marché.",
-=======
-      "descriptionST": "Algorithme court terme, principalement exposé à l'or (XAUUSD), peut intervenir ponctuellement sur BTCUSD, conçu pour exploiter les mouvements rapides du marché.",
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       "descriptionLT": "Version long terme orientée sur des horizons de plusieurs mois, moins de signaux, décisions plus filtrées."
     },
     "statusBadge": {
@@ -366,17 +343,10 @@
       }
     },
     "markets": {
-<<<<<<< HEAD
       "title": "Aperçu du cours de l'or",
       "pageBadge": "Données de marché",
       "pageTitle": "Aperçu de l'or",
       "pageSubtitle": "Suivez l'évolution du marché sur lequel WA-AMIR opère : XAUUSD (Or).",
-=======
-      "title": "Aperçu des marchés",
-      "pageBadge": "Données de marché",
-      "pageTitle": "Marchés financiers",
-      "pageSubtitle": "Suivez l'évolution des marchés principaux sur lesquels WA-AMIR opère : XAUUSD (Or) et BTCUSD (Bitcoin).",
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       "pageNote": "Visualisations indicatives. Les données réelles proviennent de votre broker ou plateforme de trading.",
       "detailedCharts": "Graphiques détaillés",
       "chartsSubtitle": "Analysez les tendances et les mouvements de prix sur les marchés principaux.",
@@ -384,13 +354,6 @@
       "xauusdMain": "Marché principal de WA-AMIR ST V1 — L'or (XAUUSD) représente plus de 99% de l'exposition de l'algorithme court terme.",
       "xauusdDescription": "L'or est un actif refuge traditionnel qui réagit aux événements géopolitiques, aux décisions des banques centrales et aux indicateurs économiques.",
       "xauusdAnalysis": "WA-AMIR ST V1 analyse en continu les mouvements de prix, la volatilité et les tendances sur ce marché pour identifier les meilleures opportunités de trading.",
-<<<<<<< HEAD
-=======
-      "btcusdTitle": "BTCUSD – Bitcoin",
-      "btcusdMain": "Marché secondaire — WA-AMIR ST V1 peut intervenir ponctuellement sur Bitcoin lorsque des opportunités spécifiques sont identifiées.",
-      "btcusdDescription": "Le Bitcoin est un marché très volatil qui offre des opportunités de trading à court terme, mais nécessite une gestion de risque adaptée.",
-      "btcusdAnalysis": "L'algorithme surveille ce marché et n'intervient que lorsque les conditions correspondent à ses critères de risque et de performance.",
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       "importantNote": "Note importante",
       "noteContent": "Ces graphiques sont indicatifs. Pour des données en temps réel et des graphiques avancés, veuillez consulter une plateforme spécialisée. Les données affichées ici sont fournies à titre informatif uniquement et non précis.",
       "ctaTitle": "Prêt à investir sur ces marchés ?",
@@ -431,11 +394,7 @@
     },
     "q6": {
       "question": "Combien coûte l'accès à l'algorithme ?",
-<<<<<<< HEAD
       "answer": "L'accès à WA-AMIR est 100% gratuit. Aucun abonnement, aucun paiement initial. WASPALGO prélève uniquement 10% des bénéfices que vous réalisez chaque mois. Si vous ne réalisez aucun bénéfice sur le mois, vous ne payez rien."
-=======
-      "answer": "L'accès à WA-AMIR est 100% gratuit. Aucun abonnement, aucun paiement initial. La seule rémunération est basée sur la performance : chaque position gagnante ouverte par l'algorithme génère 10% de commission sur les bénéfices réalisés. Si vous ne gagnez rien, vous ne payez rien."
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     },
     "q7": {
       "question": "Puis-je arrêter WA-AMIR quand je veux ?",
@@ -552,23 +511,13 @@
     },
     "assets": {
       "title": "Actifs concernés",
-<<<<<<< HEAD
       "p1": "WA-AMIR ST V1 concentre 100% de son activité sur l'or (XAUUSD). Cette exposition exclusive reflète la configuration actuelle de l'algorithme et son optimisation pour ce marché.",
       "p2": "L'algorithme est entièrement dédié au trading sur XAUUSD, ce qui permet une optimisation maximale pour ce marché spécifique."
-=======
-      "p1": "WA-AMIR ST V1 concentre plus de 99% de son activité sur l'or (XAUUSD). Cette exposition majoritaire reflète la configuration actuelle de l'algorithme et son optimisation pour ce marché.",
-      "p2": "L'algorithme peut intervenir ponctuellement sur BTCUSD dans certains contextes de marché spécifiques. Cette intervention reste limitée et dépend de conditions particulières définies dans la logique du moteur."
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     },
     "backtests": {
       "title": "Backtests & scénarios de stress",
       "p1": "WA-AMIR ST V1 a été backtesté sur les 4 dernières années de données de marché. Les résultats montrent une bonne robustesse sur différentes phases de marché, avec des périodes très solides sur l'or.",
-<<<<<<< HEAD
       "p2": "Les stress tests incluent différents scénarios de marché défavorables, incluant des périodes de forte volatilité et des chocs de prix sur XAUUSD. L'algorithme a démontré sa capacité à gérer ces situations tout en maintenant une gestion du risque rigoureuse."
-=======
-      "p2": "L'un des scénarios internes les plus défavorables utilisés en stress test correspond à un choc extrême sur BTCUSD autour du 10 octobre 2025. Dans ce scénario théorique, une position sur BTCUSD aurait pu afficher jusqu'à –24% sur une courte période.",
-      "p3": "Cependant, ce scénario reste limité car la configuration actuelle de WA-AMIR ST V1 reste majoritairement exposée à XAUUSD. De plus, lors de ce type de choc sur les cryptomonnaies, les flux se sont historiquement souvent redirigés vers l'or, ce qui, dans les simulations, a permis à l'algorithme de bénéficier de ce mouvement sur XAUUSD."
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     },
     "role": {
       "title": "Votre rôle & celui de l'algorithme",
@@ -687,14 +636,9 @@
       "capital": "Capital envisagé *",
       "experience": "Niveau d'expérience en investissement *",
       "expectations": "Qu'attendez-vous de l'algorithme ? (facultatif)",
-<<<<<<< HEAD
       "riskAcknowledged": "Je comprends que l'investissement comporte un risque de perte en capital. *",
       "infoAccurate": "Je confirme que les informations fournies sont exactes. *",
       "newsletterConsent": "Je souhaite recevoir des informations et actualités de WASPALGO (newsletter, mises à jour, performances, etc.)"
-=======
-      "riskAcknowledged": "Je comprends que le trading comporte un risque de perte en capital. *",
-      "infoAccurate": "Je confirme que les informations fournies sont exactes. *"
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     },
     "step3": {
       "title": "Vos disponibilités",

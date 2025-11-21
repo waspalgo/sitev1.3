@@ -29,11 +29,7 @@
   },
   "home": {
     "hero": {
-<<<<<<< HEAD
       "badge": "Opening for whitelist members",
-=======
-      "badge": "Latest update available",
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       "title1": "Get passive returns",
       "title2": "thanks to our algorithm.",
       "subtitle": "WA-AMIR is an autonomous and intelligent trading algorithm that continuously monitors market movements, identifies opportunities and executes trades automatically, all directly connected to your personal trading account.",
@@ -154,11 +150,7 @@
       "button": "Access the Algorithm"
     },
     "markets": {
-<<<<<<< HEAD
       "title": "Gold Price Overview"
-=======
-      "title": "Market Overview"
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     },
     "about": {
       "title": "About WASPALGO",
@@ -194,13 +186,8 @@
           "description": "We contact you via WhatsApp to discuss your profile, answer your questions, and plan the next steps of the process."
         },
         "step3": {
-<<<<<<< HEAD
           "title": "Creating an account on a partner platform",
           "description": "If you don't have an account yet, we guide you through creating an account on a compatible partner platform."
-=======
-          "title": "Broker Account Creation",
-          "description": "If you don't have an account yet, we guide you through creating an account with a compatible partner broker."
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
         },
         "step4": {
           "title": "Algorithm Connection",
@@ -272,11 +259,7 @@
       "statusOptimization": "in internal optimization phase",
       "subtitleST": "Autonomous Market Intelligence Reactor – Short Term",
       "subtitleLT": "Autonomous Market Intelligence Reactor – Long Term",
-<<<<<<< HEAD
       "descriptionST": "Short-term algorithm, exclusively exposed to gold (XAUUSD), designed to exploit rapid market movements.",
-=======
-      "descriptionST": "Short-term algorithm, primarily exposed to gold (XAUUSD), can occasionally intervene on BTCUSD, designed to exploit rapid market movements.",
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       "descriptionLT": "Long-term version oriented towards horizons of several months, fewer signals, more filtered decisions."
     },
     "statusBadge": {
@@ -360,17 +343,10 @@
       }
     },
     "markets": {
-<<<<<<< HEAD
       "title": "Gold Price Overview",
       "pageBadge": "Market Data",
       "pageTitle": "Gold Overview",
       "pageSubtitle": "Follow the evolution of the market on which WA-AMIR operates: XAUUSD (Gold).",
-=======
-      "title": "Market Overview",
-      "pageBadge": "Market Data",
-      "pageTitle": "Financial Markets",
-      "pageSubtitle": "Follow the evolution of the main markets on which WA-AMIR operates: XAUUSD (Gold) and BTCUSD (Bitcoin).",
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       "pageNote": "Indicative visualizations. Real data comes from your broker or trading platform.",
       "detailedCharts": "Detailed Charts",
       "chartsSubtitle": "Analyze trends and price movements on the main markets.",
@@ -378,13 +354,6 @@
       "xauusdMain": "Main market of WA-AMIR ST V1 — Gold (XAUUSD) represents more than 99% of the short-term algorithm's exposure.",
       "xauusdDescription": "Gold is a traditional safe-haven asset that reacts to geopolitical events, central bank decisions, and economic indicators.",
       "xauusdAnalysis": "WA-AMIR ST V1 continuously analyzes price movements, volatility, and trends on this market to identify the best trading opportunities.",
-<<<<<<< HEAD
-=======
-      "btcusdTitle": "BTCUSD – Bitcoin",
-      "btcusdMain": "Secondary market — WA-AMIR ST V1 can occasionally intervene on Bitcoin when specific opportunities are identified.",
-      "btcusdDescription": "Bitcoin is a very volatile market that offers short-term trading opportunities, but requires adapted risk management.",
-      "btcusdAnalysis": "The algorithm monitors this market and only intervenes when conditions match its risk and performance criteria.",
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       "importantNote": "Important Note",
       "noteContent": "These charts are indicative. For real-time data and advanced charts, please consult a specialized platform. The data displayed here is provided for informational purposes only and not accurate.",
       "ctaTitle": "Ready to invest in these markets?",
@@ -425,11 +394,7 @@
     },
     "q6": {
       "question": "How much does access to the algorithm cost?",
-<<<<<<< HEAD
       "answer": "Access to WA-AMIR is 100% free. No subscription, no initial payment. WASPALGO only takes 10% of the profits you make each month. If you don't make any profits during the month, you don't pay anything."
-=======
-      "answer": "Access to WA-AMIR is 100% free. No subscription, no initial payment. The only compensation is based on performance: each winning position opened by the algorithm generates 10% commission on profits made. If you don't make anything, you don't pay anything."
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     },
     "q7": {
       "question": "Can I stop WA-AMIR whenever I want?",
@@ -546,23 +511,13 @@
     },
     "assets": {
       "title": "Assets concerned",
-<<<<<<< HEAD
       "p1": "WA-AMIR ST V1 concentrates 100% of its activity on gold (XAUUSD). This exclusive exposure reflects the current algorithm configuration and its optimization for this market.",
       "p2": "The algorithm is entirely dedicated to trading on XAUUSD, which allows for maximum optimization for this specific market."
-=======
-      "p1": "WA-AMIR ST V1 concentrates more than 99% of its activity on gold (XAUUSD). This majority exposure reflects the current algorithm configuration and its optimization for this market.",
-      "p2": "The algorithm can occasionally intervene on BTCUSD in specific market contexts. This intervention remains limited and depends on particular conditions defined in the engine logic."
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     },
     "backtests": {
       "title": "Backtests & stress scenarios",
       "p1": "WA-AMIR ST V1 has been backtested on the last 4 years of market data. Results show good robustness across different market phases, with very strong periods on gold.",
-<<<<<<< HEAD
       "p2": "Stress tests include various unfavorable market scenarios, including periods of high volatility and price shocks on XAUUSD. The algorithm has demonstrated its ability to manage these situations while maintaining rigorous risk management."
-=======
-      "p2": "One of the most unfavorable internal scenarios used in stress testing corresponds to an extreme shock on BTCUSD around October 10, 2025. In this theoretical scenario, a position on BTCUSD could have shown up to –24% over a short period.",
-      "p3": "However, this scenario remains limited because the current configuration of WA-AMIR ST V1 remains predominantly exposed to XAUUSD. Moreover, during this type of shock on cryptocurrencies, flows have historically often redirected to gold, which, in simulations, allowed the algorithm to benefit from this movement on XAUUSD."
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     },
     "role": {
       "title": "Your role & that of the algorithm",

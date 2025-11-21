@@ -11,11 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-<<<<<<< HEAD
       url: `${baseUrl}/gold`,
-=======
-      url: `${baseUrl}/marches`,
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.8,

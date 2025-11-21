@@ -56,16 +56,11 @@ export default function BarChart({
     if (maxValue === 10) {
       // Pour le risque : 0, 2, 4, 6, 8, 10
       return [0, 2, 4, 6, 8, 10];
-<<<<<<< HEAD
     } else if (maxValue === 40) {
       // Pour les rendements avec maxValue 40 : 0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%
       return [0, 5, 10, 15, 20, 25, 30, 35, 40];
     } else {
       // Pour les rendements par défaut : 0%, 5%, 10%, 15%, 20%, 25%, 30%
-=======
-    } else {
-      // Pour les rendements : 0%, 5%, 10%, 15%, 20%, 25%, 30%
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       return [0, 5, 10, 15, 20, 25, 30];
     }
   };

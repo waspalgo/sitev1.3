@@ -3,10 +3,7 @@ import { supabaseServer } from '@/lib/supabaseServer';
 import { resend } from '@/lib/resendClient';
 import { sendAutoReplyEmail } from '@/lib/sendAutoReply';
 import { sanitizeString, sanitizeEmail, escapeHtml } from '@/lib/sanitize';
-<<<<<<< HEAD
 import { buildAdminNotificationHtml } from '@/lib/adminNotificationTemplate';
-=======
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
 // Force dynamic rendering to avoid build-time analysis
 export const dynamic = 'force-dynamic';
@@ -45,7 +42,6 @@ export async function POST(req: Request) {
       }, { status: 500 });
     }
 
-<<<<<<< HEAD
     const html = buildAdminNotificationHtml(
       'support',
       'Nouvelle demande de support',
@@ -61,16 +57,6 @@ export async function POST(req: Request) {
       ],
       escapeHtml(sanitizedMessage)
     );
-=======
-    const html = `
-      <h1>Nouvelle demande de support</h1>
-      <p><strong>Nom :</strong> ${escapeHtml(sanitizedName)}</p>
-      <p><strong>Email :</strong> ${escapeHtml(sanitizedEmail)}</p>
-      <p><strong>Sujet :</strong> ${sanitizedSubject ? escapeHtml(sanitizedSubject) : '—'}</p>
-      <p><strong>Message :</strong></p>
-      <p>${escapeHtml(sanitizedMessage).replace(/\n/g, '<br />')}</p>
-    `;
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
     await resend.emails.send({
       from: `WASPALGO Support <${process.env.NO_REPLY_EMAIL!}>`,

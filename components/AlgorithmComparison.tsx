@@ -22,11 +22,7 @@ export default function AlgorithmComparison() {
 
   const comparisonData: ComparisonFeature[] = [
     { label: t('home.comparison.horizon'), st: t('home.comparison.shortTerm'), lt: t('home.comparison.longTerm'), highlight: true },
-<<<<<<< HEAD
     { label: t('home.comparison.markets'), st: 'XAUUSD', lt: t('home.comparison.unknown') },
-=======
-    { label: t('home.comparison.markets'), st: 'XAUUSD/BTCUSD', lt: t('home.comparison.unknown') },
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     { label: t('home.comparison.risk'), st: t('home.comparison.moderateRisk'), lt: t('home.comparison.moderateToLow') },
     { label: t('home.comparison.performance'), st: '+177.74%', lt: unavailableText, highlight: true },
     { label: t('home.comparison.availability'), st: t('home.comparison.available'), lt: t('home.comparison.soonAvailable'), highlight: true },

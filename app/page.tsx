@@ -45,11 +45,7 @@ export default function Home() {
     { month: '08/25', value: 21.34 },
     { month: '09/25', value: 18.92 },
     { month: '10/25', value: 27.45 },
-<<<<<<< HEAD
     { month: '11/25', value: 33.39 },
-=======
-    { month: '11/25', value: 26.85 },
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
   ];
   
   // Données de bande de risque mensuelle (basées sur les rendements pour être crédibles)
@@ -57,20 +53,12 @@ export default function Home() {
   const monthlyRisk = [
     { month: '04/25', value: 3.2 }, // Rendement 16.17% -> risque modéré
     { month: '05/25', value: 4.5 }, // Rendement 22.56% -> risque modéré-élevé
-<<<<<<< HEAD
     { month: '06/25', value: 5.8 }, // Rendement 29.17% -> risque élevé
-=======
-    { month: '06/25', value: 5.8 }, // Rendement 29.17% (max) -> risque élevé
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     { month: '07/25', value: 2.1 }, // Rendement 15.28% (bas) -> risque faible
     { month: '08/25', value: 4.2 }, // Rendement 21.34% -> risque modéré-élevé
     { month: '09/25', value: 3.6 }, // Rendement 18.92% -> risque modéré
     { month: '10/25', value: 6.0 }, // Rendement 27.45% (élevé) -> risque maximum
-<<<<<<< HEAD
     { month: '11/25', value: 2.0 }, // Rendement 33.39% -> risque faible
-=======
-    { month: '11/25', value: 2.0 }, // Rendement 26.85% -> risque faible
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
   ];
   
   // Calcul du YTD à partir des données mensuelles (somme simple des rendements)
@@ -80,11 +68,7 @@ export default function Home() {
   
   const ytdReturn = calculateYTD(monthlyReturns); // YTD avec tous les mois (8 mois)
   const ytdReturnAtOpening = calculateYTD(monthlyReturns.slice(0, 7)); // YTD au 1er novembre (7 mois)
-<<<<<<< HEAD
   const maxMonthlyReturn = 33.39;
-=======
-  const maxMonthlyReturn = 29.17;
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
   const currentRisk = 2.0; // Risque actuel (11/25)
   const maxRisk = Math.max(...monthlyRisk.map(d => d.value));
 
@@ -192,13 +176,9 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
               <span className="text-text-primary">{t('home.hero.title1')}</span>
               <br />
-<<<<<<< HEAD
               <span className="text-text-primary">{t('home.hero.title2')}</span>
               <br />
               <span className="text-purple-accent">{t('home.hero.title3')}</span>
-=======
-              <span className="text-purple-accent">{t('home.hero.title2')}</span>
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
             </h1>
             
             {/* Sous-titre - Centré avec max-width */}
@@ -253,20 +233,12 @@ export default function Home() {
                     </div>
                     <div className="text-center">
                       <p className="text-text-muted text-lg sm:text-sm mb-4 sm:mb-2">{t('home.dashboard.currentMonthlyReturn')}</p>
-<<<<<<< HEAD
                       <p className="text-5xl sm:text-5xl md:text-4xl font-bold text-positive">+33.39%</p>
-=======
-                      <p className="text-5xl sm:text-5xl md:text-4xl font-bold text-positive">+26.85%</p>
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
                     </div>
                   </div>
                   <div className="h-[500px] sm:h-64 md:h-52 w-full overflow-hidden rounded-xl bg-black/20 p-1 sm:p-4 -mt-2 md:mt-0 md:mb-4">
                     <Suspense fallback={<div className="w-full h-full flex items-center justify-center"><div className="animate-pulse text-text-muted">{t('common.loading')}</div></div>}>
-<<<<<<< HEAD
                       <BarChart data={monthlyReturns} width={800} height={200} maxValue={40} />
-=======
-                      <BarChart data={monthlyReturns} width={800} height={200} maxValue={30} />
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
                     </Suspense>
                   </div>
                 </>
@@ -422,11 +394,7 @@ export default function Home() {
         <MarketsSection />
         <div className="content-container mt-4 flex justify-center">
           <Link
-<<<<<<< HEAD
             href="/gold"
-=======
-            href="/marches"
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
             className="inline-flex items-center px-6 py-3 rounded-2xl text-sm font-semibold text-white bg-purple-primary/80 hover:bg-purple-primary transition-transform duration-200 hover:scale-105 hover:-translate-y-0.5 shadow-glow-md"
           >
             {t('home.markets.viewMore')}

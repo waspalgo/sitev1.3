@@ -7,27 +7,15 @@ import type { MarketsResponse } from '@/types/markets';
  * 
  * GET /api/markets
  * 
-<<<<<<< HEAD
  * Retourne les données de marché pour Gold et l'indice global
-=======
- * Retourne les données de marché pour Gold, Bitcoin et l'indice global
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
  */
 export async function GET() {
   try {
     console.log('Fetching market data...');
-<<<<<<< HEAD
     const { gold, btc: _btc, index } = await getAllMarketsData(); // BTC ignoré - WA-AMIR ST V1 fonctionne uniquement sur XAUUSD
 
     console.log('Market data received:', {
       gold: gold ? { price: gold.price, change: gold.changePercent } : null,
-=======
-    const { gold, btc, index } = await getAllMarketsData();
-
-    console.log('Market data received:', {
-      gold: gold ? { price: gold.price, change: gold.changePercent } : null,
-      btc: btc ? { price: btc.price, change: btc.changePercent } : null,
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       index: index ? { price: index.price, change: index.changePercent } : null,
     });
 
@@ -55,11 +43,7 @@ export async function GET() {
 
     const response: MarketsResponse = {
       gold: gold || fallbackGold,
-<<<<<<< HEAD
       btc: _btc || fallbackBTC, // Gardé pour compatibilité type mais non utilisé par WA-AMIR ST V1
-=======
-      btc: btc || fallbackBTC,
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       index: index || fallbackIndex,
     };
 

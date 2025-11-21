@@ -19,7 +19,6 @@ interface ArticleData {
 const articlesData: ArticleData[] = [
   {
     id: '1',
-<<<<<<< HEAD
     titleFr: 'WA-AMIR ST V1 maintenant ouvert au whitelist !',
     titleEn: 'WA-AMIR ST V1 now open to whitelist!',
     excerptFr: 'Après 7 mois de fonctionnement en phase privée, WA-AMIR ST V1 est désormais accessible aux membres whitelist.',
@@ -28,16 +27,6 @@ const articlesData: ArticleData[] = [
 # WA-AMIR ST V1 - Ouverture pour les membres whitelist !
 
 Nous sommes ravis d'annoncer que WA-AMIR ST V1 **ouvrira entre le 24.11 et 30.11** pour les **membres whitelist**.
-=======
-    titleFr: 'WA-AMIR ST V1 maintenant ouvert au public !',
-    titleEn: 'WA-AMIR ST V1 now open to the public!',
-    excerptFr: 'Après 7 mois de fonctionnement en phase privée, WA-AMIR ST V1 est désormais accessible à tous les investisseurs.',
-    excerptEn: 'After 7 months of operation in private phase, WA-AMIR ST V1 is now accessible to all investors.',
-    contentFr: `
-# WA-AMIR ST V1 maintenant ouvert au public !
-
-Nous sommes ravis d'annoncer que WA-AMIR ST V1 est désormais **ouvert au public** depuis le **1er novembre 2025**.
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
 ## Phase privée réussie
 
@@ -46,15 +35,9 @@ WA-AMIR ST V1 fonctionne depuis **avril 2025** en phase privée, avec des résul
 - 7 mois de performance continue en phase privée
 - Gestion des risques maîtrisée
 
-<<<<<<< HEAD
 ## Ouverture pour les membres whitelist
 
 Après cette période de test réussie, nous ouvrons WA-AMIR ST V1 aux membres whitelist entre le 24.11 et 30.11. Cette phase d'ouverture limitée permettra de garantir une expérience optimale pour tous les utilisateurs.
-=======
-## Ouverture au public
-
-Après cette période de test réussie, nous ouvrons maintenant WA-AMIR ST V1 à tous les investisseurs qui souhaitent profiter de l'investissement automatisé.
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
 ## Comment commencer
 
@@ -66,15 +49,9 @@ Après cette période de test réussie, nous ouvrons maintenant WA-AMIR ST V1 à
 Pour toute question, n'hésitez pas à nous contacter via le formulaire d'accès.
     `,
     contentEn: `
-<<<<<<< HEAD
 # WA-AMIR ST V1 - Opening for whitelist members!
 
 We are pleased to announce that WA-AMIR ST V1 **will open between 24.11 and 30.11** for **whitelist members**.
-=======
-# WA-AMIR ST V1 now open to the public!
-
-We are pleased to announce that WA-AMIR ST V1 is now **open to the public** as of **November 1, 2025**.
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
 ## Successful private phase
 
@@ -83,15 +60,9 @@ WA-AMIR ST V1 has been operating since **April 2025** in private phase, with exc
 - 7 months of continuous performance in private phase
 - Controlled risk management
 
-<<<<<<< HEAD
 ## Opening for whitelist members
 
 After this successful testing period, we are opening WA-AMIR ST V1 to whitelist members between 24.11 and 30.11. This limited opening phase will ensure an optimal experience for all users.
-=======
-## Public opening
-
-After this successful testing period, we are now opening WA-AMIR ST V1 to all investors who wish to benefit from automated investing.
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
 ## How to get started
 
@@ -176,7 +147,6 @@ For any questions, please do not hesitate to contact us.
   },
   {
     id: '2',
-<<<<<<< HEAD
     titleFr: 'Nouveau record de performance : +33.39% en novembre 2025',
     titleEn: 'New performance record: +33.39% in November 2025',
     excerptFr: 'WA-AMIR ST V1 bat son record avec +33.39% en novembre, combinant performance exceptionnelle et risque minimal.',
@@ -245,54 +215,6 @@ Although past performance does not guarantee future results, this new record con
     `,
     category: 'performance',
     date: '2025-11-20',
-=======
-    titleFr: 'Record de performance : +29.17% en juin 2025',
-    titleEn: 'Performance record: +29.17% in June 2025',
-    excerptFr: 'WA-AMIR ST V1 a atteint son meilleur rendement mensuel avec +29.17% en juin.',
-    excerptEn: 'WA-AMIR ST V1 achieved its best monthly return with +29.17% in June.',
-    contentFr: `
-# Record de performance : +29.17% en juin 2025
-
-Nous sommes fiers d'annoncer que WA-AMIR ST V1 a atteint son meilleur rendement mensuel en juin 2025 avec une performance de **+29.17%**.
-
-## Détails de la performance
-
-Ce résultat exceptionnel a été obtenu grâce à :
-- Une excellente détection des tendances sur XAUUSD
-- Une gestion optimale des risques
-- Des conditions de marché favorables
-
-## Analyse
-
-Le mois de juin a été marqué par une forte volatilité sur les marchés de l'or, que WA-AMIR ST V1 a su exploiter efficacement. L'algorithme a réussi à identifier et à suivre plusieurs tendances majeures tout en maintenant un niveau de risque contrôlé.
-
-## Perspectives
-
-Bien que les performances passées ne garantissent pas les résultats futurs, ce record démontre le potentiel de WA-AMIR ST V1 dans des conditions de marché favorables.
-    `,
-    contentEn: `
-# Performance record: +29.17% in June 2025
-
-We are proud to announce that WA-AMIR ST V1 achieved its best monthly return in June 2025 with a performance of **+29.17%**.
-
-## Performance details
-
-This exceptional result was achieved thanks to:
-- Excellent trend detection on XAUUSD
-- Optimal risk management
-- Favorable market conditions
-
-## Analysis
-
-June was marked by high volatility in gold markets, which WA-AMIR ST V1 was able to exploit effectively. The algorithm successfully identified and followed several major trends while maintaining a controlled risk level.
-
-## Outlook
-
-Although past performance does not guarantee future results, this record demonstrates the potential of WA-AMIR ST V1 under favorable market conditions.
-    `,
-    category: 'performance',
-    date: '2025-07-05',
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     author: 'WASPALGO Team',
     featured: true,
   },

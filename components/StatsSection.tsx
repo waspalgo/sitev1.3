@@ -17,11 +17,7 @@ export default function StatsSection() {
 
   const stats: Stat[] = [
     {
-<<<<<<< HEAD
       value: '+184.28%',
-=======
-      value: '+177.74%',
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       labelKey: 'home.stats.performanceYTD',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

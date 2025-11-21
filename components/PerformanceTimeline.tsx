@@ -32,11 +32,7 @@ const timelineDataFr: TimelineEvent[] = [
     month: '06/25',
     return: 29.17,
     risk: 5.8,
-<<<<<<< HEAD
     description: 'Très bonne performance avec +29.17%. Risque maîtrisé.',
-=======
-    description: 'Meilleur mois avec +29.17%. Risque maîtrisé.',
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     highlight: true,
   },
   {
@@ -66,15 +62,9 @@ const timelineDataFr: TimelineEvent[] = [
   },
   {
     month: '11/25',
-<<<<<<< HEAD
     return: 33.39,
     risk: 2.0,
     description: 'Meilleur mois avec +33.39%. Ouverture prévue entre le 24.11 et 30.11 pour les membres whitelist. Performance exceptionnelle avec risque minimal.',
-=======
-    return: 26.85,
-    risk: 2.0,
-    description: 'Ouverture au public le 01/11/2025. Performance solide avec risque minimal.',
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     highlight: true,
   },
 ];
@@ -97,11 +87,7 @@ const timelineDataEn: TimelineEvent[] = [
     month: '06/25',
     return: 29.17,
     risk: 5.8,
-<<<<<<< HEAD
     description: 'Very good performance with +29.17%. Risk controlled.',
-=======
-    description: 'Best month with +29.17%. Risk controlled.',
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     highlight: true,
   },
   {
@@ -131,15 +117,9 @@ const timelineDataEn: TimelineEvent[] = [
   },
   {
     month: '11/25',
-<<<<<<< HEAD
     return: 33.39,
     risk: 2.0,
     description: 'Best month with +33.39%. Opening scheduled between 24.11 and 30.11 for whitelist members. Exceptional performance with minimal risk.',
-=======
-    return: 26.85,
-    risk: 2.0,
-    description: 'Public opening on 11/01/2025. Solid performance with minimal risk.',
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     highlight: true,
   },
 ];
@@ -212,11 +192,7 @@ export default function PerformanceTimeline() {
                               {event.month}
                             </span>
                             {event.month === '11/25' && (
-<<<<<<< HEAD
                               <span className="text-xs px-2 py-0.5 bg-purple-accent/20 text-purple-accent rounded-full font-medium whitespace-nowrap">
-=======
-                              <span className="text-xs px-2 py-0.5 bg-purple-accent/20 text-purple-accent rounded-full font-medium">
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
                                 {language === 'fr' ? 'En cours' : 'Current'}
                               </span>
                             )}

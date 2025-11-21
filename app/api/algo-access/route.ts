@@ -2,11 +2,8 @@ import { NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabaseServer';
 import { resend } from '@/lib/resendClient';
 import { sendAutoReplyEmail } from '@/lib/sendAutoReply';
-<<<<<<< HEAD
 import { buildAdminNotificationHtml } from '@/lib/adminNotificationTemplate';
 import { escapeHtml } from '@/lib/sanitize';
-=======
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
 // Force dynamic rendering to avoid build-time analysis
 export const dynamic = 'force-dynamic';
@@ -25,13 +22,10 @@ export async function POST(req: Request) {
       expectations,
       risk_acknowledged,
       info_confirmed,
-<<<<<<< HEAD
       newsletter_consent,
       preferred_days,
       time_slots,
       contact_preference,
-=======
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
     } = (await req.json()) as {
       algorithm: string;
       first_name: string;
@@ -44,7 +38,6 @@ export async function POST(req: Request) {
       expectations?: string;
       risk_acknowledged: boolean;
       info_confirmed: boolean;
-<<<<<<< HEAD
       newsletter_consent?: string;
       preferred_days?: string;
       time_slots?: string;
@@ -53,11 +46,6 @@ export async function POST(req: Request) {
 
     // Préparer les données pour l'insertion
     const insertData: Record<string, any> = {
-=======
-    };
-
-    const { error: supabaseError } = await supabaseServer.from('algo_access_requests').insert({
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
       algorithm,
       first_name,
       last_name,
@@ -69,7 +57,6 @@ export async function POST(req: Request) {
       expectations,
       risk_acknowledged,
       info_confirmed,
-<<<<<<< HEAD
     };
 
     // Ajouter les colonnes de disponibilités
@@ -86,9 +73,6 @@ export async function POST(req: Request) {
     insertData.newsletter_consent = newsletter_consent || 'NO';
 
     const { error: supabaseError } = await supabaseServer.from('algo_access_requests').insert(insertData);
-=======
-    });
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
     if (supabaseError) {
       console.error('Erreur Supabase /api/algo-access:', supabaseError);
@@ -98,7 +82,6 @@ export async function POST(req: Request) {
       }, { status: 500 });
     }
 
-<<<<<<< HEAD
     const preferredDaysText = preferred_days || '—';
     const timeSlotsText = time_slots || '—';
     const contactPreferenceText = contact_preference === 'call' 
@@ -142,21 +125,6 @@ export async function POST(req: Request) {
       ],
       expectations ? escapeHtml(expectations) : undefined
     );
-=======
-    const html = `
-      <h1>Nouvelle demande d'accès à l'algorithme</h1>
-      <p><strong>Algorithme :</strong> ${algorithm}</p>
-      <p><strong>Nom :</strong> ${first_name} ${last_name}</p>
-      <p><strong>Email :</strong> ${email}</p>
-      <p><strong>WhatsApp :</strong> ${whatsapp_number || '—'}</p>
-      <p><strong>Pays :</strong> ${country}</p>
-      <p><strong>Capital envisagé :</strong> ${capital_range}</p>
-      <p><strong>Niveau d'expérience :</strong> ${experience_level}</p>
-      <p><strong>Attentes :</strong><br />${(expectations || '—').replace(/\n/g, '<br />')}</p>
-      <p><strong>Risque accepté :</strong> ${risk_acknowledged ? 'Oui' : 'Non'}</p>
-      <p><strong>Infos confirmées :</strong> ${info_confirmed ? 'Oui' : 'Non'}</p>
-    `;
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
 
     await resend.emails.send({
       from: `WASPALGO Access <${process.env.NO_REPLY_EMAIL!}>`,

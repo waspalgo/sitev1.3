@@ -10,11 +10,7 @@ export const metadata: Metadata = {
   title: 'WASPALGO - Algorithmes de trading avec WA-AMIR',
   description:
     'WASPALGO développe des algorithmes de trading automatisés avec le moteur WA-AMIR. Technologie algorithmique pour les marchés financiers.',
-<<<<<<< HEAD
   keywords: ['trading algorithmique', 'WA-AMIR', 'algorithmes de trading', 'trading automatisé', 'XAUUSD', 'marchés financiers', 'or'],
-=======
-  keywords: ['trading algorithmique', 'WA-AMIR', 'algorithmes de trading', 'trading automatisé', 'XAUUSD', 'BTCUSD', 'marchés financiers'],
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
   authors: [{ name: 'WASPALGO' }],
   creator: 'WASPALGO',
   publisher: 'WASPALGO',

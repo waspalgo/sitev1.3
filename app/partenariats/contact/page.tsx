@@ -40,15 +40,10 @@ export default function PartnershipContactPage() {
         body: JSON.stringify(payload),
       });
 
-<<<<<<< HEAD
       const data = await res.json();
 
       if (!res.ok || !data.ok) {
         setStatusMessage(data.error || t('contact.form.error'));
-=======
-      if (!res.ok) {
-        setStatusMessage(t('contact.form.error'));
->>>>>>> 82a9afff82211ec552c4e205dc33ff711accf459
         return;
       }
 
