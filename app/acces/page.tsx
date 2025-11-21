@@ -131,7 +131,7 @@ function AccesPageContent() {
     if (isSubmitting) {
       return;
     }
-    
+
     // Valider l'étape actuelle (on est à l'étape 2, la dernière)
     const validation = validateStep(step);
     
@@ -265,7 +265,7 @@ function AccesPageContent() {
   return (
     <div className="pt-20 pb-12 px-2 sm:px-4 md:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary mb-4 sm:mb-6 md:mb-8 text-center px-2 sm:px-0">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary mb-8 sm:mb-10 md:mb-12 text-center px-2 sm:px-0">
           {t('access.title')}
         </h1>
 

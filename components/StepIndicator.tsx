@@ -6,7 +6,7 @@ interface StepIndicatorProps {
 
 export default function StepIndicator({ currentStep, totalSteps, labels }: StepIndicatorProps) {
   return (
-    <div className="mb-6 sm:mb-8 px-2 sm:px-0">
+    <div className="mb-10 sm:mb-12 md:mb-14 px-2 sm:px-0">
       <div className="flex items-start justify-center max-w-2xl mx-auto w-full">
         {Array.from({ length: totalSteps }).map((_, index) => {
           const step = index + 1;

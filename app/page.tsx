@@ -45,7 +45,7 @@ export default function Home() {
     { month: '08/25', value: 21.34 },
     { month: '09/25', value: 18.92 },
     { month: '10/25', value: 27.45 },
-    { month: '11/25', value: 33.39 },
+    { month: '11/25', value: 34.51 },
   ];
   
   // Données de bande de risque mensuelle (basées sur les rendements pour être crédibles)
@@ -58,7 +58,7 @@ export default function Home() {
     { month: '08/25', value: 4.2 }, // Rendement 21.34% -> risque modéré-élevé
     { month: '09/25', value: 3.6 }, // Rendement 18.92% -> risque modéré
     { month: '10/25', value: 6.0 }, // Rendement 27.45% (élevé) -> risque maximum
-    { month: '11/25', value: 2.0 }, // Rendement 33.39% -> risque faible
+    { month: '11/25', value: 2.0 }, // Rendement 34.51% -> risque faible
   ];
   
   // Calcul du YTD à partir des données mensuelles (somme simple des rendements)
@@ -68,7 +68,7 @@ export default function Home() {
   
   const ytdReturn = calculateYTD(monthlyReturns); // YTD avec tous les mois (8 mois)
   const ytdReturnAtOpening = calculateYTD(monthlyReturns.slice(0, 7)); // YTD au 1er novembre (7 mois)
-  const maxMonthlyReturn = 33.39;
+  const maxMonthlyReturn = 34.51;
   const currentRisk = 2.0; // Risque actuel (11/25)
   const maxRisk = Math.max(...monthlyRisk.map(d => d.value));
 
@@ -233,7 +233,7 @@ export default function Home() {
                     </div>
                     <div className="text-center">
                       <p className="text-text-muted text-lg sm:text-sm mb-4 sm:mb-2">{t('home.dashboard.currentMonthlyReturn')}</p>
-                      <p className="text-5xl sm:text-5xl md:text-4xl font-bold text-positive">+33.39%</p>
+                      <p className="text-5xl sm:text-5xl md:text-4xl font-bold text-positive">+34.51%</p>
                     </div>
                   </div>
                   <div className="h-[500px] sm:h-64 md:h-52 w-full overflow-hidden rounded-xl bg-black/20 p-1 sm:p-4 -mt-2 md:mt-0 md:mb-4">

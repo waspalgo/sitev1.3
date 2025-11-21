@@ -62,9 +62,9 @@ const timelineDataFr: TimelineEvent[] = [
   },
   {
     month: '11/25',
-    return: 33.39,
+    return: 34.51,
     risk: 2.0,
-    description: 'Meilleur mois avec +33.39%. Ouverture prévue entre le 24.11 et 30.11 pour les membres whitelist. Performance exceptionnelle avec risque minimal.',
+    description: 'Meilleur mois avec +34.51%. Ouverture prévue entre le 24.11 et 30.11 pour les membres whitelist. Performance exceptionnelle avec risque minimal.',
     highlight: true,
   },
 ];
@@ -117,9 +117,9 @@ const timelineDataEn: TimelineEvent[] = [
   },
   {
     month: '11/25',
-    return: 33.39,
+    return: 34.51,
     risk: 2.0,
-    description: 'Best month with +33.39%. Opening scheduled between 24.11 and 30.11 for whitelist members. Exceptional performance with minimal risk.',
+    description: 'Best month with +34.51%. Opening scheduled between 24.11 and 30.11 for whitelist members. Exceptional performance with minimal risk.',
     highlight: true,
   },
 ];

@@ -147,14 +147,14 @@ For any questions, please do not hesitate to contact us.
   },
   {
     id: '2',
-    titleFr: 'Nouveau record de performance : +33.39% en novembre 2025',
-    titleEn: 'New performance record: +33.39% in November 2025',
-    excerptFr: 'WA-AMIR ST V1 bat son record avec +33.39% en novembre, combinant performance exceptionnelle et risque minimal.',
-    excerptEn: 'WA-AMIR ST V1 breaks its record with +33.39% in November, combining exceptional performance with minimal risk.',
+    titleFr: 'Nouveau record de performance : +34.51% en novembre 2025',
+    titleEn: 'New performance record: +34.51% in November 2025',
+    excerptFr: 'WA-AMIR ST V1 bat son record avec +34.51% en novembre, combinant performance exceptionnelle et risque minimal.',
+    excerptEn: 'WA-AMIR ST V1 breaks its record with +34.51% in November, combining exceptional performance with minimal risk.',
     contentFr: `
-# Nouveau record de performance : +33.39% en novembre 2025
+# Nouveau record de performance : +34.51% en novembre 2025
 
-Nous sommes fiers d'annoncer que WA-AMIR ST V1 a établi un **nouveau record de performance** en novembre 2025 avec un rendement mensuel de **+33.39%**.
+Nous sommes fiers d'annoncer que WA-AMIR ST V1 a établi un **nouveau record de performance** en novembre 2025 avec un rendement mensuel de **+34.51%**.
 
 ## Un mois exceptionnel
 
@@ -164,7 +164,7 @@ Ce résultat remarquable dépasse le précédent record de +29.17% obtenu en jui
 
 Cette performance exceptionnelle a été obtenue grâce à :
 - Une détection précise et optimale des tendances sur XAUUSD
-- Une gestion des risques maîtrisée, avec un ratio rendement/risque de 16.7
+- Une gestion des risques maîtrisée, avec un ratio rendement/risque de 17.26
 - Des conditions de marché favorables exploitées efficacement
 - L'ouverture prévue entre le 24.11 et 30.11 pour les membres whitelist, validant la robustesse de l'algorithme
 
@@ -176,16 +176,16 @@ Le fait que ce record ait été établi lors de l'ouverture pour les membres whi
 
 ## Performance YTD
 
-Avec ce résultat, la performance Year-To-Date (YTD) de WA-AMIR ST V1 atteint désormais **+184.28%** sur 8 mois d'activité (avril à novembre 2025).
+Avec ce résultat, la performance Year-To-Date (YTD) de WA-AMIR ST V1 atteint désormais **+185.40%** sur 8 mois d'activité (avril à novembre 2025).
 
 ## Perspectives
 
 Bien que les performances passées ne garantissent pas les résultats futurs, ce nouveau record confirme le potentiel exceptionnel de WA-AMIR ST V1 et sa capacité à générer des rendements significatifs tout en maintenant une gestion des risques rigoureuse.
     `,
     contentEn: `
-# New performance record: +33.39% in November 2025
+# New performance record: +34.51% in November 2025
 
-We are proud to announce that WA-AMIR ST V1 has set a **new performance record** in November 2025 with a monthly return of **+33.39%**.
+We are proud to announce that WA-AMIR ST V1 has set a **new performance record** in November 2025 with a monthly return of **+34.51%**.
 
 ## An exceptional month
 
@@ -195,7 +195,7 @@ This remarkable result surpasses the previous record of +29.17% achieved in June
 
 This exceptional performance was achieved thanks to:
 - Precise and optimal trend detection on XAUUSD
-- Controlled risk management, with a return/risk ratio of 16.7
+- Controlled risk management, with a return/risk ratio of 17.26
 - Favorable market conditions exploited effectively
 - Opening scheduled between 24.11 and 30.11 for whitelist members, validating the algorithm's robustness
 
@@ -207,7 +207,7 @@ The fact that this record was set during the opening for whitelist members demon
 
 ## YTD Performance
 
-With this result, WA-AMIR ST V1's Year-To-Date (YTD) performance now reaches **+184.28%** over 8 months of activity (April to November 2025).
+With this result, WA-AMIR ST V1's Year-To-Date (YTD) performance now reaches **+185.40%** over 8 months of activity (April to November 2025).
 
 ## Outlook
 

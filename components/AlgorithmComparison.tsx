@@ -24,7 +24,7 @@ export default function AlgorithmComparison() {
     { label: t('home.comparison.horizon'), st: t('home.comparison.shortTerm'), lt: t('home.comparison.longTerm'), highlight: true },
     { label: t('home.comparison.markets'), st: 'XAUUSD', lt: t('home.comparison.unknown') },
     { label: t('home.comparison.risk'), st: t('home.comparison.moderateRisk'), lt: t('home.comparison.moderateToLow') },
-    { label: t('home.comparison.performance'), st: '+177.74%', lt: unavailableText, highlight: true },
+    { label: t('home.comparison.performance'), st: '+185.40%', lt: unavailableText, highlight: true },
     { label: t('home.comparison.availability'), st: t('home.comparison.available'), lt: t('home.comparison.soonAvailable'), highlight: true },
   ];
 
