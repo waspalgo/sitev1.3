@@ -101,20 +101,26 @@ export default function Header() {
                   {/* Séparateur pour le sélecteur de langue */}
                   <div className="h-4 w-px bg-white/20 mx-2" />
                   {/* Sélecteur de langue */}
-                  <div className="flex items-center space-x-2 text-sm">
-                    <span 
+                  <div className="flex items-center space-x-2 text-sm" role="group" aria-label="Sélecteur de langue">
+                    <button
+                      type="button"
                       className={language === 'fr' ? 'text-purple-accent font-semibold cursor-pointer hover:text-purple-300 transition-colors' : 'text-text-secondary hover:text-purple-accent transition-colors cursor-pointer'}
                       onClick={() => setLanguage('fr')}
+                      aria-label="Changer la langue en français"
+                      aria-pressed={language === 'fr'}
                     >
                       FR
-                    </span>
-                    <span className="text-text-muted">|</span>
-                    <span 
+                    </button>
+                    <span className="text-text-muted" aria-hidden="true">|</span>
+                    <button
+                      type="button"
                       className={language === 'en' ? 'text-purple-accent font-semibold cursor-pointer hover:text-purple-300 transition-colors' : 'text-text-secondary hover:text-purple-accent transition-colors cursor-pointer'}
                       onClick={() => setLanguage('en')}
+                      aria-label="Change language to English"
+                      aria-pressed={language === 'en'}
                     >
                       EN
-                    </span>
+                    </button>
                   </div>
                 </div>
               </nav>

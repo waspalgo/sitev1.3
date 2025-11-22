@@ -16,20 +16,26 @@ export default function Footer() {
             <p className="text-text-muted text-sm leading-relaxed mb-4">
               {t('footer.description')}
             </p>
-            <div className="flex items-center space-x-2 text-sm">
-              <span 
+            <div className="flex items-center space-x-2 text-sm" role="group" aria-label="Language selector">
+              <button
+                type="button"
                 className={language === 'fr' ? 'text-purple-accent font-semibold' : 'text-text-muted hover:text-purple-accent transition-colors cursor-pointer'}
                 onClick={() => setLanguage('fr')}
+                aria-label="Changer la langue en français"
+                aria-pressed={language === 'fr'}
               >
                 FR
-              </span>
-              <span className="text-text-muted">|</span>
-              <span 
+              </button>
+              <span className="text-text-muted" aria-hidden="true">|</span>
+              <button
+                type="button"
                 className={language === 'en' ? 'text-purple-accent font-semibold' : 'text-text-muted hover:text-purple-accent transition-colors cursor-pointer'}
                 onClick={() => setLanguage('en')}
+                aria-label="Change language to English"
+                aria-pressed={language === 'en'}
               >
                 EN
-              </span>
+              </button>
             </div>
           </div>
 

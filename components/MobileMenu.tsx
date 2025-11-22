@@ -93,20 +93,26 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
           {/* Footer */}
           <div className="p-6 border-t border-purple-accent/20 space-y-4">
-            <div className="flex items-center justify-center space-x-2 text-sm">
-              <span 
+            <div className="flex items-center justify-center space-x-2 text-sm" role="group" aria-label="Sélecteur de langue">
+              <button
+                type="button"
                 className={language === 'fr' ? 'text-purple-accent font-semibold cursor-pointer' : 'text-text-muted hover:text-purple-accent transition-colors cursor-pointer'}
                 onClick={() => setLanguage('fr')}
+                aria-label="Changer la langue en français"
+                aria-pressed={language === 'fr'}
               >
                 FR
-              </span>
-              <span className="text-text-muted">|</span>
-              <span 
+              </button>
+              <span className="text-text-muted" aria-hidden="true">|</span>
+              <button
+                type="button"
                 className={language === 'en' ? 'text-purple-accent font-semibold cursor-pointer' : 'text-text-muted hover:text-purple-accent transition-colors cursor-pointer'}
                 onClick={() => setLanguage('en')}
+                aria-label="Change language to English"
+                aria-pressed={language === 'en'}
               >
                 EN
-              </span>
+              </button>
             </div>
             <div onClick={onClose}>
               <PrimaryButton href="/acces" className="w-full text-center">

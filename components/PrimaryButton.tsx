@@ -24,7 +24,7 @@ export default function PrimaryButton({
   const { isKeyboardOpen } = useKeyboard();
 
   const baseClasses =
-    'inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-4 rounded-full font-semibold text-base md:text-lg text-white transition-all duration-300 relative overflow-hidden group';
+    'inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-4 rounded-full font-semibold text-base md:text-lg text-white transition-all duration-300 relative overflow-hidden group focus:outline-none focus:ring-2 focus:ring-purple-accent focus:ring-offset-2 focus:ring-offset-black';
 
   const gradientClasses =
     'bg-gradient-to-r from-purple-primary via-purple-secondary to-purple-accent';
@@ -44,16 +44,25 @@ export default function PrimaryButton({
 
   const combinedClasses = `${baseClasses} ${gradientClasses} ${glowClasses} ${hoverClasses} ${borderClasses} ${disabledClasses} ${className}`;
 
+  const ariaLabel = typeof children === 'string' ? children : undefined;
+
   if (href) {
     return (
-      <Link href={href} className={combinedClasses}>
+      <Link href={href} className={combinedClasses} aria-label={ariaLabel}>
         {children}
       </Link>
     );
   }
 
   return (
-    <button type={type} onClick={onClick} disabled={disabled} className={combinedClasses}>
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={combinedClasses}
+      aria-label={ariaLabel}
+      aria-busy={disabled}
+    >
       {children}
     </button>
   );

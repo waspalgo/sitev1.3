@@ -405,6 +405,21 @@
   }
 }
 
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
 /* Particle drift classes - mouvements plus rapides et visibles */
 .particle-drift-1 {
   animation: particle-drift-1 12s ease-in-out infinite;

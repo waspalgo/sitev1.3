@@ -549,8 +549,33 @@ function AccesProPageContent() {
                 type="button"
                 onClick={handleSubmit}
                 disabled={isSubmitting}
-                className="flex-1 px-6 py-3 bg-gradient-to-r from-slate-600 via-slate-500 to-slate-400 hover:from-slate-500 hover:via-slate-400 hover:to-slate-300 rounded-2xl text-white font-semibold transition-all duration-300 hover:scale-105 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
+                className="flex-1 px-6 py-3 bg-gradient-to-r from-slate-600 via-slate-500 to-slate-400 hover:from-slate-500 hover:via-slate-400 hover:to-slate-300 rounded-2xl text-white font-semibold transition-all duration-300 hover:scale-105 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
+                aria-label={isSubmitting ? t('access.sending') : t('access.sendRequest')}
+                aria-busy={isSubmitting}
               >
+                {isSubmitting && (
+                  <svg
+                    className="animate-spin h-5 w-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    />
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    />
+                  </svg>
+                )}
                 {isSubmitting ? t('access.sending') : t('access.sendRequest')}
               </button>
             </div>
