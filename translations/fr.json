@@ -791,7 +791,7 @@
         }
       },
     "howItWorks": {
-      "title": "Fonctionnement de WA-AMIR ST V1 PRO",
+      "title": "Fonctionnement",
       "p1": "WA-AMIR ST V1 PRO est basé sur le même moteur que WA-AMIR ST V1, mais avec une différence majeure : il ne fonctionne pas pendant toute l'ouverture du marché comme la version autonome, mais uniquement sur des fenêtres horaires ciblées, soigneusement sélectionnées pour leur profil de volatilité et de liquidité optimal.",
       "p2": "Pendant ces périodes d'activation, un trader professionnel expérimenté en marchés financiers surveille en temps réel l'activité de l'algorithme. Cette supervision humaine permet :",
       "supervision": {

@@ -792,7 +792,7 @@
         }
       },
     "howItWorks": {
-      "title": "How WA-AMIR ST V1 PRO Works",
+      "title": "How It Works",
       "p1": "WA-AMIR ST V1 PRO is based on the same engine as WA-AMIR ST V1, but with one major difference: it does not run during the entire market opening hours like the autonomous version, but only during targeted time windows, carefully selected for their optimal volatility and liquidity profile.",
       "p2": "During these activation periods, an experienced professional trader monitors the algorithm's activity in real-time. This human supervision allows:",
       "supervision": {
