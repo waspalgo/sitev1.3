@@ -64,7 +64,7 @@ export default function AlgorithmeProPage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="section-padding px-4 sm:px-6 lg:px-8 relative overflow-hidden -mt-32">
+      <section className="section-padding px-4 sm:px-6 lg:px-8 relative overflow-hidden mt-1 md:-mt-32">
         <BackgroundLights
           variant="default"
           uniqueId="algorithme-pro-how"
