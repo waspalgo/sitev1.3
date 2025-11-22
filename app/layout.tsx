@@ -47,13 +47,13 @@ export const metadata: Metadata = {
     siteName: 'WASPALGO',
     images: [
       {
-        url: '/favicon-512.png',
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://waspalgo.com'}/favicon-512.png`,
         width: 512,
         height: 512,
         alt: 'WASPALGO Logo',
       },
       {
-        url: '/og-image.png',
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://waspalgo.com'}/og-image.png`,
         width: 1200,
         height: 630,
         alt: 'WASPALGO - Algorithmes de trading avec WA-AMIR',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: 'WASPALGO | Rendements passifs grâce à notre algorithme',
     description: 'Algorithme de trading autonome connecté à votre compte. Surveillance continue des marchés, exécution automatique, gestion du risque intégrée.',
-    images: ['/favicon-512.png'],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL || 'https://waspalgo.com'}/favicon-512.png`],
   },
   robots: {
     index: true,
