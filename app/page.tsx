@@ -147,7 +147,7 @@ export default function Home() {
     },
   ];
 
-  const [initialInvestment, setInitialInvestment] = useState(2500);
+  const [initialInvestment, setInitialInvestment] = useState(1000);
 
   return (
     <div className="relative" style={{ background: '#000000' }}>
@@ -196,7 +196,16 @@ export default function Home() {
                 onClick={() => {
                   const aboutSection = document.getElementById('about-waspalgo');
                   if (aboutSection) {
-                    aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Calculate offset based on viewport height for mobile
+                    const isMobile = window.innerWidth < 768;
+                    const offset = isMobile ? 120 : 40; // More offset on mobile to ensure title is visible
+                    const elementPosition = aboutSection.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                      top: offsetPosition,
+                      behavior: 'smooth'
+                    });
                   }
                 }}
                 className="inline-flex items-center justify-center px-8 py-4 rounded-2xl border-2 border-purple-accent/40 hover:border-purple-accent/60 text-purple-accent hover:bg-purple-accent/10 text-base font-semibold transition-transform duration-200 hover:scale-105 active:scale-100 whitespace-nowrap"

@@ -538,7 +538,7 @@ function AccesPageContent() {
                       name="riskAcknowledged"
                       checked={formData.riskAcknowledged}
                       onChange={handleCheckboxChange}
-                      className={`mt-1 w-5 h-5 rounded border-purple-accent/30 bg-black/30 text-purple-accent focus:ring-purple-accent ${
+                      className={`mt-1 w-5 h-5 min-w-[1.25rem] min-h-[1.25rem] flex-shrink-0 rounded border-purple-accent/30 bg-black/30 text-purple-accent focus:ring-purple-accent ${
                         errors.riskAcknowledged ? 'border-negative' : ''
                       }`}
                       required
@@ -556,7 +556,7 @@ function AccesPageContent() {
                       name="infoAccurate"
                       checked={formData.infoAccurate}
                       onChange={handleCheckboxChange}
-                      className={`mt-1 w-5 h-5 rounded border-purple-accent/30 bg-black/30 text-purple-accent focus:ring-purple-accent ${
+                      className={`mt-1 w-5 h-5 min-w-[1.25rem] min-h-[1.25rem] flex-shrink-0 rounded border-purple-accent/30 bg-black/30 text-purple-accent focus:ring-purple-accent ${
                         errors.infoAccurate ? 'border-negative' : ''
                       }`}
                       required
@@ -574,7 +574,7 @@ function AccesPageContent() {
                       name="newsletterConsent"
                       checked={formData.newsletterConsent}
                       onChange={handleCheckboxChange}
-                      className="mt-1 w-5 h-5 rounded border-purple-accent/30 bg-black/30 text-purple-accent focus:ring-purple-accent"
+                      className="mt-1 w-5 h-5 min-w-[1.25rem] min-h-[1.25rem] flex-shrink-0 rounded border-purple-accent/30 bg-black/30 text-purple-accent focus:ring-purple-accent"
                     />
                     <span className="text-text-secondary text-sm">
                       {t('access.step2.newsletterConsent')}

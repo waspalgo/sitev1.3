@@ -73,12 +73,12 @@ export default function AlgorithmComparison() {
                     {comparisonData.map((feature, index) => (
                       <div
                         key={index}
-                        className={`grid grid-cols-3 gap-4 p-4 rounded-lg transition-all duration-200 ${
+                        className={`grid grid-cols-3 gap-4 p-4 rounded-lg border transition-colors duration-200 ${
                           hoveredFeature === index
-                            ? 'bg-purple-primary/20 border border-purple-accent/30'
+                            ? 'bg-purple-primary/20 border-purple-accent/30'
                             : feature.highlight
-                            ? 'bg-purple-primary/10'
-                            : ''
+                            ? 'bg-purple-primary/10 border-transparent'
+                            : 'border-transparent'
                         }`}
                         onMouseEnter={() => setHoveredFeature(index)}
                         onMouseLeave={() => setHoveredFeature(null)}

@@ -23,6 +23,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  
+  /* Ensure all checkboxes have the same size, especially on mobile */
+  input[type="checkbox"] {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    min-width: 1.25rem !important;
+    min-height: 1.25rem !important;
+    flex-shrink: 0 !important;
+  }
 }
 
 @layer utilities {
@@ -46,6 +55,32 @@
   .section-padding {
     @apply py-16 md:py-20 lg:py-28;
   }
+}
+
+/* TradingView Widget Styles */
+.tradingview-widget-container {
+  width: 100% !important;
+  height: 650px !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.tradingview-widget-container__widget {
+  width: 100% !important;
+  height: 600px !important;
+  position: relative;
+  flex: 1;
+  min-height: 600px;
+}
+
+.tradingview-widget-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Enhanced animations */

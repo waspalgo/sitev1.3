@@ -162,20 +162,34 @@
       "subtitle": "WASPALGO est un fournisseur de technologie d'algorithmes de trading, pas un gestionnaire d'actifs régulé.",
       "whoWeAre": {
         "title": "Qui sommes-nous ?",
-        "p1": "WASPALGO développe et fournit des technologies d'algorithmes de trading. Notre moteur WA-AMIR (WASP Autonomous Market Intelligence Reactor) est conçu pour analyser les marchés et générer des signaux de trading automatisés.",
-        "p2": "Nous sommes un fournisseur de technologie, pas un conseiller en investissement ni un gestionnaire de fonds. Notre rôle est de fournir l'outil algorithmique, pas de gérer votre capital."
+        "p1": "WASPALGO est une équipe spécialisée dans la création de technologies algorithmiques avancées pour l'analyse des marchés financiers.",
+        "p2": "Nous combinons expertise en développement, connaissances en finance de marché et expérience de trading professionnel pour concevoir des outils automatisés capables d'analyser les conditions du marché en temps réel et de générer des signaux de trading performants.",
+        "engine": {
+          "title": "Notre moteur propriétaire, WA-AMIR",
+          "description": "Notre moteur propriétaire, WA-AMIR (WASP Autonomous Market Intelligence Reactor), est le cœur de notre technologie. Il a été conçu pour observer, interpréter et réagir aux dynamiques du marché afin d'optimiser la prise de décision automatisée."
+        },
+        "team": {
+          "title": "Une équipe multidisciplinaire",
+          "description": "WASPALGO rassemble plusieurs compétences :",
+          "developers": "Développeurs spécialisés en systèmes d'automatisation, IA et architectures scalables.",
+          "financeExperts": "Experts en finance maîtrisant l'analyse macroéconomique et les comportements de marché.",
+          "traders": "Traders professionnels, garants d'une compréhension opérationnelle des marchés et capables d'améliorer les stratégies lorsque cela est nécessaire.",
+          "analysts": "Analystes en gestion du risque, travaillant sur la stabilité et la robustesse des algorithmes.",
+          "conclusion": "Cette combinaison nous permet de créer des systèmes intelligents, fiables et continuellement améliorés."
+        }
       },
       "vision": {
         "title": "Notre vision",
-        "p1": "Nous croyons que l'automatisation algorithmique permet aux investisseurs de profiter des marchés sans avoir à trader eux-mêmes. Nous proposons différentes variantes de notre moteur WA-AMIR : des versions fonctionnant en continu 24/7 de manière autonome, ainsi qu'une version PRO supervisée par un trader professionnel sur des horaires ciblés. Toutes fonctionnent sans émotions, en suivant des règles strictes et testées. Cela permet également aux personnes sans connaissance en trading d'investir et de générer un revenu passif.",
+        "p1": "Nous croyons que l'automatisation algorithmique permet aux investisseurs de profiter des marchés sans avoir à trader eux-mêmes. Nous proposons différentes variantes de notre moteur WA-AMIR : des versions fonctionnant de manière autonome uniquement pendant l'ouverture du marché de l'or (du dimanche 23h au vendredi 23h, heure de Zurich), ainsi qu'une version PRO supervisée par un trader professionnel sur des horaires ciblés. Toutes fonctionnent sans émotions, en suivant des règles strictes et testées. Cela permet également aux personnes sans connaissance en trading d'investir et de générer un revenu passif.",
         "p2": "Notre objectif est de démocratiser l'investissement automatisé en rendant accessible à tous une technologie de trading algorithmique avancée. L'algorithme prend les décisions de trading pour vous, mais vous gardez le contrôle total de votre compte : vous pouvez arrêter, modifier ou retirer votre capital à tout moment."
       },
       "methodology": {
         "title": "Notre méthodologie",
-        "internal": "Développement interne : WA-AMIR est développé et optimisé en interne par notre équipe technique. Nous proposons différentes variantes : des versions autonomes fonctionnant 24/7, et une version PRO avec supervision humaine sur horaires ciblés.",
-        "backtesting": "Backtesting rigoureux : Tous nos algorithmes sont testés sur des données historiques étendues et soumis à des scénarios de stress, qu'ils fonctionnent de manière autonome ou avec supervision humaine.",
+        "internal": "Développement interne : WA-AMIR est développé et optimisé en interne par notre équipe multidisciplinaire composée de développeurs spécialisés, d'experts en finance, de traders professionnels et d'analystes en gestion du risque. Nous proposons différentes variantes : des versions autonomes fonctionnant uniquement pendant l'ouverture du marché de l'or (5 jours sur 7), et une version PRO avec supervision humaine sur horaires ciblés.",
+        "backtesting": "Backtesting rigoureux : Tous nos algorithmes sont testés sur des données historiques étendues et soumis à des scénarios de stress par notre équipe d'analystes, qu'ils fonctionnent de manière autonome ou avec supervision humaine.",
         "transparency": "Transparence : Nous affichons les performances réelles et historiques de nos algorithmes, sans promesses ni garanties. Chaque variante (autonome ou PRO) a ses propres caractéristiques et avantages.",
-        "control": "Contrôle utilisateur : Vous gardez le contrôle total de votre capital. L'algorithme envoie des signaux (ou est supervisé par un trader pour la version PRO), mais c'est votre compte qui exécute les positions."
+        "control": "Contrôle utilisateur : Vous gardez le contrôle total de votre capital. L'algorithme envoie des signaux (ou est supervisé par un trader professionnel pour la version PRO), mais c'est votre compte qui exécute les positions.",
+        "continuousImprovement": "Amélioration continue : Notre équipe multidisciplinaire travaille en permanence à l'amélioration de WA-AMIR en analysant les performances, en optimisant les stratégies et en adaptant l'algorithme aux conditions du marché."
       }
     },
     "onboarding": {
@@ -323,20 +337,34 @@
       "subtitle": "WASPALGO est un fournisseur de technologie d'algorithmes de trading, pas un gestionnaire d'actifs régulé.",
       "whoWeAre": {
         "title": "Qui sommes-nous ?",
-        "p1": "WASPALGO développe et fournit des technologies d'algorithmes de trading. Notre moteur WA-AMIR (WASP Autonomous Market Intelligence Reactor) est conçu pour analyser les marchés et générer des signaux de trading automatisés.",
-        "p2": "Nous sommes un fournisseur de technologie, pas un conseiller en investissement ni un gestionnaire de fonds. Notre rôle est de fournir l'outil algorithmique, pas de gérer votre capital."
+        "p1": "WASPALGO est une équipe spécialisée dans la création de technologies algorithmiques avancées pour l'analyse des marchés financiers.",
+        "p2": "Nous combinons expertise en développement, connaissances en finance de marché et expérience de trading professionnel pour concevoir des outils automatisés capables d'analyser les conditions du marché en temps réel et de générer des signaux de trading performants.",
+        "engine": {
+          "title": "Notre moteur propriétaire, WA-AMIR",
+          "description": "Notre moteur propriétaire, WA-AMIR (WASP Autonomous Market Intelligence Reactor), est le cœur de notre technologie. Il a été conçu pour observer, interpréter et réagir aux dynamiques du marché afin d'optimiser la prise de décision automatisée."
+        },
+        "team": {
+          "title": "Une équipe multidisciplinaire",
+          "description": "WASPALGO rassemble plusieurs compétences :",
+          "developers": "Développeurs spécialisés en systèmes d'automatisation, IA et architectures scalables.",
+          "financeExperts": "Experts en finance maîtrisant l'analyse macroéconomique et les comportements de marché.",
+          "traders": "Traders professionnels, garants d'une compréhension opérationnelle des marchés et capables d'améliorer les stratégies lorsque cela est nécessaire.",
+          "analysts": "Analystes en gestion du risque, travaillant sur la stabilité et la robustesse des algorithmes.",
+          "conclusion": "Cette combinaison nous permet de créer des systèmes intelligents, fiables et continuellement améliorés."
+        }
       },
       "vision": {
         "title": "Notre vision",
-        "p1": "Nous croyons que l'automatisation algorithmique permet aux investisseurs de profiter des marchés sans avoir à trader eux-mêmes. Nous proposons différentes variantes de notre moteur WA-AMIR : des versions fonctionnant en continu 24/7 de manière autonome, ainsi qu'une version PRO supervisée par un trader professionnel sur des horaires ciblés. Toutes fonctionnent sans émotions, en suivant des règles strictes et testées. Cela permet également aux personnes sans connaissance en trading d'investir et de générer un revenu passif.",
+        "p1": "Nous croyons que l'automatisation algorithmique permet aux investisseurs de profiter des marchés sans avoir à trader eux-mêmes. Nous proposons différentes variantes de notre moteur WA-AMIR : des versions fonctionnant de manière autonome uniquement pendant l'ouverture du marché de l'or (du dimanche 23h au vendredi 23h, heure de Zurich), ainsi qu'une version PRO supervisée par un trader professionnel sur des horaires ciblés. Toutes fonctionnent sans émotions, en suivant des règles strictes et testées. Cela permet également aux personnes sans connaissance en trading d'investir et de générer un revenu passif.",
         "p2": "Notre objectif est de démocratiser l'investissement automatisé en rendant accessible à tous une technologie de trading algorithmique avancée. L'algorithme prend les décisions de trading pour vous, mais vous gardez le contrôle total de votre compte : vous pouvez arrêter, modifier ou retirer votre capital à tout moment."
       },
       "methodology": {
         "title": "Notre méthodologie",
-        "internal": "Développement interne : WA-AMIR est développé et optimisé en interne par notre équipe technique. Nous proposons différentes variantes : des versions autonomes fonctionnant 24/7, et une version PRO avec supervision humaine sur horaires ciblés.",
-        "backtesting": "Backtesting rigoureux : Tous nos algorithmes sont testés sur des données historiques étendues et soumis à des scénarios de stress, qu'ils fonctionnent de manière autonome ou avec supervision humaine.",
+        "internal": "Développement interne : WA-AMIR est développé et optimisé en interne par notre équipe multidisciplinaire composée de développeurs spécialisés, d'experts en finance, de traders professionnels et d'analystes en gestion du risque. Nous proposons différentes variantes : des versions autonomes fonctionnant uniquement pendant l'ouverture du marché de l'or (5 jours sur 7), et une version PRO avec supervision humaine sur horaires ciblés.",
+        "backtesting": "Backtesting rigoureux : Tous nos algorithmes sont testés sur des données historiques étendues et soumis à des scénarios de stress par notre équipe d'analystes, qu'ils fonctionnent de manière autonome ou avec supervision humaine.",
         "transparency": "Transparence : Nous affichons les performances réelles et historiques de nos algorithmes, sans promesses ni garanties. Chaque variante (autonome ou PRO) a ses propres caractéristiques et avantages.",
-        "control": "Contrôle utilisateur : Vous gardez le contrôle total de votre capital. L'algorithme envoie des signaux (ou est supervisé par un trader pour la version PRO), mais c'est votre compte qui exécute les positions."
+        "control": "Contrôle utilisateur : Vous gardez le contrôle total de votre capital. L'algorithme envoie des signaux (ou est supervisé par un trader professionnel pour la version PRO), mais c'est votre compte qui exécute les positions.",
+        "continuousImprovement": "Amélioration continue : Notre équipe multidisciplinaire travaille en permanence à l'amélioration de WA-AMIR en analysant les performances, en optimisant les stratégies et en adaptant l'algorithme aux conditions du marché."
       },
       "notWaspalgo": {
         "title": "Ce que WASPALGO n'est PAS",
@@ -355,7 +383,7 @@
       "detailedCharts": "Graphiques détaillés",
       "chartsSubtitle": "Analysez les tendances et les mouvements de prix sur les marchés principaux.",
       "xauusdTitle": "XAUUSD – Or",
-      "xauusdMain": "Marché principal de WA-AMIR ST V1 — L'or (XAUUSD) représente plus de 99% de l'exposition de l'algorithme court terme.",
+      "xauusdMain": "Marché principal de WA-AMIR ST V1 — L'or (XAUUSD) représente 100% de l'exposition de l'algorithme court terme.",
       "xauusdDescription": "L'or est un actif refuge traditionnel qui réagit aux événements géopolitiques, aux décisions des banques centrales et aux indicateurs économiques.",
       "xauusdAnalysis": "WA-AMIR ST V1 analyse en continu les mouvements de prix, la volatilité et les tendances sur ce marché pour identifier les meilleures opportunités de trading.",
       "importantNote": "Note importante",
@@ -364,7 +392,48 @@
       "ctaSubtitle": "WA-AMIR ST V1 analyse et trade automatiquement sur ces marchés pour vous. Déposez votre capital et laissez l'algorithme travailler.",
       "ctaButton": "Accéder à WA-AMIR ST V1",
       "ctaLearnMore": "En savoir plus sur les algorithmes",
-      "viewMore": "Voir plus"
+      "viewMore": "Voir plus",
+      "marketHours": {
+        "title": "Horaires du marché de l'or",
+        "timezone": "Fuseau horaire : Zurich",
+        "description": "Le marché de l'or (FOREX / XAUUSD) est ouvert 24h/24, 5 jours sur 7, mais pas le week-end.",
+        "opening": {
+          "title": "Ouverture",
+          "time": "Dimanche à 23:00 (heure de Zurich)",
+          "note": "→ équivalent à l'ouverture du marché Forex après le week-end."
+        },
+        "closing": {
+          "title": "Fermeture",
+          "time": "Vendredi à 23:00 (heure de Zurich)",
+          "note": "→ juste avant la fermeture du marché Forex mondial."
+        },
+        "summary": {
+          "title": "Résumé simple",
+          "day": "Jour",
+          "open": "Ouvert ?",
+          "hours": "Horaires (Zurich)",
+          "monday": "Lundi",
+          "tuesday": "Mardi",
+          "wednesday": "Mercredi",
+          "thursday": "Jeudi",
+          "friday": "Vendredi",
+          "saturday": "Samedi",
+          "sunday": "Dimanche",
+          "yes": "Oui",
+          "closed": "Fermé",
+          "closedUntil": "Fermé jusqu'à 23:00",
+          "reopens": "Réouvre à 23:00",
+          "hoursAllDay": "00:00 – 23:59",
+          "hoursFriday": "00:00 – 23:00"
+        },
+        "important": {
+          "title": "Important",
+          "description": "Même si c'est \"ouvert 24h\", la liquidité varie :",
+          "veryHigh": "Très forte pendant Londres + New York (13h-18h Zurich)",
+          "good": "Bonne pendant Londres (9h-17h Zurich)",
+          "weak": "Faible pendant la nuit asiatique (0h-7h Zurich)"
+        }
+      }
     }
   },
   "faq": {
@@ -410,7 +479,7 @@
     },
     "q9": {
       "question": "L'algorithme fonctionne-t-il 24/7 ?",
-      "answer": "Nous proposons deux variantes : WA-AMIR ST V1 fonctionne en continu 24/7 de manière autonome pendant l'ouverture des marchés (5 jours sur 7) et analyse XAUUSD en permanence. WA-AMIR ST V1 PRO fonctionne sur des horaires ciblés avec supervision humaine d'un trader professionnel pour une approche encore plus encadrée."
+      "answer": "Non, l'algorithme fonctionne uniquement pendant l'ouverture du marché de l'or (XAUUSD). Nous proposons deux variantes : WA-AMIR ST V1 fonctionne de manière autonome pendant toute l'ouverture du marché (du dimanche 23h au vendredi 23h, heure de Zurich, 5 jours sur 7) et analyse XAUUSD en permanence pendant ces périodes. WA-AMIR ST V1 PRO fonctionne sur des horaires ciblés avec supervision humaine d'un trader professionnel pour une approche encore plus encadrée."
     },
     "q10": {
       "question": "Quels rendements puis-je espérer ?",
@@ -525,7 +594,7 @@
     },
     "role": {
       "title": "Votre rôle & celui de l'algorithme",
-      "p1": "Vous déposez simplement votre capital sur votre compte chez un broker partenaire, puis nous connectons WA-AMIR à votre compte. Selon la variante choisie (autonome 24/7 ou PRO avec supervision), l'algorithme trade automatiquement à votre place, sans que vous ayez à intervenir.",
+      "p1": "Vous déposez simplement votre capital sur votre compte chez un broker partenaire, puis nous connectons WA-AMIR à votre compte. Selon la variante choisie (autonome pendant l'ouverture du marché ou PRO avec supervision), l'algorithme trade automatiquement à votre place, sans que vous ayez à intervenir.",
       "p2": "Vous pouvez laisser votre investissement fonctionner des semaines, des mois ou des années sans rien faire. Vous restez propriétaire de votre compte et pouvez retirer vos bénéfices ou votre capital de départ à tout moment. Vous pouvez arrêter l'algorithme instantanément si vous le souhaitez.",
       "p3": "Avant toute mise en place, un échange privé permet d'expliquer le fonctionnement et de répondre à vos questions."
     },
@@ -565,8 +634,8 @@
     },
     "responseTime": "Temps de réponse moyen : 24 à 48h (jours ouvrables).",
     "form": {
-      "name": "Nom",
-      "namePlaceholder": "Votre nom",
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom complet",
       "email": "Email",
       "emailPlaceholder": "votre@email.com",
       "subject": "Sujet",
@@ -715,11 +784,15 @@
         "subtitle": "L'algorithme supervisé par un trader professionnel",
         "description": "Une version avancée de WA-AMIR ST V1, active seulement quelques heures par jour, combinant la précision de l'algorithme et la vigilance d'un expert des marchés.",
         "cta": "Accéder à l'algorithme pro",
-        "versionPro": "VERSION PRO"
+        "versionPro": "VERSION PRO",
+        "restrictedAccess": {
+          "title": "Accès restreint",
+          "description": "La version PRO n'est pas accessible à tous les investisseurs. Pour demander l'accès, veuillez remplir le formulaire ci-dessous. Nous examinerons votre demande et vous contacterons uniquement si vous êtes sélectionné."
+        }
       },
     "howItWorks": {
       "title": "Fonctionnement de WA-AMIR ST V1 PRO",
-      "p1": "WA-AMIR ST V1 PRO est basé sur le même moteur que WA-AMIR ST V1, mais avec une différence majeure : il ne fonctionne pas en continu 24h/24, mais uniquement sur des fenêtres horaires ciblées, soigneusement sélectionnées pour leur profil de volatilité et de liquidité optimal.",
+      "p1": "WA-AMIR ST V1 PRO est basé sur le même moteur que WA-AMIR ST V1, mais avec une différence majeure : il ne fonctionne pas pendant toute l'ouverture du marché comme la version autonome, mais uniquement sur des fenêtres horaires ciblées, soigneusement sélectionnées pour leur profil de volatilité et de liquidité optimal.",
       "p2": "Pendant ces périodes d'activation, un trader professionnel expérimenté en marchés financiers surveille en temps réel l'activité de l'algorithme. Cette supervision humaine permet :",
       "supervision": {
         "title": "Surveillance humaine en direct",
@@ -752,7 +825,7 @@
     },
     "followUp": {
       "title": "Organisation du suivi",
-      "p1": "WA-AMIR ST V1 PRO n'est pas un algorithme \"fire and forget\" fonctionnant 24h/24. Il est activé uniquement sur des créneaux horaires définis, pendant lesquels le trader est concentré spécifiquement sur cette stratégie.",
+      "p1": "WA-AMIR ST V1 PRO n'est pas un algorithme \"fire and forget\" fonctionnant pendant toute l'ouverture du marché. Il est activé uniquement sur des créneaux horaires définis, pendant lesquels le trader est concentré spécifiquement sur cette stratégie.",
       "p2": "Ce processus comprend :",
       "preMarket": "Une revue pré-marché pour identifier les opportunités du jour",
       "monitoring": "Une surveillance active pendant toute la période d'activation",

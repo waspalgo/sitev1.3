@@ -1,81 +1,16 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import MetricCard from './MetricCard';
 import ScrollReveal from './ScrollReveal';
 import BackgroundLights from './BackgroundLights';
+import TradingViewWidget from './TradingViewWidget';
+import GlassCard from './GlassCard';
 import { useLanguage } from '@/contexts/LanguageContext';
-import type { MarketsResponse } from '@/types/markets';
 
 /**
- * Section "Aperçu des marchés" avec données en temps réel
- * 
- * Rafraîchit automatiquement les données toutes les 15 secondes
+ * Section "Aperçu du cours de l'or" avec widget TradingView
  */
 export default function MarketsSection() {
   const { t } = useLanguage();
-  const [markets, setMarkets] = useState<MarketsResponse | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  const fetchMarkets = async () => {
-    try {
-      const response = await fetch('/api/markets');
-      if (!response.ok) {
-        throw new Error('Failed to fetch markets data');
-      }
-      const data: MarketsResponse = await response.json();
-      setMarkets(data);
-      setIsLoading(false);
-    } catch (error) {
-      console.error('Error fetching markets:', error);
-      setIsLoading(false);
-      // En cas d'erreur, on garde les données précédentes ou on utilise les fallbacks
-    }
-  };
-
-  useEffect(() => {
-    // Charger immédiatement
-    fetchMarkets();
-
-    // Rafraîchir toutes les 15 secondes (configurable)
-    // Note: Alpha Vantage limite à 5 appels/min, donc 15s est un bon compromis
-    const REFRESH_INTERVAL = 15000; // 15 secondes
-    const interval = setInterval(fetchMarkets, REFRESH_INTERVAL);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  // Formatage des prix
-  const formatPrice = (price: number): string => {
-    if (price >= 1000) {
-      return `$${price.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-    }
-    return `$${price.toFixed(2)}`;
-  };
-
-  // Valeurs de fallback pendant le chargement ou en cas d'erreur
-  const fallbackData: MarketsResponse = {
-    gold: {
-      symbol: 'XAUUSD',
-      price: 4085.825,
-      changePercent: -3.01,
-      history: Array.from({ length: 20 }, () => Math.random() * 100 + 4000),
-    },
-    btc: {
-      symbol: 'BTCUSD',
-      price: 63245.80,
-      changePercent: -1.23,
-      history: Array.from({ length: 20 }, () => Math.random() * 5000 + 60000),
-    },
-    index: {
-      symbol: 'GLOBAL',
-      price: 1234.56,
-      changePercent: 0.42,
-      history: Array.from({ length: 20 }, () => Math.random() * 100 + 1200),
-    },
-  };
-
-  const data = markets || fallbackData;
 
   return (
     <section className="section-padding px-4 sm:px-6 lg:px-8 bg-bg-primary py-16 md:py-20 relative overflow-hidden">
@@ -94,7 +29,7 @@ export default function MarketsSection() {
       />
       <div className="content-container max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
         <ScrollReveal>
-          <div className="mb-12 text-center">
+          <div className="mb-16 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary relative inline-block">
               <span className="relative">
                 {t('home.markets.title')}
@@ -110,22 +45,11 @@ export default function MarketsSection() {
             </h2>
           </div>
         </ScrollReveal>
-        <div className="grid grid-cols-1 gap-6 max-w-3xl mx-auto">
+        <div className="w-full">
           <ScrollReveal delay={200}>
-            <MetricCard
-              title={
-                <span className="flex items-center gap-2">
-                  XAUUSD – Or
-                  <span className="text-xs px-2 py-1 bg-text-muted/20 text-text-muted rounded-full">
-                    Désactivé temporairement
-                  </span>
-                </span>
-              }
-              value={isLoading ? '—' : formatPrice(data.gold.price)}
-              change={data.gold.changePercent}
-              sparklineData={data.gold.history}
-              isLoading={isLoading}
-            />
+            <GlassCard glow className="p-0 w-full overflow-hidden">
+              <TradingViewWidget />
+            </GlassCard>
           </ScrollReveal>
         </div>
       </div>

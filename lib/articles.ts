@@ -40,7 +40,7 @@ WA-AMIR ST V1 PRO représente une évolution majeure dans notre offre d'algorith
 
 ### Concept hybride
 
-WA-AMIR ST V1 PRO est une version **hybride** de notre algorithme standard WA-AMIR ST V1. Il repose sur le même moteur algorithmique éprouvé, mais avec une différence fondamentale : il ne fonctionne pas en continu 24h/24, mais uniquement sur des **fenêtres horaires ciblées**, soigneusement sélectionnées pour leur profil optimal de volatilité et de liquidité.
+WA-AMIR ST V1 PRO est une version **hybride** de notre algorithme standard WA-AMIR ST V1. Il repose sur le même moteur algorithmique éprouvé, mais avec une différence fondamentale : il ne fonctionne pas pendant toute l'ouverture du marché comme la version autonome, mais uniquement sur des **fenêtres horaires ciblées**, soigneusement sélectionnées pour leur profil optimal de volatilité et de liquidité.
 
 ### Supervision professionnelle
 
@@ -206,7 +206,7 @@ WA-AMIR ST V1 PRO represents a major evolution in our trading algorithm offering
 
 ### Hybrid Concept
 
-WA-AMIR ST V1 PRO is a **hybrid** version of our standard WA-AMIR ST V1 algorithm. It is based on the same proven algorithmic engine, but with one fundamental difference: it does not run continuously 24/7, but only during **targeted time windows**, carefully selected for their optimal volatility and liquidity profile.
+WA-AMIR ST V1 PRO is a **hybrid** version of our standard WA-AMIR ST V1 algorithm. It is based on the same proven algorithmic engine, but with one fundamental difference: it does not run during the entire market opening hours like the autonomous version, but only during **targeted time windows**, carefully selected for their optimal volatility and liquidity profile.
 
 ### Professional Supervision
 

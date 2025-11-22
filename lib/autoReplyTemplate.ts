@@ -41,7 +41,7 @@ export function buildAutoReplyHtml(name?: string, context?: string, locale: 'fr'
   if (context) {
     // Si on a un contexte spécifique (ex: "votre demande d'accès à l'algorithme WA-AMIR ST V1")
     contextText = locale === 'fr' 
-      ? `concernant <strong>${context}</strong>`
+    ? `concernant <strong>${context}</strong>`
       : `regarding <strong>${context}</strong>`;
   } else {
     // Si pas de contexte, on mentionne juste le site

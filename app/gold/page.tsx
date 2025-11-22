@@ -132,6 +132,137 @@ export default function MarchesPage() {
 
           </div>
 
+          {/* Market Hours Section */}
+          <ScrollReveal delay={200}>
+            <GlassCard className="p-6 md:p-8 mt-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-text-primary">
+                    {t('home.markets.marketHours.title')} — {t('home.markets.marketHours.timezone')}
+                  </h3>
+                </div>
+              </div>
+              <p className="text-text-secondary mb-6 leading-relaxed">
+                {t('home.markets.marketHours.description')}
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-purple-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <h4 className="text-lg font-semibold text-text-primary mb-1">{t('home.markets.marketHours.opening.title')}</h4>
+                    <p className="text-text-secondary mb-1">{t('home.markets.marketHours.opening.time')}</p>
+                    <p className="text-text-muted text-sm">{t('home.markets.marketHours.opening.note')}</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-purple-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <h4 className="text-lg font-semibold text-text-primary mb-1">{t('home.markets.marketHours.closing.title')}</h4>
+                    <p className="text-text-secondary mb-1">{t('home.markets.marketHours.closing.time')}</p>
+                    <p className="text-text-muted text-sm">{t('home.markets.marketHours.closing.note')}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Summary Table */}
+              <div className="mb-8">
+                <div className="flex items-center gap-2 mb-4">
+                  <svg className="w-5 h-5 text-purple-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <h4 className="text-lg font-semibold text-text-primary">{t('home.markets.marketHours.summary.title')}</h4>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="border-b border-purple-accent/20">
+                        <th className="text-left py-3 px-4 text-text-primary font-semibold">{t('home.markets.marketHours.summary.day')}</th>
+                        <th className="text-center py-3 px-4 text-text-primary font-semibold">{t('home.markets.marketHours.summary.open')}</th>
+                        <th className="text-right py-3 px-4 text-text-primary font-semibold">{t('home.markets.marketHours.summary.hours')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-purple-accent/10">
+                        <td className="py-3 px-4 text-text-secondary">{t('home.markets.marketHours.summary.monday')}</td>
+                        <td className="py-3 px-4 text-center text-positive font-medium">{t('home.markets.marketHours.summary.yes')}</td>
+                        <td className="py-3 px-4 text-right text-text-secondary">{t('home.markets.marketHours.summary.hoursAllDay')}</td>
+                      </tr>
+                      <tr className="border-b border-purple-accent/10">
+                        <td className="py-3 px-4 text-text-secondary">{t('home.markets.marketHours.summary.tuesday')}</td>
+                        <td className="py-3 px-4 text-center text-positive font-medium">{t('home.markets.marketHours.summary.yes')}</td>
+                        <td className="py-3 px-4 text-right text-text-secondary">{t('home.markets.marketHours.summary.hoursAllDay')}</td>
+                      </tr>
+                      <tr className="border-b border-purple-accent/10">
+                        <td className="py-3 px-4 text-text-secondary">{t('home.markets.marketHours.summary.wednesday')}</td>
+                        <td className="py-3 px-4 text-center text-positive font-medium">{t('home.markets.marketHours.summary.yes')}</td>
+                        <td className="py-3 px-4 text-right text-text-secondary">{t('home.markets.marketHours.summary.hoursAllDay')}</td>
+                      </tr>
+                      <tr className="border-b border-purple-accent/10">
+                        <td className="py-3 px-4 text-text-secondary">{t('home.markets.marketHours.summary.thursday')}</td>
+                        <td className="py-3 px-4 text-center text-positive font-medium">{t('home.markets.marketHours.summary.yes')}</td>
+                        <td className="py-3 px-4 text-right text-text-secondary">{t('home.markets.marketHours.summary.hoursAllDay')}</td>
+                      </tr>
+                      <tr className="border-b border-purple-accent/10">
+                        <td className="py-3 px-4 text-text-secondary">{t('home.markets.marketHours.summary.friday')}</td>
+                        <td className="py-3 px-4 text-center text-positive font-medium">{t('home.markets.marketHours.summary.yes')}</td>
+                        <td className="py-3 px-4 text-right text-text-secondary">{t('home.markets.marketHours.summary.hoursFriday')}</td>
+                      </tr>
+                      <tr className="border-b border-purple-accent/10">
+                        <td className="py-3 px-4 text-text-secondary">{t('home.markets.marketHours.summary.saturday')}</td>
+                        <td className="py-3 px-4 text-center text-negative font-medium">X {t('home.markets.marketHours.summary.closed')}</td>
+                        <td className="py-3 px-4 text-right text-text-muted">—</td>
+                      </tr>
+                      <tr>
+                        <td className="py-3 px-4 text-text-secondary">{t('home.markets.marketHours.summary.sunday')}</td>
+                        <td className="py-3 px-4 text-center text-negative font-medium">X {t('home.markets.marketHours.summary.closedUntil')}</td>
+                        <td className="py-3 px-4 text-right text-text-secondary">{t('home.markets.marketHours.summary.reopens')}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Important Note */}
+              <GlassCard className="p-4 md:p-6 border-yellow-500/20 bg-yellow-500/5">
+                <div className="flex items-start gap-4">
+                  <svg className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                  <div>
+                    <h4 className="text-lg font-semibold text-text-primary mb-2">{t('home.markets.marketHours.important.title')}</h4>
+                    <p className="text-text-secondary mb-3 leading-relaxed">
+                      {t('home.markets.marketHours.important.description')}
+                    </p>
+                    <ul className="space-y-2 text-text-secondary text-sm">
+                      <li className="flex items-start gap-2">
+                        <span className="text-positive mt-1">•</span>
+                        <span>{t('home.markets.marketHours.important.veryHigh')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-positive mt-1">•</span>
+                        <span>{t('home.markets.marketHours.important.good')}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-positive mt-1">•</span>
+                        <span>{t('home.markets.marketHours.important.weak')}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </GlassCard>
+            </GlassCard>
+          </ScrollReveal>
+
           <ScrollReveal delay={300}>
             <GlassCard className="p-6 md:p-8 mt-8 border-yellow-500/20 bg-yellow-500/5">
               <div className="flex items-start gap-4">

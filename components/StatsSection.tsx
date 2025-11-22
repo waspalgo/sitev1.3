@@ -37,7 +37,7 @@ export default function StatsSection() {
       color: 'purple',
     },
     {
-      value: '99%+',
+      value: '100%',
       labelKey: 'home.stats.xauusdExposure',
       icon: (
         <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
