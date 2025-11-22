@@ -132,6 +132,10 @@
       "title": "Nos algorithmes",
       "subtitle": "WASPALGO développe un moteur interne WA-AMIR avec deux variantes : court terme et long terme.",
       "seeAll": "Voir tous nos algorithmes",
+      "proButton": "Algorithme pro",
+      "viewProAlgorithm": "Voir algorithme ST V1 PRO",
+      "proDescription": "Cet algorithme est une version pro de WA-AMIR ST V1 mais qui est supervisé en direct par un trader professionnel.",
+      "versionPro": "VERSION PRO",
       "page": {
         "badge": "Moteur WA-AMIR",
         "title": "Nos algorithmes",
@@ -163,15 +167,15 @@
       },
       "vision": {
         "title": "Notre vision",
-        "p1": "Nous croyons que l'automatisation algorithmique permet aux investisseurs de profiter des marchés sans avoir à trader eux-mêmes. Vous déposez votre capital, nous connectons l'algorithme, et il trade automatiquement à votre place, 24/7, sans émotions, en suivant des règles strictes et testées. Cela permet également aux personnes sans connaissance en trading d'investir et de générer un revenu passif.",
+        "p1": "Nous croyons que l'automatisation algorithmique permet aux investisseurs de profiter des marchés sans avoir à trader eux-mêmes. Nous proposons différentes variantes de notre moteur WA-AMIR : des versions fonctionnant en continu 24/7 de manière autonome, ainsi qu'une version PRO supervisée par un trader professionnel sur des horaires ciblés. Toutes fonctionnent sans émotions, en suivant des règles strictes et testées. Cela permet également aux personnes sans connaissance en trading d'investir et de générer un revenu passif.",
         "p2": "Notre objectif est de démocratiser l'investissement automatisé en rendant accessible à tous une technologie de trading algorithmique avancée. L'algorithme prend les décisions de trading pour vous, mais vous gardez le contrôle total de votre compte : vous pouvez arrêter, modifier ou retirer votre capital à tout moment."
       },
       "methodology": {
         "title": "Notre méthodologie",
-        "internal": "Développement interne : WA-AMIR est développé et optimisé en interne par notre équipe technique.",
-        "backtesting": "Backtesting rigoureux : Tous nos algorithmes sont testés sur des données historiques étendues et soumis à des scénarios de stress.",
-        "transparency": "Transparence : Nous affichons les performances réelles et historiques de nos algorithmes, sans promesses ni garanties.",
-        "control": "Contrôle utilisateur : Vous gardez le contrôle total de votre capital. L'algorithme envoie des signaux, mais c'est votre compte qui exécute les positions."
+        "internal": "Développement interne : WA-AMIR est développé et optimisé en interne par notre équipe technique. Nous proposons différentes variantes : des versions autonomes fonctionnant 24/7, et une version PRO avec supervision humaine sur horaires ciblés.",
+        "backtesting": "Backtesting rigoureux : Tous nos algorithmes sont testés sur des données historiques étendues et soumis à des scénarios de stress, qu'ils fonctionnent de manière autonome ou avec supervision humaine.",
+        "transparency": "Transparence : Nous affichons les performances réelles et historiques de nos algorithmes, sans promesses ni garanties. Chaque variante (autonome ou PRO) a ses propres caractéristiques et avantages.",
+        "control": "Contrôle utilisateur : Vous gardez le contrôle total de votre capital. L'algorithme envoie des signaux (ou est supervisé par un trader pour la version PRO), mais c'est votre compte qui exécute les positions."
       }
     },
     "onboarding": {
@@ -324,15 +328,15 @@
       },
       "vision": {
         "title": "Notre vision",
-        "p1": "Nous croyons que l'automatisation algorithmique permet aux investisseurs de profiter des marchés sans avoir à trader eux-mêmes. Vous déposez votre capital, nous connectons l'algorithme, et il trade automatiquement à votre place, 24/7, sans émotions, en suivant des règles strictes et testées. Cela permet également aux personnes sans connaissance en trading d'investir et de générer un revenu passif.",
+        "p1": "Nous croyons que l'automatisation algorithmique permet aux investisseurs de profiter des marchés sans avoir à trader eux-mêmes. Nous proposons différentes variantes de notre moteur WA-AMIR : des versions fonctionnant en continu 24/7 de manière autonome, ainsi qu'une version PRO supervisée par un trader professionnel sur des horaires ciblés. Toutes fonctionnent sans émotions, en suivant des règles strictes et testées. Cela permet également aux personnes sans connaissance en trading d'investir et de générer un revenu passif.",
         "p2": "Notre objectif est de démocratiser l'investissement automatisé en rendant accessible à tous une technologie de trading algorithmique avancée. L'algorithme prend les décisions de trading pour vous, mais vous gardez le contrôle total de votre compte : vous pouvez arrêter, modifier ou retirer votre capital à tout moment."
       },
       "methodology": {
         "title": "Notre méthodologie",
-        "internal": "Développement interne : WA-AMIR est développé et optimisé en interne par notre équipe technique.",
-        "backtesting": "Backtesting rigoureux : Tous nos algorithmes sont testés sur des données historiques étendues et soumis à des scénarios de stress.",
-        "transparency": "Transparence : Nous affichons les performances réelles et historiques de nos algorithmes, sans promesses ni garanties.",
-        "control": "Contrôle utilisateur : Vous gardez le contrôle total de votre capital. L'algorithme envoie des signaux, mais c'est votre compte qui exécute les positions."
+        "internal": "Développement interne : WA-AMIR est développé et optimisé en interne par notre équipe technique. Nous proposons différentes variantes : des versions autonomes fonctionnant 24/7, et une version PRO avec supervision humaine sur horaires ciblés.",
+        "backtesting": "Backtesting rigoureux : Tous nos algorithmes sont testés sur des données historiques étendues et soumis à des scénarios de stress, qu'ils fonctionnent de manière autonome ou avec supervision humaine.",
+        "transparency": "Transparence : Nous affichons les performances réelles et historiques de nos algorithmes, sans promesses ni garanties. Chaque variante (autonome ou PRO) a ses propres caractéristiques et avantages.",
+        "control": "Contrôle utilisateur : Vous gardez le contrôle total de votre capital. L'algorithme envoie des signaux (ou est supervisé par un trader pour la version PRO), mais c'est votre compte qui exécute les positions."
       },
       "notWaspalgo": {
         "title": "Ce que WASPALGO n'est PAS",
@@ -390,7 +394,7 @@
     },
     "q5": {
       "question": "Quelles plateformes sont compatibles ?",
-      "answer": "WA-AMIR fonctionne actuellement via Pu Prime, qui sert d'intermédiaire sécurisé. Ensuite, il est possible de connecter MetaTrader 4 ou 5 à Pu Prime, ce qui permet de : suivre toutes les positions en temps réel, consulter l'historique complet, vérifier l'activité directement depuis MetaTrader."
+      "answer": "Pour des raisons de sécurité, nous ne divulguons pas publiquement les plateformes partenaires utilisées sur notre site internet. Les informations détaillées sur les plateformes partenaires compatibles et la configuration technique sont communiquées uniquement aux clients qui ont fait une demande d'accès et qui ont été sélectionnés."
     },
     "q6": {
       "question": "Combien coûte l'accès à l'algorithme ?",
@@ -398,7 +402,7 @@
     },
     "q7": {
       "question": "Puis-je arrêter WA-AMIR quand je veux ?",
-      "answer": "Oui. Vous pouvez désactiver l'algorithme en un clic. Toutes les positions restent visibles et contrôlables depuis MetaTrader ou Pu Prime."
+      "answer": "Oui. Vous pouvez désactiver l'algorithme en un clic. Toutes les positions restent visibles et contrôlables depuis votre plateforme de trading."
     },
     "q8": {
       "question": "Quel capital est recommandé pour commencer ?",
@@ -406,7 +410,7 @@
     },
     "q9": {
       "question": "L'algorithme fonctionne-t-il 24/7 ?",
-      "answer": "WA-AMIR fonctionne en continu pendant l'ouverture des marchés (5 jours sur 7). Il analyse XAUUSD en permanence pour saisir les meilleures opportunités dès qu'elles apparaissent."
+      "answer": "Nous proposons deux variantes : WA-AMIR ST V1 fonctionne en continu 24/7 de manière autonome pendant l'ouverture des marchés (5 jours sur 7) et analyse XAUUSD en permanence. WA-AMIR ST V1 PRO fonctionne sur des horaires ciblés avec supervision humaine d'un trader professionnel pour une approche encore plus encadrée."
     },
     "q10": {
       "question": "Quels rendements puis-je espérer ?",
@@ -521,7 +525,7 @@
     },
     "role": {
       "title": "Votre rôle & celui de l'algorithme",
-      "p1": "Vous déposez simplement votre capital sur votre compte chez un broker partenaire, puis nous connectons WA-AMIR à votre compte. L'algorithme trade automatiquement à votre place, 24/7, sans que vous ayez à intervenir.",
+      "p1": "Vous déposez simplement votre capital sur votre compte chez un broker partenaire, puis nous connectons WA-AMIR à votre compte. Selon la variante choisie (autonome 24/7 ou PRO avec supervision), l'algorithme trade automatiquement à votre place, sans que vous ayez à intervenir.",
       "p2": "Vous pouvez laisser votre investissement fonctionner des semaines, des mois ou des années sans rien faire. Vous restez propriétaire de votre compte et pouvez retirer vos bénéfices ou votre capital de départ à tout moment. Vous pouvez arrêter l'algorithme instantanément si vous le souhaitez.",
       "p3": "Avant toute mise en place, un échange privé permet d'expliquer le fonctionnement et de répondre à vos questions."
     },
@@ -704,5 +708,93 @@
       "advanced": "Avancé"
     },
     "back": "Retour"
+  },
+    "algorithmePro": {
+      "hero": {
+        "title": "WA-AMIR ST V1 PRO",
+        "subtitle": "L'algorithme supervisé par un trader professionnel",
+        "description": "Une version avancée de WA-AMIR ST V1, active seulement quelques heures par jour, combinant la précision de l'algorithme et la vigilance d'un expert des marchés.",
+        "cta": "Accéder à l'algorithme pro",
+        "versionPro": "VERSION PRO"
+      },
+    "howItWorks": {
+      "title": "Fonctionnement de WA-AMIR ST V1 PRO",
+      "p1": "WA-AMIR ST V1 PRO est basé sur le même moteur que WA-AMIR ST V1, mais avec une différence majeure : il ne fonctionne pas en continu 24h/24, mais uniquement sur des fenêtres horaires ciblées, soigneusement sélectionnées pour leur profil de volatilité et de liquidité optimal.",
+      "p2": "Pendant ces périodes d'activation, un trader professionnel expérimenté en marchés financiers surveille en temps réel l'activité de l'algorithme. Cette supervision humaine permet :",
+      "supervision": {
+        "title": "Surveillance humaine en direct",
+        "description": "Un trader expérimenté suit en temps réel les positions de l'algorithme pendant les heures d'activation."
+      },
+      "targetedHours": {
+        "title": "Horaires ciblés",
+        "description": "L'algorithme n'est actif que sur des créneaux horaires choisis pour leur profil de volatilité et de liquidité."
+      },
+      "reactivity": {
+        "title": "Réactivité aux événements",
+        "description": "En cas d'annonce économique ou de mouvement brutal, le trader peut intervenir immédiatement."
+      },
+      "sameDna": {
+        "title": "Même ADN que WA-AMIR ST V1",
+        "description": "Basé sur la même logique algorithmique, avec une couche de supervision supplémentaire."
+      },
+      "riskManagement": {
+        "title": "Approche plus encadrée du risque",
+        "description": "Pensée pour des investisseurs qui souhaitent une solution plus suivie et plus professionnelle."
+      },
+      "list1": "Fermer manuellement certaines positions si nécessaire",
+      "list2": "Ajuster l'exposition en cas de volatilité extrême",
+      "list3": "Optimiser certaines entrées et sorties en fonction du contexte de marché",
+      "p3": "L'objectif est de concentrer le risque et le capital sur les meilleurs moments du marché, avec une couche humaine supplémentaire qui peut réagir aux événements imprévus et aux conditions de marché exceptionnelles."
+    },
+    "differences": {
+      "title": "Ce qui rend l'algorithme pro différent",
+      "subtitle": "Une approche hybride combinant technologie et expertise humaine"
+    },
+    "followUp": {
+      "title": "Organisation du suivi",
+      "p1": "WA-AMIR ST V1 PRO n'est pas un algorithme \"fire and forget\" fonctionnant 24h/24. Il est activé uniquement sur des créneaux horaires définis, pendant lesquels le trader est concentré spécifiquement sur cette stratégie.",
+      "p2": "Ce processus comprend :",
+      "preMarket": "Une revue pré-marché pour identifier les opportunités du jour",
+      "monitoring": "Une surveillance active pendant toute la période d'activation",
+      "postSession": "Un débrief et une analyse après chaque session pour optimiser les performances futures"
+    },
+    "investorProfile": {
+      "title": "Pour quel type d'investisseur ?",
+      "subtitle": "WA-AMIR ST V1 PRO s'adresse aux investisseurs qui :",
+      "item1": "Souhaitent un niveau de suivi supérieur",
+      "item2": "Sont intéressés par une approche hybride : technologie + expertise humaine",
+      "item3": "Sont conscients des risques du trading, mais veulent une solution plus encadrée et professionnelle"
+    },
+    "riskWarning": {
+      "title": "Avertissement sur les risques",
+      "content": "Le trading sur les marchés financiers comporte un risque élevé de perte en capital. Les performances passées, réelles ou simulées, ne garantissent en aucun cas les résultats futurs. Même avec la supervision d'un trader professionnel, WA-AMIR ST V1 PRO reste une stratégie exposée aux fluctuations du marché."
+    },
+      "form": {
+        "title": "Accéder à l'algorithme pro",
+        "subtitle": "Remplissez ce formulaire pour demander l'accès à WA-AMIR ST V1 PRO",
+        "accessTitle": "Accéder à WA-AMIR ST V1 PRO",
+        "selectedAlgorithm": "Algorithme sélectionné :",
+      "firstName": "Prénom *",
+      "lastName": "Nom *",
+      "email": "Adresse e-mail *",
+      "amount": "Montant envisagé *",
+      "amountPlaceholder": "Sélectionnez un montant",
+      "message": "Message / Motivation (optionnel)",
+      "messagePlaceholder": "Décrivez votre intérêt pour cette version pro...",
+      "disclaimer": "Je comprends que l'investissement comporte un risque de perte en capital. *",
+      "submit": "Envoyer ma demande",
+      "sending": "Envoi en cours...",
+      "successTitle": "Demande envoyée avec succès",
+      "successMessage": "Merci ! Votre demande d'accès à WA-AMIR ST V1 PRO a bien été envoyée. Nous vous contacterons prochainement.",
+      "backToHome": "Retour à l'accueil",
+      "errors": {
+        "firstName": "Le prénom est requis",
+        "lastName": "Le nom est requis",
+        "email": "L'adresse e-mail est requise",
+        "emailInvalid": "L'adresse e-mail n'est pas valide",
+        "amount": "Le montant envisagé est requis",
+        "disclaimer": "Vous devez accepter l'avertissement sur les risques"
+      }
+    }
   }
 }

@@ -479,7 +479,7 @@ export default function Home() {
                             <input
                               type="range"
                               min={500}
-                              max={25000}
+                              max={15000}
                               step={500}
                               value={initialAmount}
                               onChange={(e) => setInitialInvestment(Number(e.target.value))}
@@ -487,7 +487,7 @@ export default function Home() {
                             />
                             <div className="flex justify-between text-xs text-text-muted mt-1">
                               <span>500 $</span>
-                              <span>25 000 $</span>
+                              <span>15 000 $</span>
                             </div>
                           </div>
                         </div>
@@ -589,6 +589,7 @@ export default function Home() {
                 ]}
                 learnMoreHref="/algorithmes/wa-amir-st"
                 accessHref="/acces?algo=wa-amir-st"
+                proHref="/algorithme-pro"
               />
             </ScrollReveal>
             <ScrollReveal delay={200}>

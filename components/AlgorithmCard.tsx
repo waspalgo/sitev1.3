@@ -18,6 +18,7 @@ interface AlgorithmCardProps {
   accessDisabled?: boolean;
   accessLabel?: string;
   status?: 'active' | 'inactive';
+  proHref?: string;
 }
 
 export default function AlgorithmCard({
@@ -32,6 +33,7 @@ export default function AlgorithmCard({
   accessDisabled = false,
   accessLabel,
   status,
+  proHref,
 }: AlgorithmCardProps) {
   const { t } = useLanguage();
   const defaultAccessLabel = t('home.algorithmCard.access');
@@ -89,18 +91,28 @@ export default function AlgorithmCard({
         >
           {t('home.algorithmCard.learnMore')}
         </Link>
-        {accessHref && !accessDisabled ? (
-          <PrimaryButton href={accessHref} className="text-sm px-6 py-2">
-            {accessLabel || defaultAccessLabel}
-          </PrimaryButton>
-        ) : (
-          <button
-            disabled
-            className="px-6 py-2 bg-text-muted/20 text-text-muted rounded-2xl text-center font-medium cursor-not-allowed opacity-50"
-          >
-            {accessLabel || t('home.algorithmCard.accessSoon')}
-          </button>
-        )}
+        <div className="flex gap-2">
+          {accessHref && !accessDisabled ? (
+            <PrimaryButton href={accessHref} className="text-sm px-6 py-2 flex-1">
+              {accessLabel || defaultAccessLabel}
+            </PrimaryButton>
+          ) : (
+            <button
+              disabled
+              className="px-6 py-2 bg-text-muted/20 text-text-muted rounded-2xl text-center font-medium cursor-not-allowed opacity-50 flex-1"
+            >
+              {accessLabel || t('home.algorithmCard.accessSoon')}
+            </button>
+          )}
+          {proHref && (
+            <Link
+              href={proHref}
+              className="inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-slate-600 via-slate-500 to-slate-400 text-white rounded-2xl text-center font-semibold text-sm transition-all duration-300 hover:scale-105 hover:from-slate-500 hover:via-slate-400 hover:to-slate-300"
+            >
+              PRO
+            </Link>
+          )}
+        </div>
       </div>
     </GlassCard>
   );

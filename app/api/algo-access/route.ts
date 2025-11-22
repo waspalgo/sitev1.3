@@ -26,6 +26,7 @@ export async function POST(req: Request) {
       preferred_days,
       time_slots,
       contact_preference,
+      locale,
     } = (await req.json()) as {
       algorithm: string;
       first_name: string;
@@ -42,6 +43,7 @@ export async function POST(req: Request) {
       preferred_days?: string;
       time_slots?: string;
       contact_preference?: string;
+      locale?: 'fr' | 'en';
     };
 
     // Préparer les données pour l'insertion
@@ -133,10 +135,16 @@ export async function POST(req: Request) {
       html,
     });
 
+    // Déterminer le contexte traduit selon la langue
+    const contextText = locale === 'en'
+      ? `your access request to the ${algorithm} algorithm`
+      : `votre demande d'accès à l'algorithme ${algorithm}`;
+
     await sendAutoReplyEmail({
       to: email,
       name: first_name,
-      context: `votre demande d’accès à l’algorithme ${algorithm}`,
+      context: contextText,
+      locale: locale || 'fr',
     });
 
     return NextResponse.json({ ok: true });

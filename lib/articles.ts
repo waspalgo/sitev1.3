@@ -18,6 +18,349 @@ interface ArticleData {
 
 const articlesData: ArticleData[] = [
   {
+    id: '8',
+    titleFr: 'WA-AMIR ST V1 PRO : Une version supervisée par un trader professionnel',
+    titleEn: 'WA-AMIR ST V1 PRO: A version supervised by a professional trader',
+    excerptFr: 'Découvrez WA-AMIR ST V1 PRO, notre nouvelle version hybride combinant la précision algorithmique et la vigilance humaine d\'un trader expert.',
+    excerptEn: 'Discover WA-AMIR ST V1 PRO, our new hybrid version combining algorithmic precision and the human vigilance of an expert trader.',
+    contentFr: `
+# WA-AMIR ST V1 PRO : Une version supervisée par un trader professionnel
+
+Nous sommes fiers d'annoncer le lancement de **WA-AMIR ST V1 PRO**, une nouvelle variante de notre algorithme qui combine la puissance algorithmique de WA-AMIR ST V1 avec la supervision en temps réel d'un trader professionnel expérimenté.
+
+---
+
+## Introduction
+
+WA-AMIR ST V1 PRO représente une évolution majeure dans notre offre d'algorithmes de trading. Après des mois de développement et de tests en phase privée, nous lançons cette version **hybride** qui allie l'excellence algorithmique de WA-AMIR ST V1 à l'expertise humaine d'un trader professionnel.
+
+---
+
+## Qu'est-ce que WA-AMIR ST V1 PRO ?
+
+### Concept hybride
+
+WA-AMIR ST V1 PRO est une version **hybride** de notre algorithme standard WA-AMIR ST V1. Il repose sur le même moteur algorithmique éprouvé, mais avec une différence fondamentale : il ne fonctionne pas en continu 24h/24, mais uniquement sur des **fenêtres horaires ciblées**, soigneusement sélectionnées pour leur profil optimal de volatilité et de liquidité.
+
+### Supervision professionnelle
+
+Pendant ces périodes d'activation, un **trader professionnel expérimenté** :
+- Surveille en temps réel l'activité de l'algorithme
+- Peut intervenir manuellement si nécessaire
+- Ajuste l'exposition en cas de volatilité extrême
+- Optimise certaines entrées et sorties en fonction du contexte de marché
+
+### Objectif
+
+Cette approche permet de concentrer le risque et le capital sur les meilleurs moments du marché, avec une couche humaine supplémentaire qui peut réagir aux événements imprévus et aux conditions de marché exceptionnelles.
+
+---
+
+## Les différences clés avec WA-AMIR ST V1
+
+### 🔍 Surveillance humaine en direct
+
+Un trader expérimenté suit en temps réel les positions de l'algorithme pendant les heures d'activation. Cette supervision permet une **réactivité immédiate** face aux événements imprévus et aux conditions de marché exceptionnelles.
+
+**Avantages :**
+- Intervention rapide en cas de besoin
+- Analyse contextuelle en temps réel
+- Décisions stratégiques basées sur l'expertise humaine
+
+### ⏰ Horaires ciblés
+
+L'algorithme n'est actif que sur des **créneaux horaires choisis** pour leur profil de volatilité et de liquidité optimal. 
+
+**Bénéfices :**
+- Concentration du capital sur les meilleurs moments
+- Réduction de l'exposition aux périodes de faible liquidité
+- Optimisation du ratio risque/rendement
+
+### ⚡ Réactivité aux événements
+
+En cas d'annonce économique majeure ou de mouvement brutal des marchés, le trader peut **intervenir immédiatement** pour :
+- Protéger les positions existantes
+- Saisir des opportunités émergentes
+- Ajuster la stratégie en fonction du contexte
+
+### 🧬 Même ADN que WA-AMIR ST V1
+
+Basé sur la même logique algorithmique que WA-AMIR ST V1, WA-AMIR ST V1 PRO bénéficie de :
+- Toute l'expertise développée en phase privée
+- Les optimisations continues apportées au système
+- Une couche supplémentaire de supervision humaine
+
+### 🛡️ Approche plus encadrée du risque
+
+Pensée pour des investisseurs qui souhaitent :
+- Une solution plus suivie et professionnelle
+- Un niveau de surveillance supérieur
+- Une gestion du risque encore plus rigoureuse
+
+---
+
+## Accès et disponibilité
+
+### Accès restreint
+
+**WA-AMIR ST V1 PRO n'est pas encore en libre accès pour tout le monde.** Pour l'instant, seules certaines personnes ayant fait une demande spécifique et ayant été **sélectionnées** peuvent y avoir accès.
+
+### Pourquoi un accès restreint ?
+
+Cette approche sélective nous permet de :
+- Garantir une qualité de service optimale
+- Offrir une supervision personnalisée pour chaque utilisateur
+- Assurer un accompagnement adapté à chaque investisseur
+- Maintenir un niveau d'excellence dans la gestion
+
+### Processus de sélection
+
+Notre équipe analyse chaque demande avec attention et contacte directement les candidats retenus. Nous privilégions les investisseurs qui correspondent au profil idéal pour cette version pro de l'algorithme.
+
+---
+
+## Structure tarifaire
+
+### Frais actuels
+
+Actuellement, WA-AMIR ST V1 PRO est proposé avec des **frais de performance de 10%**.
+
+### Évolution possible
+
+Ces frais peuvent être amenés à évoluer par la suite en fonction de :
+- La demande croissante pour ce service
+- L'évolution du service et des fonctionnalités
+- Les ajustements du marché
+
+Nous informerons tous les utilisateurs en cas de modification de la structure tarifaire.
+
+---
+
+## Pour qui est WA-AMIR ST V1 PRO ?
+
+Cette version est idéale pour les investisseurs qui :
+
+✅ **Souhaitent un niveau de suivi supérieur**
+- Accompagnement personnalisé
+- Surveillance active des positions
+- Feedback régulier sur la performance
+
+✅ **Préfèrent une approche hybride**
+- Technologie algorithmique de pointe
+- Expertise humaine complémentaire
+- Meilleur des deux mondes
+
+✅ **Recherchent une solution professionnelle**
+- Encadrement rigoureux
+- Gestion des risques avancée
+- Suivi adapté à leur profil
+
+✅ **Valorisent la réactivité**
+- Surveillance active du marché
+- Réaction immédiate aux événements
+- Optimisation continue
+
+---
+
+## Comment faire une demande ?
+
+### Formulaire dédié
+
+Si vous souhaitez être considéré pour l'accès à WA-AMIR ST V1 PRO, vous pouvez remplir le **formulaire dédié** disponible sur notre site.
+
+### Processus
+
+1. **Remplissez le formulaire** avec vos informations
+2. **Notre équipe analyse** chaque demande
+3. **Contact direct** avec les candidats retenus
+4. **Accompagnement personnalisé** pour la mise en place
+
+### Prochaines étapes
+
+Une fois votre demande reçue, nous vous contacterons dans les meilleurs délais pour discuter de votre profil et de votre adéquation avec WA-AMIR ST V1 PRO.
+
+---
+
+## Avertissement important
+
+⚠️ **Le trading sur les marchés financiers comporte un risque élevé de perte en capital.**
+
+Les performances passées, réelles ou simulées, ne garantissent en aucun cas les résultats futurs. Même avec la supervision d'un trader professionnel, WA-AMIR ST V1 PRO reste une stratégie exposée aux fluctuations du marché.
+
+Nous recommandons de n'investir que des montants dont vous pouvez vous permettre de perdre une partie ou la totalité.
+    `,
+    contentEn: `
+# WA-AMIR ST V1 PRO: A version supervised by a professional trader
+
+We are proud to announce the launch of **WA-AMIR ST V1 PRO**, a new variant of our algorithm that combines the algorithmic power of WA-AMIR ST V1 with real-time supervision by an experienced professional trader.
+
+---
+
+## Introduction
+
+WA-AMIR ST V1 PRO represents a major evolution in our trading algorithm offering. After months of development and testing in private phase, we are launching this **hybrid** version that combines the algorithmic excellence of WA-AMIR ST V1 with the human expertise of a professional trader.
+
+---
+
+## What is WA-AMIR ST V1 PRO?
+
+### Hybrid Concept
+
+WA-AMIR ST V1 PRO is a **hybrid** version of our standard WA-AMIR ST V1 algorithm. It is based on the same proven algorithmic engine, but with one fundamental difference: it does not run continuously 24/7, but only during **targeted time windows**, carefully selected for their optimal volatility and liquidity profile.
+
+### Professional Supervision
+
+During these activation periods, an **experienced professional trader**:
+- Monitors the algorithm's activity in real-time
+- Can intervene manually if necessary
+- Adjusts exposure in case of extreme volatility
+- Optimizes certain entries and exits based on market context
+
+### Objective
+
+This approach allows concentrating risk and capital on the best market moments, with an additional human layer that can react to unforeseen events and exceptional market conditions.
+
+---
+
+## Key Differences with WA-AMIR ST V1
+
+### 🔍 Live Human Supervision
+
+An experienced trader monitors the algorithm's positions in real-time during activation hours. This supervision allows for **immediate responsiveness** to unforeseen events and exceptional market conditions.
+
+**Advantages:**
+- Rapid intervention when needed
+- Real-time contextual analysis
+- Strategic decisions based on human expertise
+
+### ⏰ Targeted Hours
+
+The algorithm is only active during **selected time slots** chosen for their optimal volatility and liquidity profile.
+
+**Benefits:**
+- Capital concentration on best moments
+- Reduced exposure during low liquidity periods
+- Risk/return ratio optimization
+
+### ⚡ Event Reactivity
+
+In case of major economic announcements or sudden market movements, the trader can **intervene immediately** to:
+- Protect existing positions
+- Seize emerging opportunities
+- Adjust strategy based on context
+
+### 🧬 Same DNA as WA-AMIR ST V1
+
+Based on the same algorithmic logic as WA-AMIR ST V1, WA-AMIR ST V1 PRO benefits from:
+- All expertise developed in private phase
+- Continuous optimizations made to the system
+- An additional layer of human supervision
+
+### 🛡️ More Structured Risk Approach
+
+Designed for investors who want:
+- A more monitored and professional solution
+- A higher level of surveillance
+- Even more rigorous risk management
+
+---
+
+## Access and Availability
+
+### Restricted Access
+
+**WA-AMIR ST V1 PRO is not yet freely accessible to everyone.** For now, only certain people who have made a specific request and have been **selected** can access it.
+
+### Why Restricted Access?
+
+This selective approach allows us to:
+- Guarantee optimal service quality
+- Offer personalized supervision for each user
+- Ensure adapted support for each investor
+- Maintain a level of excellence in management
+
+### Selection Process
+
+Our team carefully analyzes each request and directly contacts the selected candidates. We prioritize investors who match the ideal profile for this pro version of the algorithm.
+
+---
+
+## Fee Structure
+
+### Current Fees
+
+Currently, WA-AMIR ST V1 PRO is offered with **performance fees of 10%**.
+
+### Possible Evolution
+
+These fees may evolve in the future depending on:
+- Growing demand for this service
+- Service evolution and features
+- Market adjustments
+
+We will inform all users of any changes to the fee structure.
+
+---
+
+## Who is WA-AMIR ST V1 PRO for?
+
+This version is ideal for investors who:
+
+✅ **Want a higher level of follow-up**
+- Personalized support
+- Active position monitoring
+- Regular performance feedback
+
+✅ **Prefer a hybrid approach**
+- Cutting-edge algorithmic technology
+- Complementary human expertise
+- Best of both worlds
+
+✅ **Are looking for a professional solution**
+- Rigorous framework
+- Advanced risk management
+- Follow-up adapted to their profile
+
+✅ **Value responsiveness**
+- Active market monitoring
+- Immediate reaction to events
+- Continuous optimization
+
+---
+
+## How to Make a Request?
+
+### Dedicated Form
+
+If you wish to be considered for access to WA-AMIR ST V1 PRO, you can fill out the **dedicated form** available on our website.
+
+### Process
+
+1. **Fill out the form** with your information
+2. **Our team analyzes** each request
+3. **Direct contact** with selected candidates
+4. **Personalized support** for setup
+
+### Next Steps
+
+Once your request is received, we will contact you as soon as possible to discuss your profile and your suitability for WA-AMIR ST V1 PRO.
+
+---
+
+## Important Warning
+
+⚠️ **Trading on financial markets involves a high risk of capital loss.**
+
+Past performance, real or simulated, does not in any way guarantee future results. Even with the supervision of a professional trader, WA-AMIR ST V1 PRO remains a strategy exposed to market fluctuations.
+
+We recommend investing only amounts you can afford to lose in part or in full.
+    `,
+    category: 'announcement',
+    date: '2025-11-21',
+    author: 'WASPALGO Team',
+    featured: true,
+  },
+  {
     id: '1',
     titleFr: 'WA-AMIR ST V1 maintenant ouvert au whitelist !',
     titleEn: 'WA-AMIR ST V1 now open to whitelist!',

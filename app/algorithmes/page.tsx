@@ -154,6 +154,23 @@ export default function AlgorithmesPage() {
               />
             </ScrollReveal>
           </div>
+
+          {/* Algorithme Pro Section */}
+          <ScrollReveal delay={300}>
+            <div className="mt-12 text-center">
+              <Link
+                href="/algorithme-pro"
+                className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-slate-600 via-slate-500 to-slate-400 hover:from-slate-500 hover:via-slate-400 hover:to-slate-300 text-white rounded-full font-semibold transition-all duration-300 hover:scale-105 mb-6"
+              >
+                {t('home.algorithms.viewProAlgorithm')}
+              </Link>
+              <GlassCard className="p-6 max-w-3xl mx-auto">
+                <p className="text-text-secondary text-center">
+                  {t('home.algorithms.proDescription')}
+                </p>
+              </GlassCard>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
