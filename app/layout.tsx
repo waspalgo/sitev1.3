@@ -42,30 +42,29 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: '/',
-    title: 'WASPALGO - Algorithmes de trading avec WA-AMIR',
-    description: 'WASPALGO développe des algorithmes de trading automatisés avec le moteur WA-AMIR. Technologie algorithmique pour les marchés financiers.',
+    title: 'WASPALGO | Rendements passifs grâce à notre algorithme',
+    description: 'Algorithme de trading autonome connecté à votre compte. Surveillance continue des marchés, exécution automatique, gestion du risque intégrée.',
     siteName: 'WASPALGO',
     images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'WASPALGO - Algorithmes de trading avec WA-AMIR',
-      },
-      // Fallback temporaire avec le favicon si og-image.png n'existe pas encore
       {
         url: '/favicon-512.png',
         width: 512,
         height: 512,
         alt: 'WASPALGO Logo',
       },
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'WASPALGO - Algorithmes de trading avec WA-AMIR',
+      },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'WASPALGO - Algorithmes de trading avec WA-AMIR',
-    description: 'WASPALGO développe des algorithmes de trading automatisés avec le moteur WA-AMIR.',
-    images: ['/og-image.png'],
+    card: 'summary',
+    title: 'WASPALGO | Rendements passifs grâce à notre algorithme',
+    description: 'Algorithme de trading autonome connecté à votre compte. Surveillance continue des marchés, exécution automatique, gestion du risque intégrée.',
+    images: ['/favicon-512.png'],
   },
   robots: {
     index: true,
